@@ -1,0 +1,97 @@
+INFO: [COSIM-47] Using Modelsim for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "D:/environment/IDE/vivado/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling HLS_HelloWorld.cpp_pre.cpp.tb.cpp
+   Compiling apatb_flash_led.cpp
+   Compiling HLS_HelloWorld_tb.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting Modelsim ...
+INFO: [COSIM-316] Starting C post checking ...
+shift_out is 0 
+shift_out is 1 
+shift_out is 0 
+shift_out is 1 
+Reading D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# do cosim.modelsim.scr
+# 
+#     set fl [open ".exit.err" w]
+#     puts $fl "Elaboration errors in executing modelsim simulator"
+#     close $fl
+#     quit
+# 
+# D:/environment/clibs
+# nt64
+# 1
+# D:/environment/clibs/questa/10.5b/nt64/lib
+WARNING: There is no IP libs for this version of ModelSim. If you may use cosim with IP, please make sure the IP libs have been pre-compiled.
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Copying D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:09 on May 13,2023
+# vlog -sv -work work glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 12:46:09 on May 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:09 on May 13,2023
+# vlog -sv -work work flash_led.autotb.v 
+# -- Compiling module apatb_flash_led_top
+# 
+# Top level modules:
+# 	apatb_flash_led_top
+# End time: 12:46:10 on May 13,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:10 on May 13,2023
+# vlog -sv -work work flash_led.v 
+# -- Compiling module flash_led
+# 
+# Top level modules:
+# 	flash_led
+# End time: 12:46:10 on May 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -debugDB -t 10ps -voptargs=""+acc"" -L work -L unisims_ver -L xpm apatb_flash_led_top glbl -suppress 6630 -wlf flash_led.wlf 
+# Start time: 12:46:11 on May 13,2023
+# Loading sv_std.std
+# Loading work.apatb_flash_led_top
+# Loading work.flash_led
+# Loading work.glbl
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# It appears vopt was not run with -debugdb option on this design.
+# Advanced Causality and Schematic debug features will not be available.
+# Variable Constant Generic SpecParam Memory Assertion Cover Endpoint ScVariable CellInternal ImmediateAssert VHDLFile
+# 1
+# 1
+# ////////////////////////////////////////////////////////////////////////////////////
+# // Inter-Transaction Progress: Completed Transaction / Total Transaction
+# // Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+# //
+# // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+# ////////////////////////////////////////////////////////////////////////////////////
+# // RTL Simulation : 0 / 4 [0.00%] @ "12500"
+# // RTL Simulation : 1 / 4 [100.00%] @ "115500"
+# // RTL Simulation : 2 / 4 [100.00%] @ "217500"
+# // RTL Simulation : 3 / 4 [100.00%] @ "319500"
+# // RTL Simulation : 4 / 4 [100.00%] @ "421500"
+# ////////////////////////////////////////////////////////////////////////////////////
+# ** Note: $finish    : flash_led.autotb.v(292)
+#    Time: 4255 ns  Iteration: 1  Instance: /apatb_flash_led_top
+# End time: 12:46:12 on May 13,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+shift_out is 0 
+shift_out is 1 
+shift_out is 0 
+shift_out is 1 
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

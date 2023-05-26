@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA_TEST/Data_flip_flop/PRJ/simulation/qsim
+vData_flip_flop
+Z1 !s110 1668340971
+!i10b 1
+!s100 MJOFW=SlcJO=@ziHBAZn_2
+IE``HA_20U<dnAI00FB83n3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1668340970
+Z4 8Data_flip_flop.vo
+Z5 FData_flip_flop.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1668340971.000000
+Z8 !s107 Data_flip_flop.vo|
+Z9 !s90 -work|work|Data_flip_flop.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@data_flip_flop
+vData_flip_flop_vlg_vec_tst
+R1
+!i10b 1
+!s100 6GRV>o5Pcjhm9P[^?B:bI1
+I7h?ZmTI>UM_<ZNWfKS>9z1
+R2
+R0
+R3
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@data_flip_flop_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 hVYQ[i=;GChn]i7lN>QBj2
+IKC=mGOhUglWjVl@fbE@KV2
+R2
+R0
+R3
+R4
+R5
+L0 162
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

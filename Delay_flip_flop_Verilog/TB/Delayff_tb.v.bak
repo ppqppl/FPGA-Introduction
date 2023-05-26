@@ -1,0 +1,23 @@
+//测试代码
+`timescale 1ns / 1ns
+
+module Dff_tb;
+	reg clk,rst,clr,d;
+	wire q;
+	initial
+		begin 
+			clk=1'b0;
+			forever #10 clk=~clk;
+		end
+	initial 
+		begin
+			clr=1'b0;
+			rst=1'b0; d=1'b0;
+			#10 rst=1'b1;clr=1'b0;d=1'b0;
+			#10 rst=1'b1;clr=1'b1;d=1'b1;
+			#10 rst=1'b0;clr=1'b0;d=1'b1;
+			#20 d=1'b0;
+			#20 d=1'b1;
+		end
+	Df U1(.clk(clk),.clr(clr),.rst(rst),.d(d),.q(q));
+endmodule 

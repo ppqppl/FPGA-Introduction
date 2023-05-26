@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at TIME_ctrl.v(39): always construct contains both blocking and non-blocking assignments File: D:/code-file/FPGA/CLOCK/SRC/TIME_ctrl.v Line: 39
+Warning (10268): Verilog HDL information at TIME_ctrl.v(59): always construct contains both blocking and non-blocking assignments File: D:/code-file/FPGA/CLOCK/SRC/TIME_ctrl.v Line: 59
+Warning (10268): Verilog HDL information at SEG_driver.v(44): always construct contains both blocking and non-blocking assignments File: D:/code-file/FPGA/CLOCK/SRC/SEG_driver.v Line: 44

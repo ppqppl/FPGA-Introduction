@@ -1,0 +1,81 @@
+# Reading D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/tcl/vsim/pref.tcl
+# do UART_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/UART/SRC {D:/code-file/FPGA/UART/SRC/UART_TX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:30:48 on Dec 09,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/UART/SRC" D:/code-file/FPGA/UART/SRC/UART_TX.v 
+# -- Compiling module UART_TX
+# 
+# Top level modules:
+# 	UART_TX
+# End time: 16:30:48 on Dec 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/UART/SRC {D:/code-file/FPGA/UART/SRC/UART_RX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:30:49 on Dec 09,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/UART/SRC" D:/code-file/FPGA/UART/SRC/UART_RX.v 
+# -- Compiling module UART_RX
+# 
+# Top level modules:
+# 	UART_RX
+# End time: 16:30:49 on Dec 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/UART/SRC {D:/code-file/FPGA/UART/SRC/UART.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:30:49 on Dec 09,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/UART/SRC" D:/code-file/FPGA/UART/SRC/UART.v 
+# -- Compiling module UART
+# 
+# Top level modules:
+# 	UART
+# End time: 16:30:49 on Dec 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/UART/PRJ/../TB {D:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:30:49 on Dec 09,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/UART/PRJ/../TB" D:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v 
+# -- Compiling module TB_UART
+# 
+# Top level modules:
+# 	TB_UART
+# End time: 16:30:49 on Dec 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_UART
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_UART 
+# Start time: 16:30:49 on Dec 09,2022
+# Loading work.TB_UART
+# Loading work.UART
+# Loading work.UART_RX
+# Loading work.UART_TX
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v(46)
+#    Time: 190100 ns  Iteration: 0  Instance: /TB_UART
+# Break in Module TB_UART at D:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v line 46
+add wave -position insertpoint sim:/TB_UART/instance_UART/*
+add wave -position insertpoint sim:/TB_UART/instance_UART/instance_UART_RX/*
+add wave -position insertpoint sim:/TB_UART/instance_UART/instance_UART_TX/*
+restart
+run -continue
+# ** Note: $stop    : D:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v(46)
+#    Time: 190100 ns  Iteration: 0  Instance: /TB_UART
+# Break in Module TB_UART at D:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v line 46
+# End time: 17:18:39 on Dec 09,2022, Elapsed time: 0:47:50
+# Errors: 0, Warnings: 0

@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'data_drive:u_data_drive|states_current[0]'
+Slack : -9.270
+TNS   : -71.682
+
+Type  : Slow 1200mV 85C Model Setup 'u_vga_dirve|pll_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -5.231
+TNS   : -94.363
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : 15.067
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_vga_dirve|pll_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'data_drive:u_data_drive|states_current[0]'
+Slack : 0.605
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'data_drive:u_data_drive|states_current[0]'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : 9.786
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_vga_dirve|pll_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.701
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'data_drive:u_data_drive|states_current[0]'
+Slack : -9.174
+TNS   : -70.834
+
+Type  : Slow 1200mV 0C Model Setup 'u_vga_dirve|pll_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -4.574
+TNS   : -80.057
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : 15.267
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_vga_dirve|pll_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'data_drive:u_data_drive|states_current[0]'
+Slack : 0.638
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'data_drive:u_data_drive|states_current[0]'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.773
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_vga_dirve|pll_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.659
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'data_drive:u_data_drive|states_current[0]'
+Slack : -3.550
+TNS   : -24.895
+
+Type  : Fast 1200mV 0C Model Setup 'u_vga_dirve|pll_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -2.042
+TNS   : -35.879
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : 17.847
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'data_drive:u_data_drive|states_current[0]'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_vga_dirve|pll_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'data_drive:u_data_drive|states_current[0]'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.435
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_vga_dirve|pll_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.734
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,119 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 96 184 264 200)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "clk_clk" (rect 5 0 39 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 96 264 264 280)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "reset_reset_n" (rect 5 0 72 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 72 224 264 240)
+	(text "OUTPUT" (rect 153 6 191 16)(font "Arial" (font_size 6)))
+	(text "out_led_export[7..0]" (rect 5 4 102 16)(font "Arial" ))
+	(pt 192 8)
+	(drawing
+		(line (pt 192 8)(pt 140 8))
+		(line (pt 140 12)(pt 114 12))
+		(line (pt 140 4)(pt 114 4))
+		(line (pt 140 4)(pt 140 12))
+		(line (pt 114 12)(pt 110 8))
+		(line (pt 110 8)(pt 114 4))
+		(line (pt 114 4)(pt 110 8))
+	)
+	(rotate180)
+)
+(symbol
+	(rect 264 120 552 304)
+	(text "Nios" (rect 132 -1 162 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 168 25 180)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 41 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 112 72))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "reset_reset_n" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 141 84 155)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 112 152))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "out_led_export[7..0]" (rect 0 0 113 14)(font "Arial" (font_size 8)))
+		(text "out_led_export[7..0]" (rect 4 101 117 115)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 112 112)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 97 43 114 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 117 67 131 79)(font "Arial" (color 0 0 0)))
+		(text "out_led" (rect 70 83 118 98)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 117 107 147 119)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 83 123 116 138)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 117 147 153 159)(font "Arial" (color 0 0 0)))
+		(text " Nios " (rect 266 168 295 180)(font "Arial" ))
+		(line (pt 112 32)(pt 176 32))
+		(line (pt 176 32)(pt 176 168))
+		(line (pt 112 168)(pt 176 168))
+		(line (pt 112 32)(pt 112 168))
+		(line (pt 113 52)(pt 113 76))
+		(line (pt 114 52)(pt 114 76))
+		(line (pt 113 92)(pt 113 116))
+		(line (pt 114 92)(pt 114 116))
+		(line (pt 113 132)(pt 113 156))
+		(line (pt 114 132)(pt 114 156))
+		(line (pt 0 0)(pt 288 0))
+		(line (pt 288 0)(pt 288 184))
+		(line (pt 0 184)(pt 288 184))
+		(line (pt 0 0)(pt 0 184))
+	)
+)

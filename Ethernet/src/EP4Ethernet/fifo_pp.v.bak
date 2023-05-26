@@ -1,0 +1,129 @@
+/***********************************************/
+
+//Project Name : FIFO
+//Email		   :
+//Create Time	: 2021/01/09 13:36
+//Editor       : Liu
+//Version		: Rev1.0.0
+
+/***********************************************/
+
+module fifo_pp(
+ input rst_n,
+ input clk,
+ input [7:0]data_in,
+ input wr_en,
+ output reg fifo1_wr_en,
+ output reg fifo2_wr_en,
+ output reg fifo1_rd_en,
+ output reg fifo2_rd_en,
+ output [7:0]data_out
+);
+
+
+wire [8:0] fifo_cnt1;
+wire [8:0] fifo_cnt2;
+
+wire [7:0]data_out1;
+wire [7:0]data_out2;
+assign data_out=fifo1_rd_en?data_out1:data_out2;
+
+parameter idle = 4'b0000,
+         start = 4'b0001,
+          ping = 4'b0010,
+          pang = 4'b0100;
+              
+reg[3:0]state;
+reg[3:0]next_state;
+//
+always@(posedge clk or negedge rst_n)begin
+if(!rst_n) state<= idle;
+else state <= next_state;
+end
+//
+always@(posedge clk)begin
+ case(state)
+  idle:if(wr_en) 
+       next_state <= start;
+       else next_state <= idle;
+  start:if(fifo_cnt1 == 9'd500)
+        next_state <= ping;
+        else next_state <= start;
+  ping:if(fifo_cnt2 == 9'd500)
+        next_state <= pang;
+	    else next_state <= ping;
+  
+  pang:if(fifo_cnt1 == 9'd500)
+       next_state <= ping;
+       else next_state <= pang;
+  default: next_state <= idle;	   
+ endcase
+end
+
+
+//
+always@(posedge clk or negedge rst_n)begin
+ if(!rst_n)begin
+  fifo1_wr_en <= 0;
+  fifo2_wr_en <= 0;
+ end
+ else case(state)
+  idle:begin
+        fifo1_wr_en <= 0;
+		fifo2_wr_en <= 0;
+		fifo2_rd_en <= 0;
+		fifo1_rd_en <= 0;
+	   end
+  start:begin
+         fifo1_wr_en <= 1;
+		 fifo2_wr_en <= 0;
+		 fifo2_rd_en <= 1;
+		 fifo1_rd_en <= 0;
+		end  
+  ping:begin
+        fifo1_wr_en <= 0;
+		fifo2_wr_en <= 1;
+		fifo2_rd_en <= 0;
+		fifo1_rd_en <= 1;
+	   end
+  pang:begin
+        fifo1_wr_en <= 1;
+		fifo2_wr_en <= 0;
+		fifo2_rd_en <= 1;
+		fifo1_rd_en <= 0;
+	   end
+  default:begin
+          fifo1_wr_en <= 0;
+		  fifo2_wr_en <= 0;
+		  fifo2_rd_en <= 0;
+		  fifo1_rd_en <= 0;
+		  end
+ 
+ endcase
+end
+
+
+fifo fifo1(
+ .wr_en(fifo1_wr_en),
+ .rd_en(fifo1_rd_en),
+ .data_in(data_in),
+ .rst_n(rst_n),
+ .clk(clk),
+ .data_out(data_out1),
+ .wr_full(),
+ .rd_empty(),
+ .fifo_cnt(fifo_cnt1)
+);
+
+fifo fifo2(
+ .wr_en(fifo2_wr_en),
+ .rd_en(fifo2_rd_en),
+ .data_in(data_in),
+ .rst_n(rst_n),
+ .clk(clk),
+ .data_out(data_out2),
+ .wr_full(),
+ .rd_empty(),
+ .fifo_cnt(fifo_cnt2)
+);
+

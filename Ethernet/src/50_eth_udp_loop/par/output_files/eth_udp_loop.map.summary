@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 25 09:00:30 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : eth_udp_loop
+Top-level Entity Name : eth_udp_loop
+Family : Cyclone IV E
+Total logic elements : 4,772
+    Total combinational functions : 2,908
+    Dedicated logic registers : 3,260
+Total registers : 3272
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 317,440
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

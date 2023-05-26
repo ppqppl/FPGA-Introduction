@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA/UART/PRJ/simulation/modelsim
+vTB_UART
+Z1 !s110 1670574649
+!i10b 1
+!s100 mQkz^2j]mhm9MMZcca:iK0
+I0c9U@CPbOUT@7_icnS?zT0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1670574593
+8D:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v
+FD:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1670574649.000000
+!s107 D:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/UART/PRJ/../TB|D:/code-file/FPGA/UART/PRJ/../TB/TB_UART.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/UART/PRJ/../TB
+Z6 tCvgOpt 0
+n@t@b_@u@a@r@t
+vUART
+R1
+!i10b 1
+!s100 EcQaz73K9Ba78nAjR2f4d1
+Ii170DdCEk[HE0R^986m_D2
+R2
+R0
+w1670572759
+8D:/code-file/FPGA/UART/SRC/UART.v
+FD:/code-file/FPGA/UART/SRC/UART.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/code-file/FPGA/UART/SRC/UART.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/UART/SRC|D:/code-file/FPGA/UART/SRC/UART.v|
+!i113 1
+R5
+Z7 !s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/UART/SRC
+R6
+n@u@a@r@t
+vUART_RX
+R1
+!i10b 1
+!s100 GMd94aWZWc2H:7[3[>lV@0
+I]4_SOnNoXlUEHMSY?E18F2
+R2
+R0
+w1670574416
+8D:/code-file/FPGA/UART/SRC/UART_RX.v
+FD:/code-file/FPGA/UART/SRC/UART_RX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/code-file/FPGA/UART/SRC/UART_RX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/UART/SRC|D:/code-file/FPGA/UART/SRC/UART_RX.v|
+!i113 1
+R5
+R7
+R6
+n@u@a@r@t_@r@x
+vUART_TX
+!s110 1670574648
+!i10b 1
+!s100 bSVMcKU]c<HVRK9_O6QVF0
+IHKdYeLMkDk70[aiE7:7gB0
+R2
+R0
+w1670571775
+8D:/code-file/FPGA/UART/SRC/UART_TX.v
+FD:/code-file/FPGA/UART/SRC/UART_TX.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1670574648.000000
+!s107 D:/code-file/FPGA/UART/SRC/UART_TX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/UART/SRC|D:/code-file/FPGA/UART/SRC/UART_TX.v|
+!i113 1
+R5
+R7
+R6
+n@u@a@r@t_@t@x

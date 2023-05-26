@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA/Full_adder4/prj/simulation/modelsim
+vFull_adder4
+Z1 !s110 1679731107
+!i10b 1
+!s100 `c:`<j1V3W_Dfa:FD[]N@3
+I^@dJnfAjBTFDJ>Uzl`GdO0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1679727415
+8D:/code-file/FPGA/Full_adder4/src/Full_adder4.v
+FD:/code-file/FPGA/Full_adder4/src/Full_adder4.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1679731107.000000
+!s107 D:/code-file/FPGA/Full_adder4/src/Full_adder4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/Full_adder4/src|D:/code-file/FPGA/Full_adder4/src/Full_adder4.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/Full_adder4/src
+Z6 tCvgOpt 0
+n@full_adder4
+vTB_Full_adder4
+R1
+!i10b 1
+!s100 z?L[91hhXZZ]z]eJeYf150
+IN2VO?SNPf]?n`Uj`Z8]DW3
+R2
+R0
+w1679730697
+8D:/code-file/FPGA/Full_adder4/prj/../tb/TB_Full_adder4.v
+FD:/code-file/FPGA/Full_adder4/prj/../tb/TB_Full_adder4.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/code-file/FPGA/Full_adder4/prj/../tb/TB_Full_adder4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/Full_adder4/prj/../tb|D:/code-file/FPGA/Full_adder4/prj/../tb/TB_Full_adder4.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/Full_adder4/prj/../tb
+R6
+n@t@b_@full_adder4

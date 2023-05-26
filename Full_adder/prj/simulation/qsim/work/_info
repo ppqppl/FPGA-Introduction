@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA/Full_adder/prj/simulation/qsim
+vFull_adder1
+Z1 !s110 1681107891
+!i10b 1
+!s100 j0mdGcHc;U?@dZn@80eHB1
+I_nNol>5Z9oe;mH@nF1Pnc2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1681107886
+Z4 8Full_adder1.vo
+Z5 FFull_adder1.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1681107890.000000
+Z8 !s107 Full_adder1.vo|
+Z9 !s90 -work|work|Full_adder1.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@full_adder1
+vFull_adder1_vlg_vec_tst
+R1
+!i10b 1
+!s100 kf4gdjn[i97<8HBG`VZ3o3
+IYDh6Yl8Hae]fVPig>WeaU1
+R2
+R0
+w1681107885
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+!s108 1681107891.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@full_adder1_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 WhXL`_[F1V8mkd5@G_?Fh1
+I?e5UDm>1m0]4L6RU0c@V^1
+R2
+R0
+R3
+R4
+R5
+L0 172
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

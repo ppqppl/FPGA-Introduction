@@ -1,0 +1,209 @@
+Flow report for eth_udp_loop
+Thu May 25 09:01:06 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Thu May 25 09:01:02 2023           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                      ; eth_udp_loop                                    ;
+; Top-level Entity Name              ; eth_udp_loop                                    ;
+; Family                             ; Cyclone IV E                                    ;
+; Device                             ; EP4CE115F29C7                                   ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 4,504 / 114,480 ( 4 % )                         ;
+;     Total combinational functions  ; 2,912 / 114,480 ( 3 % )                         ;
+;     Dedicated logic registers      ; 3,260 / 114,480 ( 3 % )                         ;
+; Total registers                    ; 3272                                            ;
+; Total pins                         ; 14 / 529 ( 3 % )                                ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 317,440 / 3,981,312 ( 8 % )                     ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                 ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                  ;
++------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/25/2023 08:59:48 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; eth_udp_loop        ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                                                                                                              ;
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                     ; Value                                                                                                                                                                                                                                  ; Default Value ; Entity Name ; Section Id       ;
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID               ; 186426158108.168497638816684                                                                                                                                                                                                           ; --            ; --          ; --               ;
+; ENABLE_SIGNALTAP                    ; On                                                                                                                                                                                                                                     ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                                                                                                                                                                     ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/sync_fifo_2048x32b_bb.v                                                                                                                                                                                                         ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/pll_inst.v                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/pll_bb.v                                                                                                                                                                                                                        ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/pll.ppf                                                                                                                                                                                                                         ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x4.bsf                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x4_inst.v                                                                                                                                                                                                                   ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x4_bb.v                                                                                                                                                                                                                     ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x4.inc                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x4.cmp                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x4.ppf                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x1.bsf                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x1_inst.v                                                                                                                                                                                                                   ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x1_bb.v                                                                                                                                                                                                                     ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x1.inc                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x1.cmp                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddo_x1.ppf                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x4.bsf                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x4_inst.v                                                                                                                                                                                                                   ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x4_bb.v                                                                                                                                                                                                                     ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x4.inc                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x4.cmp                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x4.ppf                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x1.bsf                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x1_inst.v                                                                                                                                                                                                                   ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x1_bb.v                                                                                                                                                                                                                     ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x1.inc                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x1.cmp                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; ipcore/ddi_x1.ppf                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                                                                                                                                                                                 ; --            ; --          ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                                                                                                                                                                                 ; --            ; --          ; Top              ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                                                                                                                                                                                 ; --            ; --          ; Top              ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                                                                                                                                                                                    ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                                                                                                                                                                  ; --            ; --          ; --               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                                                                                                                                                                           ; --            ; --          ; --               ;
+; SLD_FILE                            ; db/stp1_auto_stripped.stp                                                                                                                                                                                                              ; --            ; --          ; --               ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                                                                                                                                                                                                    ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                                                                                                                                                                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_BLOCK_TYPE=AUTO                                                                                                                                                                                                                ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334529                                                                                                                                                                                                                ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                                                                                                                                                                                 ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=2048                                                                                                                                                                                                                  ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                                                                                                                                                             ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                                                                                                                                                                                         ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                                                                                                                                                                                      ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                                                                                                                                                                                 ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                                                                                                                                                           ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                                                                                                                                                                                    ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=2048                                                                                                                                                                                                                  ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                                                                                                                                                                                               ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                                                                                                                                                                   ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                                                                                                                                                           ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=62                                                                                                                                                                                                                       ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=62                                                                                                                                                                                                                    ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=211                                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_BITS=62                                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INCREMENTAL_ROUTING=1                                                                                                                                                                                                              ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_PIPELINE=0                                                                                                                                                                                                                 ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_PIPELINE=0                                                                                                                                                                                                                     ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_COUNTER_PIPELINE=0                                                                                                                                                                                                                 ; --            ; --          ; auto_signaltap_1 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_BLOCK_TYPE=AUTO                                                                                                                                                                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                                                                                                                                                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                                                                                                                                                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=2048                                                                                                                                                                                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                                                                                                                                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                                                                                                                                                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                                                                                                                                                                                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                                                                                                                                                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                                                                                                                                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                                                                                                                                                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=2048                                                                                                                                                                                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                                                                                                                                                                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                                                                                                                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                                                                                                                                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=61                                                                                                                                                                                                                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=61                                                                                                                                                                                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=208                                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_BITS=61                                                                                                                                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INCREMENTAL_ROUTING=1                                                                                                                                                                                                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_PIPELINE=0                                                                                                                                                                                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_PIPELINE=0                                                                                                                                                                                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_COUNTER_PIPELINE=0                                                                                                                                                                                                                 ; --            ; --          ; auto_signaltap_0 ;
+; USE_SIGNALTAP_FILE                  ; output_files/stp1.stp                                                                                                                                                                                                                  ; --            ; --          ; --               ;
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:40     ; 1.0                     ; 4937 MB             ; 00:00:41                           ;
+; Fitter               ; 00:00:25     ; 1.1                     ; 6106 MB             ; 00:00:16                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4699 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.3                     ; 4943 MB             ; 00:00:02                           ;
+; Total                ; 00:01:11     ; --                      ; --                  ; 00:01:02                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; ppqppl           ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; ppqppl           ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; ppqppl           ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; ppqppl           ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off eth_udp_loop -c eth_udp_loop
+quartus_fit --read_settings_files=off --write_settings_files=off eth_udp_loop -c eth_udp_loop
+quartus_asm --read_settings_files=off --write_settings_files=off eth_udp_loop -c eth_udp_loop
+quartus_sta eth_udp_loop -c eth_udp_loop
+
+
+

@@ -1,0 +1,34 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\code-file\FPGA\UART\PRJ\UART.qsys --block-symbol-file --output-directory=D:\code-file\FPGA\UART\PRJ\UART --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading PRJ/UART.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\code-file\FPGA\UART\PRJ\UART.qsys --synthesis=VERILOG --output-directory=D:\code-file\FPGA\UART\PRJ\UART\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading PRJ/UART.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: UART: Generating UART "UART" for QUARTUS_SYNTH
+Info: rs232_0: Starting Generation of RS232 UART
+Info: rs232_0: "UART" instantiated altera_up_avalon_rs232 "rs232_0"
+Info: rst_controller: "UART" instantiated altera_reset_controller "rst_controller"
+Info: UART: Done "UART" with 3 modules, 9 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

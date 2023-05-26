@@ -1,0 +1,8 @@
+
+State Machine - |FSM_LED|state_c
+Name state_c.S4 state_c.S3 state_c.S2 state_c.S1 state_c.IDLE 
+state_c.IDLE 0 0 0 0 0 
+state_c.S1 0 0 0 1 1 
+state_c.S2 0 0 1 0 1 
+state_c.S3 0 1 0 0 1 
+state_c.S4 1 0 0 0 1 

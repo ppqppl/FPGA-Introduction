@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Thu Apr 20 18:08:30 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : vga_protocol_top
+Top-level Entity Name : vga_protocol_top
+Family : Cyclone IV E
+Total logic elements : 253
+    Total combinational functions : 251
+    Dedicated logic registers : 114
+Total registers : 114
+Total pins : 30
+Total virtual pins : 0
+Total memory bits : 600,000
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

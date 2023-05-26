@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at vga_dirve .v(5): object "h_sync" differs only in case from object "H_SYNC" in the same scope File: D:/code-file/FPGA/VGA/src/vga_dirve .v Line: 5
+Info (10281): Verilog HDL Declaration information at vga_dirve .v(6): object "v_sync" differs only in case from object "V_SYNC" in the same scope File: D:/code-file/FPGA/VGA/src/vga_dirve .v Line: 6

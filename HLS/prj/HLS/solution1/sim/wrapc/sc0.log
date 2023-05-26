@@ -1,0 +1,5 @@
+   Build using "D:/environment/IDE/vivado/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling HLS_HelloWorld.cpp_pre.cpp.tb.cpp
+   Compiling apatb_flash_led.cpp
+   Compiling HLS_HelloWorld_tb.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

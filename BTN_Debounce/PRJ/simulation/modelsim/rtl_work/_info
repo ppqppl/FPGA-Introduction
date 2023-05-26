@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA/BTN_Debounce/PRJ/simulation/modelsim
+vKey_Debounce1
+!s110 1668754874
+!i10b 1
+!s100 `kjN:`5>_I0g@W_984]Kf3
+I@V?GGVHb=5[AH69WXl>G[3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1668754850
+8D:/code-file/FPGA/BTN_Debounce/SRC/Key_Debounce1.v
+FD:/code-file/FPGA/BTN_Debounce/SRC/Key_Debounce1.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1668754874.000000
+!s107 D:/code-file/FPGA/BTN_Debounce/SRC/Key_Debounce1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/BTN_Debounce/SRC|D:/code-file/FPGA/BTN_Debounce/SRC/Key_Debounce1.v|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/BTN_Debounce/SRC
+Z5 tCvgOpt 0
+n@key_@debounce1
+vTB_Key1
+!s110 1668754875
+!i10b 1
+!s100 N;zQkKf`:DhgE[ihORLD71
+IjFG``eMFQ1@;Ug?bmQDeA1
+R1
+R0
+w1668754253
+8D:/code-file/FPGA/BTN_Debounce/PRJ/../TB/TB_Key1.v
+FD:/code-file/FPGA/BTN_Debounce/PRJ/../TB/TB_Key1.v
+L0 2
+R2
+r1
+!s85 0
+31
+R3
+!s107 D:/code-file/FPGA/BTN_Debounce/PRJ/../TB/TB_Key1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/BTN_Debounce/PRJ/../TB|D:/code-file/FPGA/BTN_Debounce/PRJ/../TB/TB_Key1.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/BTN_Debounce/PRJ/../TB
+R5
+n@t@b_@key1

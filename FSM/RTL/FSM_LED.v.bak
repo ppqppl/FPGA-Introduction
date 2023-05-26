@@ -1,0 +1,126 @@
+module FSM_LED#(parameter TIME_1S = 50_000_000)(
+    input               clk,    
+    input               ret_n,
+    output  reg [3:0]   led
+);
+
+    parameter  IDLE = 5'b00001, // 宏定义 定义状态（状态机）
+                S1  = 5'b00010,
+                S2  = 5'b00100,
+                S3  = 5'b01000,
+                S4  = 5'b10000; // 最后一行用分号
+    
+    wire        idle2s1 ;   // 2->to 状态跳转条件
+    wire        s12s2   ;
+    wire        s22s3   ;
+    wire        s32s4   ;
+    wire        s42idle ;
+
+    reg     [4:0]   state_n;    // 次态  状态寄存器
+    reg     [4:0]   state_c;    // 现态
+
+    // parameter   TIME_1S  = 50_000_000;  // 计数1s
+
+    reg     [25:0]  cnt     ;   // 计数 1s 计时器
+    wire            add_cnt ;   // 计数器 开始或加一的条件
+    wire            end_cnt ;   // 计数器 结束的条件
+
+    always @(posedge clk or negedge rst_n)begin
+        if(!rst_n)begin
+            cnt <= 26'd0;
+        end
+        else if(add_cnt)begin   // 加一条件有效的时候
+            if(end_cnt)begin    // 计数到了最大值
+                cnt <= 26'0;
+            end
+            else begin  
+                cnt <= cnt+1;
+            end
+        end
+        else begin  // 默认保持不变
+            cnt <= cnt;
+        end
+    end
+
+    assign add_cnt = 1'b1;  // 为一表示一致有效
+    assign end_cnt = add_cnt && cnt == TIME_1S - 1; // 加一条件有效 && 周期结束 归零 
+
+    // 状态机的第一段 时许逻辑
+    always @(posedge clk oe negedge rst_n)begin
+        if(!rst_n)begin
+            state_c <= IDLE;    // 复位状态处于 空闲状态
+        end
+        else begin
+            state_c <= state_n  // 下一个时钟周期到来的时候，就把次态值 赋予我们的现态
+        end
+    end
+
+    // 状态机第二段 组合逻辑  state_n  只在第二段状态机里面用
+    always @(*)begin    // * 代表的意思是 里面所有的敏感信号 我都不在意
+        case(state_c)
+        IDLE:begin
+            if(idle2s1)
+                state_n = s1;
+            else
+                state_n = state_c; 
+        end
+        S1:begin
+            if(s12s2)
+                state_n = s2;
+            else
+                state_n = state_c; 
+        end
+        S2:begin
+            if(s22s3)
+                state_n = s3;
+            else
+                state_n = state_c; 
+        end
+        S3:begin
+            if(s32s4)
+                state_n = s4;
+            else
+                state_n = state_c; 
+        end
+        S4:begin
+            if(s42idle)
+                state_n = IDLE;
+            else
+                state_n = state_c; 
+        end
+        default : state_n = state_c;
+        endcase
+    end
+
+    assign idle2s1  =   state_c == IDLE && end_cnt; // 1s计数完了 在 IDLE 情况下 就满足跳转条件
+    assign s12s2    =   state_c == S1   && end_cnt;
+    assign s22s3    =   state_c == S2   && end_cnt;
+    assign s32s4    =   state_c == S3   && end_cnt;
+    assign s42idle  =   state_c == S4   && end_cnt;
+
+    // 第三状态机 设计输出(时序逻辑)
+    always @(posedge clk oe megedge rst_n)begin
+        if(!rst_n)begin
+            led <= 4'b1001; // 值可以自己设定
+        end
+        else if(state_c == IDLE)begin   // 只有一句语句 可以不写 begin end
+            led <= 4'b0000;
+        end
+        else if(state_c == S1)begin
+            led <= 4'b0001;
+        end
+        else if(state_c == S2)begin
+            led <= 4'b0010;
+        end
+        else if(state_c == S3)begin
+            led <= 4'b0100;
+        end
+        else if(state_c == S4)begin
+            led <= 4'b1000;
+        end
+        else begin
+            led <= led;
+        end
+    end 
+
+endmodule

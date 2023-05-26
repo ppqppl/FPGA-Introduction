@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="HLS_HelloWorld.h" path="D:\code-file\FPGA\HLS\prj\HLS\code\HLS_HelloWorld.h"/>
+    <originFiles name="HLS_HelloWorld.cpp" path="D:\code-file\FPGA\HLS\prj\HLS\code\HLS_HelloWorld.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="HLS_HelloWorld_tb.cpp" path="D:\code-file\FPGA\HLS\prj\HLS\code\HLS_HelloWorld_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,11 @@
+Info (10281): Verilog HDL Declaration information at arp_tx.v(29): object "des_mac" differs only in case from object "DES_MAC" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/arp/arp_tx.v Line: 29
+Info (10281): Verilog HDL Declaration information at arp_tx.v(30): object "des_ip" differs only in case from object "DES_IP" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/arp/arp_tx.v Line: 30
+Info (10281): Verilog HDL Declaration information at arp.v(40): object "des_mac" differs only in case from object "DES_MAC" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/arp/arp.v Line: 40
+Info (10281): Verilog HDL Declaration information at arp.v(41): object "des_ip" differs only in case from object "DES_IP" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/arp/arp.v Line: 41
+Info (10281): Verilog HDL Declaration information at udp_tx.v(30): object "des_mac" differs only in case from object "DES_MAC" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/udp/udp_tx.v Line: 30
+Info (10281): Verilog HDL Declaration information at udp_tx.v(31): object "des_ip" differs only in case from object "DES_IP" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/udp/udp_tx.v Line: 31
+Info (10281): Verilog HDL Declaration information at udp_rx.v(49): object "ETH_TYPE" differs only in case from object "eth_type" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/udp/udp_rx.v Line: 49
+Info (10281): Verilog HDL Declaration information at udp.v(40): object "des_mac" differs only in case from object "DES_MAC" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/udp/udp.v Line: 40
+Info (10281): Verilog HDL Declaration information at udp.v(41): object "des_ip" differs only in case from object "DES_IP" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/udp/udp.v Line: 41
+Info (10281): Verilog HDL Declaration information at eth_udp_loop.v(41): object "DES_MAC" differs only in case from object "des_mac" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/eth_udp_loop.v Line: 41
+Info (10281): Verilog HDL Declaration information at eth_udp_loop.v(43): object "DES_IP" differs only in case from object "des_ip" in the same scope File: F:/001/1_Verilog/50_eth_udp_loop/rtl/eth_udp_loop.v Line: 43

@@ -1,0 +1,42 @@
+
+State Machine - |ethernet|data_acq:d1|fifo_pp:fifo|next_state
+Name next_state.idle next_state.pang next_state.ping next_state.start 
+next_state.idle 0 0 0 0 
+next_state.start 1 0 0 1 
+next_state.ping 1 0 1 0 
+next_state.pang 1 1 0 0 
+
+State Machine - |ethernet|data_acq:d1|fifo_pp:fifo|state
+Name state.idle state.pang state.ping state.start 
+state.idle 0 0 0 0 
+state.start 1 0 0 1 
+state.ping 1 0 1 0 
+state.pang 1 1 0 0 
+
+State Machine - |ethernet|data_acq:d1|fir:f1|fir_0002:fir_inst|fir_0002_ast:fir_0002_ast_inst|auk_dspip_avalon_streaming_sink_hpfir:sink|sink_state
+Name sink_state.end1 sink_state.st_err sink_state.run1 sink_state.stall sink_state.start 
+sink_state.start 0 0 0 0 0 
+sink_state.stall 0 0 0 1 1 
+sink_state.run1 0 0 1 0 1 
+sink_state.st_err 0 1 0 0 1 
+sink_state.end1 1 0 0 0 1 
+
+State Machine - |ethernet|udp_receive:u_udp_receive|cur_state
+Name cur_state.st_rx_end cur_state.st_rx_data cur_state.st_udp_head cur_state.st_ip_head cur_state.st_eth_head cur_state.st_preamble cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 
+cur_state.st_preamble 0 0 0 0 0 1 1 
+cur_state.st_eth_head 0 0 0 0 1 0 1 
+cur_state.st_ip_head 0 0 0 1 0 0 1 
+cur_state.st_udp_head 0 0 1 0 0 0 1 
+cur_state.st_rx_data 0 1 0 0 0 0 1 
+cur_state.st_rx_end 1 0 0 0 0 0 1 
+
+State Machine - |ethernet|udp_send:u_udp_send|cur_state
+Name cur_state.st_crc cur_state.st_tx_data cur_state.st_ip_head cur_state.st_eth_head cur_state.st_preamble cur_state.st_check_sum cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 
+cur_state.st_check_sum 0 0 0 0 0 1 1 
+cur_state.st_preamble 0 0 0 0 1 0 1 
+cur_state.st_eth_head 0 0 0 1 0 0 1 
+cur_state.st_ip_head 0 0 1 0 0 0 1 
+cur_state.st_tx_data 0 1 0 0 0 0 1 
+cur_state.st_crc 1 0 0 0 0 0 1 

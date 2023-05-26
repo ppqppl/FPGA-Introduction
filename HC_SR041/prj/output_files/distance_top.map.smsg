@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at seg_driver.v(143): always construct contains both blocking and non-blocking assignments File: D:/code-file/FPGA/HC_SR041/src/seg_driver.v Line: 143

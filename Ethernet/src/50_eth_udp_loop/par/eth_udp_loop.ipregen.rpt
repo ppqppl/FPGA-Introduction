@@ -1,0 +1,88 @@
+IP Upgrade report for eth_udp_loop
+Thu May 25 08:59:17 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; IP Upgrade Summary                                                             ;
++------------------------------+-------------------------------------------------+
+; IP Components Upgrade Status ; Passed - Thu May 25 08:59:17 2023               ;
+; Quartus Prime Version        ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                ; eth_udp_loop                                    ;
+; Top-level Entity Name        ; eth_udp_loop                                    ;
+; Family                       ; Cyclone IV E                                    ;
++------------------------------+-------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                                   ;
++--------------------+----------------+---------+-------------------------------+-----------------------------+-------------------------------+---------+
+; Entity Name        ; Component Name ; Version ; Original Source File          ; Generation File Path        ; New Source File               ; Message ;
++--------------------+----------------+---------+-------------------------------+-----------------------------+-------------------------------+---------+
+; sync_fifo_2048x32b ; FIFO           ; 13.1    ; ipcore/sync_fifo_2048x32b.qip ; ipcore/sync_fifo_2048x32b.v ; ipcore/sync_fifo_2048x32b.qip ;         ;
+; pll                ; ALTPLL         ; 13.1    ; ipcore/pll.qip                ; ipcore/pll.v                ; ipcore/pll.qip                ;         ;
+; ddo_x4             ; ALTDDIO_OUT    ; 13.1    ; ipcore/ddo_x4.qip             ; ipcore/ddo_x4.v             ; ipcore/ddo_x4.qip             ;         ;
+; ddo_x1             ; ALTDDIO_OUT    ; 13.1    ; ipcore/ddo_x1.qip             ; ipcore/ddo_x1.v             ; ipcore/ddo_x1.qip             ;         ;
+; ddi_x4             ; ALTDDIO_IN     ; 13.1    ; ipcore/ddi_x4.qip             ; ipcore/ddi_x4.v             ; ipcore/ddi_x4.qip             ;         ;
+; ddi_x1             ; ALTDDIO_IN     ; 13.1    ; ipcore/ddi_x1.qip             ; ipcore/ddi_x1.v             ; ipcore/ddi_x1.qip             ;         ;
++--------------------+----------------+---------+-------------------------------+-----------------------------+-------------------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "ipcore/sync_fifo_2048x32b.v" to "ipcore/sync_fifo_2048x32b.BAK.v"
+Info (11837): Started upgrading IP component FIFO with file "ipcore/sync_fifo_2048x32b.v"
+Info (11902): Backing up file "ipcore/pll.v" to "ipcore/pll.BAK.v"
+Info (11837): Started upgrading IP component ALTPLL with file "ipcore/pll.v"
+Info (11902): Backing up file "ipcore/ddo_x4.v" to "ipcore/ddo_x4.BAK.v"
+Info (11837): Started upgrading IP component ALTDDIO_OUT with file "ipcore/ddo_x4.v"
+Info (11902): Backing up file "ipcore/ddo_x1.v" to "ipcore/ddo_x1.BAK.v"
+Info (11837): Started upgrading IP component ALTDDIO_OUT with file "ipcore/ddo_x1.v"
+Info (11902): Backing up file "ipcore/ddi_x4.v" to "ipcore/ddi_x4.BAK.v"
+Info (11837): Started upgrading IP component ALTDDIO_IN with file "ipcore/ddi_x4.v"
+Info (11902): Backing up file "ipcore/ddi_x1.v" to "ipcore/ddi_x1.BAK.v"
+Info (11837): Started upgrading IP component ALTDDIO_IN with file "ipcore/ddi_x1.v"
+Info (11131): Completed upgrading IP component FIFO with file "ipcore/sync_fifo_2048x32b.v"
+Info (11131): Completed upgrading IP component ALTPLL with file "ipcore/pll.v"
+Info (11131): Completed upgrading IP component ALTDDIO_OUT with file "ipcore/ddo_x4.v"
+Info (11131): Completed upgrading IP component ALTDDIO_OUT with file "ipcore/ddo_x1.v"
+Info (11131): Completed upgrading IP component ALTDDIO_IN with file "ipcore/ddi_x4.v"
+Info (11131): Completed upgrading IP component ALTDDIO_IN with file "ipcore/ddi_x1.v"
+Info (23030): Evaluation of Tcl script d:/environment/ide/quartus_18.1.0.625/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4893 megabytes
+    Info: Processing ended: Thu May 25 08:59:17 2023
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:10
+
+

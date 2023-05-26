@@ -1,0 +1,5479 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+//
+// This file contains Slow Corner delays for the design using part EP4CE115F29C7,
+// with speed grade 7, core voltage 1.2VmV, and temperature 0 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim-Altera (Verilog) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "UART")
+  (DATE "05/21/2023 14:24:18")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus Prime")
+  (VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_from_uart_data\[0\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (819:819:819) (725:725:725))
+        (IOPATH i o (2550:2550:2550) (2529:2529:2529))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_from_uart_data\[1\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (521:521:521) (445:445:445))
+        (IOPATH i o (2550:2550:2550) (2529:2529:2529))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_from_uart_data\[2\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (834:834:834) (740:740:740))
+        (IOPATH i o (2530:2530:2530) (2509:2509:2509))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_from_uart_data\[3\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (535:535:535) (461:461:461))
+        (IOPATH i o (2560:2560:2560) (2539:2539:2539))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_from_uart_data\[4\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (770:770:770) (661:661:661))
+        (IOPATH i o (2570:2570:2570) (2549:2549:2549))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_from_uart_data\[5\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (825:825:825) (723:723:723))
+        (IOPATH i o (2540:2540:2540) (2519:2519:2519))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_from_uart_data\[6\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (841:841:841) (751:751:751))
+        (IOPATH i o (2550:2550:2550) (2529:2529:2529))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_from_uart_data\[7\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (842:842:842) (738:738:738))
+        (IOPATH i o (2530:2530:2530) (2509:2509:2509))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_from_uart_valid\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (585:585:585) (563:563:563))
+        (IOPATH i o (2560:2560:2560) (2539:2539:2539))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_to_uart_ready\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (550:550:550) (491:491:491))
+        (IOPATH i o (2510:2510:2510) (2489:2489:2489))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE rs232_0_UART_TXD\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (924:924:924) (881:881:881))
+        (IOPATH i o (3693:3693:3693) (3730:3730:3730))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE clk_clk\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (704:704:704) (788:788:788))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_clkctrl")
+    (INSTANCE clk_clk\~inputclkctrl)
+    (DELAY
+      (ABSOLUTE
+        (PORT inclk[0] (162:162:162) (156:156:156))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE reset_reset_n\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (634:634:634) (718:718:718))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rst_controller\|alt_rst_sync_uq1\|altera_reset_synchronizer_int_chain\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1920:1920:1920))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT clrn (5724:5724:5724) (5440:5440:5440))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+        (IOPATH (negedge clrn) q (199:199:199) (199:199:199))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rst_controller\|alt_rst_sync_uq1\|altera_reset_synchronizer_int_chain\[0\]\~feeder)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (234:234:234) (297:297:297))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rst_controller\|alt_rst_sync_uq1\|altera_reset_synchronizer_int_chain\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1920:1920:1920))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT clrn (5724:5724:5724) (5440:5440:5440))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+        (IOPATH (negedge clrn) q (199:199:199) (199:199:199))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rst_controller\|alt_rst_sync_uq1\|altera_reset_synchronizer_int_chain_out\~feeder)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (236:236:236) (298:298:298))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rst_controller\|alt_rst_sync_uq1\|altera_reset_synchronizer_int_chain_out)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1920:1920:1920))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT clrn (5724:5724:5724) (5440:5440:5440))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+        (IOPATH (negedge clrn) q (199:199:199) (199:199:199))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_UART_RXD\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (612:612:612) (697:697:697))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|receiving_data\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (290:290:290) (365:365:365))
+        (PORT datad (3592:3592:3592) (3665:3665:3665))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|receiving_data)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1928:1928:1928) (1944:1944:1944))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1876:1876:1876) (1903:1903:1903))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[2\]\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (296:296:296) (375:375:375))
+        (PORT datab (235:235:235) (268:268:268))
+        (PORT datac (1320:1320:1320) (1334:1334:1334))
+        (IOPATH dataa combout (346:346:346) (357:357:357))
+        (IOPATH datab combout (351:351:351) (349:349:349))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[0\]\~9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (291:291:291) (368:368:368))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[2\]\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (240:240:240) (266:266:266))
+        (PORT datac (421:421:421) (445:445:445))
+        (PORT datad (1256:1256:1256) (1256:1256:1256))
+        (IOPATH datab combout (343:343:343) (349:349:349))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1927:1927:1927) (1943:1943:1943))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (751:751:751) (811:811:811))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[1\]\~11)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (278:278:278) (353:353:353))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1927:1927:1927) (1943:1943:1943))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (751:751:751) (811:811:811))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[2\]\~13)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (272:272:272) (348:348:348))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1927:1927:1927) (1943:1943:1943))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (751:751:751) (811:811:811))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[3\]\~15)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (282:282:282) (365:365:365))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1927:1927:1927) (1943:1943:1943))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (751:751:751) (811:811:811))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[4\]\~17)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (271:271:271) (344:344:344))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1927:1927:1927) (1943:1943:1943))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (751:751:751) (811:811:811))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[5\]\~19)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (278:278:278) (353:353:353))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1927:1927:1927) (1943:1943:1943))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (751:751:751) (811:811:811))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[6\]\~21)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (278:278:278) (356:356:356))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1927:1927:1927) (1943:1943:1943))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (751:751:751) (811:811:811))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[7\]\~23)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (272:272:272) (345:345:345))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[7\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1927:1927:1927) (1943:1943:1943))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (751:751:751) (811:811:811))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|Equal1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (270:270:270) (344:344:344))
+        (PORT datac (238:238:238) (313:313:313))
+        (PORT datad (242:242:242) (309:309:309))
+        (IOPATH datab combout (369:369:369) (349:349:349))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|Equal0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (281:281:281) (363:363:363))
+        (PORT datab (278:278:278) (355:355:355))
+        (PORT datac (243:243:243) (321:321:321))
+        (PORT datad (247:247:247) (316:316:316))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[8\]\~25)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (295:295:295) (373:373:373))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_counter\[8\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1927:1927:1927) (1943:1943:1943))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (751:751:751) (811:811:811))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|Equal0\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (242:242:242) (272:272:272))
+        (PORT datab (221:221:221) (248:248:248))
+        (PORT datac (259:259:259) (336:336:336))
+        (PORT datad (263:263:263) (330:330:330))
+        (IOPATH dataa combout (349:349:349) (365:365:365))
+        (IOPATH datab combout (351:351:351) (349:349:349))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[0\]\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (234:234:234) (267:267:267))
+        (PORT datad (425:425:425) (410:410:410))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1928:1928:1928) (1944:1944:1944))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[1\]\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (288:288:288) (375:375:375))
+        (PORT datab (234:234:234) (267:267:267))
+        (PORT datad (424:424:424) (410:410:410))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datab combout (369:369:369) (378:378:378))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1928:1928:1928) (1944:1944:1944))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|Add1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (280:280:280) (355:355:355))
+        (PORT datac (257:257:257) (342:342:342))
+        (PORT datad (248:248:248) (319:319:319))
+        (IOPATH datab combout (369:369:369) (349:349:349))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[2\]\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (296:296:296) (376:376:376))
+        (PORT datab (235:235:235) (269:269:269))
+        (PORT datac (1320:1320:1320) (1333:1333:1333))
+        (PORT datad (425:425:425) (410:410:410))
+        (IOPATH dataa combout (346:346:346) (357:357:357))
+        (IOPATH datab combout (351:351:351) (349:349:349))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[2\]\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (222:222:222) (253:253:253))
+        (PORT datab (219:219:219) (246:246:246))
+        (PORT datad (378:378:378) (359:359:359))
+        (IOPATH dataa combout (358:358:358) (377:377:377))
+        (IOPATH datab combout (364:364:364) (378:378:378))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1928:1928:1928) (1944:1944:1944))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|Add1\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (290:290:290) (377:377:377))
+        (PORT datab (279:279:279) (355:355:355))
+        (PORT datac (240:240:240) (314:314:314))
+        (PORT datad (249:249:249) (318:318:318))
+        (IOPATH dataa combout (334:334:334) (344:344:344))
+        (IOPATH datab combout (343:343:343) (349:349:349))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[3\]\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (224:224:224) (255:255:255))
+        (PORT datab (470:470:470) (448:448:448))
+        (PORT datad (204:204:204) (231:231:231))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (343:343:343) (339:339:339))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|bit_counter\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1928:1928:1928) (1944:1944:1944))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|Equal2\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (290:290:290) (376:376:376))
+        (PORT datab (279:279:279) (355:355:355))
+        (PORT datac (240:240:240) (314:314:314))
+        (PORT datad (249:249:249) (319:319:319))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|all_bits_transmitted\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1364:1364:1364) (1371:1371:1371))
+        (PORT datac (203:203:203) (240:240:240))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|all_bits_transmitted)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1928:1928:1928) (1944:1944:1944))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_from_uart_ready\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (642:642:642) (727:727:727))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_0\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1331:1331:1331) (1344:1344:1344))
+        (PORT datad (196:196:196) (220:220:220))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_is_0_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1917:1917:1917) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_2\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (678:678:678) (666:666:666))
+        (PORT datab (270:270:270) (311:311:311))
+        (PORT datac (619:619:619) (583:583:583))
+        (PORT datad (241:241:241) (306:306:306))
+        (IOPATH dataa combout (358:358:358) (377:377:377))
+        (IOPATH datab combout (364:364:364) (378:378:378))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (461:461:461) (468:468:468))
+        (PORT datab (278:278:278) (355:355:355))
+        (IOPATH dataa combout (360:360:360) (392:392:392))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (364:364:364) (394:394:394))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_1\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (656:656:656) (621:621:621))
+        (PORT datab (293:293:293) (365:365:365))
+        (PORT datac (1330:1330:1330) (1343:1343:1343))
+        (PORT datad (694:694:694) (689:689:689))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1916:1916:1916) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1305:1305:1305) (1251:1251:1251))
+        (PORT sload (1894:1894:1894) (1942:1942:1942))
+        (PORT ena (1036:1036:1036) (981:981:981))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (461:461:461) (468:468:468))
+        (PORT datab (285:285:285) (355:355:355))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1916:1916:1916) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1305:1305:1305) (1251:1251:1251))
+        (PORT sload (1894:1894:1894) (1942:1942:1942))
+        (PORT ena (1036:1036:1036) (981:981:981))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (462:462:462) (469:469:469))
+        (PORT datab (446:446:446) (477:477:477))
+        (IOPATH dataa combout (360:360:360) (392:392:392))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (364:364:364) (394:394:394))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1916:1916:1916) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1305:1305:1305) (1251:1251:1251))
+        (PORT sload (1894:1894:1894) (1942:1942:1942))
+        (PORT ena (1036:1036:1036) (981:981:981))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (462:462:462) (469:469:469))
+        (PORT datab (276:276:276) (352:352:352))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1916:1916:1916) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1305:1305:1305) (1251:1251:1251))
+        (PORT sload (1894:1894:1894) (1942:1942:1942))
+        (PORT ena (1036:1036:1036) (981:981:981))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (463:463:463) (470:470:470))
+        (PORT datab (451:451:451) (479:479:479))
+        (IOPATH dataa combout (360:360:360) (392:392:392))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (364:364:364) (394:394:394))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1916:1916:1916) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1304:1304:1304) (1251:1251:1251))
+        (PORT sload (1894:1894:1894) (1942:1942:1942))
+        (PORT ena (1036:1036:1036) (981:981:981))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (463:463:463) (470:470:470))
+        (PORT datab (275:275:275) (350:350:350))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1916:1916:1916) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1304:1304:1304) (1250:1250:1250))
+        (PORT sload (1894:1894:1894) (1942:1942:1942))
+        (PORT ena (1036:1036:1036) (981:981:981))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (278:278:278) (358:358:358))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1916:1916:1916) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1304:1304:1304) (1250:1250:1250))
+        (PORT sload (1894:1894:1894) (1942:1942:1942))
+        (PORT ena (1036:1036:1036) (981:981:981))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (465:465:465) (495:495:495))
+        (PORT datab (279:279:279) (356:356:356))
+        (PORT datac (247:247:247) (326:326:326))
+        (PORT datad (248:248:248) (317:317:317))
+        (IOPATH dataa combout (358:358:358) (377:377:377))
+        (IOPATH datab combout (364:364:364) (378:378:378))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (298:298:298) (378:378:378))
+        (PORT datab (281:281:281) (358:358:358))
+        (PORT datac (263:263:263) (338:338:338))
+        (PORT datad (189:189:189) (208:208:208))
+        (IOPATH dataa combout (310:310:310) (329:329:329))
+        (IOPATH datab combout (311:311:311) (331:331:331))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_2\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (654:654:654) (619:619:619))
+        (PORT datab (219:219:219) (246:246:246))
+        (PORT datac (237:237:237) (280:280:280))
+        (PORT datad (361:361:361) (345:345:345))
+        (IOPATH dataa combout (327:327:327) (323:323:323))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_is_2_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1917:1917:1917) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1881:1881:1881) (1921:1921:1921))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_1\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (652:652:652) (616:616:616))
+        (PORT datab (272:272:272) (345:345:345))
+        (PORT datac (237:237:237) (280:280:280))
+        (PORT datad (241:241:241) (305:305:305))
+        (IOPATH dataa combout (349:349:349) (365:365:365))
+        (IOPATH datab combout (350:350:350) (375:375:375))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_1\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1367:1367:1367) (1381:1381:1381))
+        (PORT datab (379:379:379) (369:369:369))
+        (PORT datad (210:210:210) (229:229:229))
+        (IOPATH dataa combout (358:358:358) (377:377:377))
+        (IOPATH datab combout (364:364:364) (378:378:378))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_is_1_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1917:1917:1917) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (678:678:678) (666:666:666))
+        (PORT datab (269:269:269) (310:310:310))
+        (PORT datac (238:238:238) (313:313:313))
+        (PORT datad (615:615:615) (574:574:574))
+        (IOPATH dataa combout (312:312:312) (329:329:329))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|empty_dff\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (229:229:229) (262:262:262))
+        (PORT datab (272:272:272) (313:313:313))
+        (PORT datac (1326:1326:1326) (1338:1338:1338))
+        (PORT datad (190:190:190) (210:210:210))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH datab combout (343:343:343) (349:349:349))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|empty_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1917:1917:1917) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|comb\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (2686:2686:2686) (2892:2892:2892))
+        (PORT datad (477:477:477) (514:514:514))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (465:465:465) (496:496:496))
+        (PORT datab (279:279:279) (356:356:356))
+        (PORT datac (248:248:248) (327:327:327))
+        (PORT datad (249:249:249) (318:318:318))
+        (IOPATH dataa combout (310:310:310) (323:323:323))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (297:297:297) (377:377:377))
+        (PORT datab (219:219:219) (246:246:246))
+        (PORT datac (262:262:262) (337:337:337))
+        (PORT datad (250:250:250) (320:320:320))
+        (IOPATH dataa combout (310:310:310) (323:323:323))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (750:750:750) (738:738:738))
+        (PORT datab (644:644:644) (609:609:609))
+        (PORT datad (359:359:359) (343:343:343))
+        (IOPATH dataa combout (327:327:327) (323:323:323))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|full_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1917:1917:1917) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1881:1881:1881) (1921:1921:1921))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|comb\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (693:693:693) (683:683:683))
+        (PORT datad (261:261:261) (328:328:328))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\~9)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (3265:3265:3265) (3361:3361:3361))
+        (PORT datad (1388:1388:1388) (1394:1394:1394))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|Equal1\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (283:283:283) (367:367:367))
+        (PORT datab (278:278:278) (355:355:355))
+        (PORT datac (247:247:247) (325:325:325))
+        (PORT datad (247:247:247) (316:316:316))
+        (IOPATH dataa combout (358:358:358) (377:377:377))
+        (IOPATH datab combout (364:364:364) (378:378:378))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|Equal1\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (459:459:459) (492:492:492))
+        (PORT datab (698:698:698) (647:647:647))
+        (PORT datac (608:608:608) (563:563:563))
+        (PORT datad (453:453:453) (473:473:473))
+        (IOPATH dataa combout (346:346:346) (357:357:357))
+        (IOPATH datab combout (351:351:351) (349:349:349))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_Counters\|baud_clock_falling_edge)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1928:1928:1928) (1944:1944:1944))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1876:1876:1876) (1903:1903:1903))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[9\]\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (672:672:672) (661:661:661))
+        (PORT datad (1390:1390:1390) (1397:1397:1397))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[9\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\~8)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (234:234:234) (306:306:306))
+        (PORT datad (1391:1391:1391) (1398:1398:1398))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[8\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\~7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (288:288:288) (362:362:362))
+        (PORT datad (1392:1392:1392) (1399:1399:1399))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[7\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (288:288:288) (358:358:358))
+        (PORT datad (1389:1389:1389) (1395:1395:1395))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (287:287:287) (357:357:357))
+        (PORT datad (1387:1387:1387) (1393:1393:1393))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (288:288:288) (358:358:358))
+        (PORT datad (1391:1391:1391) (1397:1397:1397))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (289:289:289) (364:364:364))
+        (PORT datad (1389:1389:1389) (1395:1395:1395))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (288:288:288) (359:359:359))
+        (PORT datad (1392:1392:1392) (1399:1399:1399))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (289:289:289) (359:359:359))
+        (PORT datad (1388:1388:1388) (1394:1394:1394))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|data_in_shift_reg\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (284:284:284) (354:354:354))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|_\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1041:1041:1041) (1027:1027:1027))
+        (PORT datac (1297:1297:1297) (1279:1279:1279))
+        (PORT datad (763:763:763) (760:760:760))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1924:1924:1924) (1938:1938:1938))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (624:624:624) (669:669:669))
+        (PORT sload (1925:1925:1925) (1991:1991:1991))
+        (PORT ena (844:844:844) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (286:286:286) (361:361:361))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1924:1924:1924) (1938:1938:1938))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (623:623:623) (669:669:669))
+        (PORT sload (1925:1925:1925) (1991:1991:1991))
+        (PORT ena (844:844:844) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (286:286:286) (361:361:361))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1924:1924:1924) (1938:1938:1938))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (623:623:623) (668:668:668))
+        (PORT sload (1925:1925:1925) (1991:1991:1991))
+        (PORT ena (844:844:844) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita3)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (285:285:285) (355:355:355))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1924:1924:1924) (1938:1938:1938))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (622:622:622) (667:667:667))
+        (PORT sload (1925:1925:1925) (1991:1991:1991))
+        (PORT ena (844:844:844) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita4)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (285:285:285) (355:355:355))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1924:1924:1924) (1938:1938:1938))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (620:620:620) (665:665:665))
+        (PORT sload (1925:1925:1925) (1991:1991:1991))
+        (PORT ena (844:844:844) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita5)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (285:285:285) (355:355:355))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1924:1924:1924) (1938:1938:1938))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (619:619:619) (664:664:664))
+        (PORT sload (1925:1925:1925) (1991:1991:1991))
+        (PORT ena (844:844:844) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita6)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (255:255:255) (318:318:318))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1924:1924:1924) (1938:1938:1938))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (618:618:618) (663:663:663))
+        (PORT sload (1925:1925:1925) (1991:1991:1991))
+        (PORT ena (844:844:844) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_lsb\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1364:1364:1364) (1378:1378:1378))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_lsb\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (304:304:304) (383:383:383))
+        (PORT datac (1331:1331:1331) (1344:1344:1344))
+        (PORT datad (2621:2621:2621) (2812:2812:2812))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_lsb)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1917:1917:1917) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (879:879:879) (873:873:873))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[0\]\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1368:1368:1368) (1382:1382:1382))
+        (PORT datab (476:476:476) (507:507:507))
+        (PORT datad (616:616:616) (576:576:576))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH datab combout (343:343:343) (349:349:349))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1917:1917:1917) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[0\]\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (310:310:310) (385:385:385))
+        (PORT datab (304:304:304) (382:382:382))
+        (PORT datac (231:231:231) (302:302:302))
+        (PORT datad (2621:2621:2621) (2813:2813:2813))
+        (IOPATH dataa combout (334:334:334) (344:344:344))
+        (IOPATH datab combout (343:343:343) (349:349:349))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (286:286:286) (361:361:361))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|_\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2735:2735:2735) (2932:2932:2932))
+        (PORT datab (515:515:515) (527:527:527))
+        (PORT datac (1291:1291:1291) (1308:1308:1308))
+        (PORT datad (479:479:479) (517:517:517))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (343:343:343) (349:349:349))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1931:1931:1931))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1092:1092:1092) (1067:1067:1067))
+        (PORT sload (1957:1957:1957) (1989:1989:1989))
+        (PORT ena (849:849:849) (841:841:841))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[1\]\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1363:1363:1363) (1377:1377:1377))
+        (PORT datab (641:641:641) (606:606:606))
+        (PORT datad (451:451:451) (476:476:476))
+        (IOPATH dataa combout (367:367:367) (329:329:329))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1917:1917:1917) (1930:1930:1930))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[1\]\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (504:504:504) (521:521:521))
+        (PORT datab (297:297:297) (375:375:375))
+        (PORT datac (231:231:231) (302:302:302))
+        (PORT datad (2615:2615:2615) (2806:2806:2806))
+        (IOPATH dataa combout (310:310:310) (323:323:323))
+        (IOPATH datab combout (312:312:312) (331:331:331))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (295:295:295) (374:374:374))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1931:1931:1931))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1091:1091:1091) (1067:1067:1067))
+        (PORT sload (1957:1957:1957) (1989:1989:1989))
+        (PORT ena (849:849:849) (841:841:841))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[2\]\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (747:747:747) (738:738:738))
+        (PORT datab (421:421:421) (415:415:415))
+        (PORT datad (1387:1387:1387) (1393:1393:1393))
+        (IOPATH dataa combout (310:310:310) (323:323:323))
+        (IOPATH datab combout (312:312:312) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[2\]\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (295:295:295) (374:374:374))
+        (PORT datab (425:425:425) (454:454:454))
+        (PORT datac (2695:2695:2695) (2902:2902:2902))
+        (PORT datad (486:486:486) (524:524:524))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita2)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (278:278:278) (356:356:356))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1931:1931:1931))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1091:1091:1091) (1066:1066:1066))
+        (PORT sload (1957:1957:1957) (1989:1989:1989))
+        (PORT ena (849:849:849) (841:841:841))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[3\]\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1331:1331:1331) (1349:1349:1349))
+        (PORT datab (280:280:280) (357:357:357))
+        (PORT datad (228:228:228) (253:253:253))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1931:1931:1931))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[3\]\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (268:268:268) (342:342:342))
+        (PORT datab (279:279:279) (356:356:356))
+        (PORT datac (2688:2688:2688) (2893:2893:2893))
+        (PORT datad (479:479:479) (517:517:517))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita3)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (292:292:292) (366:366:366))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1931:1931:1931))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1089:1089:1089) (1064:1064:1064))
+        (PORT sload (1957:1957:1957) (1989:1989:1989))
+        (PORT ena (849:849:849) (841:841:841))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[4\]\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (702:702:702) (701:701:701))
+        (PORT datab (423:423:423) (417:417:417))
+        (PORT datad (1389:1389:1389) (1396:1396:1396))
+        (IOPATH dataa combout (310:310:310) (323:323:323))
+        (IOPATH datab combout (312:312:312) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1932:1932:1932))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[4\]\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (437:437:437) (463:463:463))
+        (PORT datab (293:293:293) (367:367:367))
+        (PORT datac (2694:2694:2694) (2901:2901:2901))
+        (PORT datad (485:485:485) (523:523:523))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita4)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (278:278:278) (356:356:356))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1931:1931:1931))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1089:1089:1089) (1064:1064:1064))
+        (PORT sload (1957:1957:1957) (1989:1989:1989))
+        (PORT ena (849:849:849) (841:841:841))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[5\]\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1330:1330:1330) (1348:1348:1348))
+        (PORT datab (280:280:280) (358:358:358))
+        (PORT datad (228:228:228) (253:253:253))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1931:1931:1931))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[5\]\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2736:2736:2736) (2934:2934:2934))
+        (PORT datab (278:278:278) (355:355:355))
+        (PORT datac (233:233:233) (304:304:304))
+        (PORT datad (480:480:480) (517:517:517))
+        (IOPATH dataa combout (312:312:312) (323:323:323))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita5)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (248:248:248) (318:318:318))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1931:1931:1931))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1088:1088:1088) (1063:1063:1063))
+        (PORT sload (1957:1957:1957) (1989:1989:1989))
+        (PORT ena (849:849:849) (841:841:841))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[6\]\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1331:1331:1331) (1349:1349:1349))
+        (PORT datab (281:281:281) (357:357:357))
+        (PORT datad (229:229:229) (254:254:254))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1918:1918:1918) (1931:1931:1931))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[6\]\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2734:2734:2734) (2931:2931:2931))
+        (PORT datab (278:278:278) (354:354:354))
+        (PORT datac (235:235:235) (306:306:306))
+        (PORT datad (478:478:478) (515:515:515))
+        (IOPATH dataa combout (312:312:312) (323:323:323))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.datain_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (764:764:764) (762:762:762))
+        (PORT d[1] (808:808:808) (793:793:793))
+        (PORT d[2] (800:800:800) (787:787:787))
+        (PORT d[3] (778:778:778) (777:777:777))
+        (PORT d[4] (793:793:793) (779:779:779))
+        (PORT d[5] (785:785:785) (775:775:775))
+        (PORT d[6] (790:790:790) (779:779:779))
+        (PORT d[7] (777:777:777) (777:777:777))
+        (PORT clk (2256:2256:2256) (2286:2286:2286))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (201:201:201))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.addr_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (778:778:778) (790:790:790))
+        (PORT d[1] (814:814:814) (826:826:826))
+        (PORT d[2] (815:815:815) (821:821:821))
+        (PORT d[3] (773:773:773) (785:785:785))
+        (PORT d[4] (813:813:813) (826:826:826))
+        (PORT d[5] (1010:1010:1010) (976:976:976))
+        (PORT d[6] (775:775:775) (789:789:789))
+        (PORT clk (2253:2253:2253) (2282:2282:2282))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (201:201:201))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.we_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (1015:1015:1015) (930:930:930))
+        (PORT clk (2253:2253:2253) (2282:2282:2282))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (201:201:201))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.active_core_port_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2256:2256:2256) (2286:2286:2286))
+        (PORT d[0] (1558:1558:1558) (1484:1484:1484))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.wpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2257:2257:2257) (2287:2287:2287))
+        (IOPATH (posedge clk) pulse (0:0:0) (2194:2194:2194))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.rpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2257:2257:2257) (2287:2287:2287))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.ftpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2257:2257:2257) (2287:2287:2287))
+        (IOPATH (posedge clk) pulse (0:0:0) (2772:2772:2772))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.rwpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2257:2257:2257) (2287:2287:2287))
+        (IOPATH (posedge clk) pulse (0:0:0) (2772:2772:2772))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.addr_b_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (743:743:743) (700:700:700))
+        (PORT d[1] (713:713:713) (679:679:679))
+        (PORT d[2] (702:702:702) (664:664:664))
+        (PORT d[3] (705:705:705) (669:669:669))
+        (PORT d[4] (731:731:731) (693:693:693))
+        (PORT d[5] (750:750:750) (714:714:714))
+        (PORT d[6] (714:714:714) (681:681:681))
+        (PORT clk (2214:2214:2214) (2205:2205:2205))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (201:201:201))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.active_core_port_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2214:2214:2214) (2205:2205:2205))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.rpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2215:2215:2215) (2206:2206:2206))
+        (IOPATH (posedge clk) pulse (0:0:0) (2618:2618:2618))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.ftpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2215:2215:2215) (2206:2206:2206))
+        (IOPATH (posedge clk) pulse (0:0:0) (2802:2802:2802))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_In_Deserializer\|RS232_In_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.rwpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2215:2215:2215) (2206:2206:2206))
+        (IOPATH (posedge clk) pulse (0:0:0) (2802:2802:2802))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_to_uart_valid\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (622:622:622) (707:707:707))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (299:299:299) (379:379:379))
+        (PORT datab (470:470:470) (479:479:479))
+        (IOPATH dataa combout (360:360:360) (392:392:392))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (364:364:364) (394:394:394))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_2\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (272:272:272) (351:351:351))
+        (PORT datab (668:668:668) (627:627:627))
+        (PORT datac (711:711:711) (673:673:673))
+        (PORT datad (614:614:614) (607:607:607))
+        (IOPATH dataa combout (380:380:380) (360:360:360))
+        (IOPATH datab combout (391:391:391) (399:399:399))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (302:302:302) (386:386:386))
+        (PORT datab (470:470:470) (479:479:479))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (476:476:476) (500:500:500))
+        (PORT datab (469:469:469) (478:478:478))
+        (IOPATH dataa combout (360:360:360) (392:392:392))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (364:364:364) (394:394:394))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1899:1899:1899) (1916:1916:1916))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1708:1708:1708) (1683:1683:1683))
+        (PORT sload (1322:1322:1322) (1370:1370:1370))
+        (PORT ena (866:866:866) (853:853:853))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (474:474:474) (500:500:500))
+        (PORT datab (468:468:468) (477:477:477))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (459:459:459) (495:495:495))
+        (PORT datab (467:467:467) (476:476:476))
+        (IOPATH dataa combout (360:360:360) (392:392:392))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (364:364:364) (394:394:394))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1899:1899:1899) (1916:1916:1916))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1706:1706:1706) (1680:1680:1680))
+        (PORT sload (1322:1322:1322) (1370:1370:1370))
+        (PORT ena (866:866:866) (853:853:853))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (475:475:475) (501:501:501))
+        (PORT datab (467:467:467) (475:475:475))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1899:1899:1899) (1916:1916:1916))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1705:1705:1705) (1680:1680:1680))
+        (PORT sload (1322:1322:1322) (1370:1370:1370))
+        (PORT ena (866:866:866) (853:853:853))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_comb_bita6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (302:302:302) (382:382:382))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1899:1899:1899) (1916:1916:1916))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1705:1705:1705) (1679:1679:1679))
+        (PORT sload (1322:1322:1322) (1370:1370:1370))
+        (PORT ena (866:866:866) (853:853:853))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (302:302:302) (385:385:385))
+        (PORT datab (312:312:312) (385:385:385))
+        (PORT datac (268:268:268) (347:347:347))
+        (PORT datad (268:268:268) (338:338:338))
+        (IOPATH dataa combout (327:327:327) (323:323:323))
+        (IOPATH datab combout (343:343:343) (339:339:339))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (220:220:220) (251:251:251))
+        (PORT datab (294:294:294) (368:368:368))
+        (PORT datac (280:280:280) (354:354:354))
+        (PORT datad (283:283:283) (348:348:348))
+        (IOPATH dataa combout (380:380:380) (360:360:360))
+        (IOPATH datab combout (391:391:391) (399:399:399))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_2\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (758:758:758) (713:713:713))
+        (PORT datab (668:668:668) (627:627:627))
+        (PORT datac (185:185:185) (213:213:213))
+        (PORT datad (386:386:386) (367:367:367))
+        (IOPATH dataa combout (334:334:334) (333:333:333))
+        (IOPATH datab combout (328:328:328) (331:331:331))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_is_2_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1897:1897:1897) (1914:1914:1914))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1340:1340:1340) (1361:1361:1361))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_0\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (779:779:779) (801:801:801))
+        (PORT datad (196:196:196) (220:220:220))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_is_0_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1897:1897:1897) (1914:1914:1914))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_1\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (275:275:275) (354:354:354))
+        (PORT datab (664:664:664) (622:622:622))
+        (PORT datac (717:717:717) (680:680:680))
+        (PORT datad (242:242:242) (307:307:307))
+        (IOPATH dataa combout (358:358:358) (377:377:377))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_1\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (220:220:220) (251:251:251))
+        (PORT datab (817:817:817) (826:826:826))
+        (PORT datad (380:380:380) (361:361:361))
+        (IOPATH dataa combout (358:358:358) (377:377:377))
+        (IOPATH datab combout (364:364:364) (378:378:378))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_is_1_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1897:1897:1897) (1914:1914:1914))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (680:680:680) (666:666:666))
+        (PORT datab (664:664:664) (622:622:622))
+        (PORT datac (719:719:719) (682:682:682))
+        (PORT datad (243:243:243) (308:308:308))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH datab combout (381:381:381) (395:395:395))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|empty_dff\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (757:757:757) (712:712:712))
+        (PORT datab (229:229:229) (259:259:259))
+        (PORT datac (784:784:784) (806:806:806))
+        (PORT datad (190:190:190) (209:209:209))
+        (IOPATH dataa combout (334:334:334) (344:344:344))
+        (IOPATH datab combout (369:369:369) (349:349:349))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|empty_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1897:1897:1897) (1914:1914:1914))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[0\]\~9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (273:273:273) (352:352:352))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|transmitting_data\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (282:282:282) (364:364:364))
+        (PORT datad (247:247:247) (317:317:317))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|transmitting_data)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1897:1897:1897) (1914:1914:1914))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1340:1340:1340) (1361:1361:1361))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[2\]\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (473:473:473) (513:513:513))
+        (PORT datab (438:438:438) (445:445:445))
+        (PORT datac (948:948:948) (928:928:928))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1919:1919:1919))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (942:942:942) (973:973:973))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[1\]\~11)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (271:271:271) (344:344:344))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1919:1919:1919))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (942:942:942) (973:973:973))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[2\]\~13)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (271:271:271) (344:344:344))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1919:1919:1919))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (942:942:942) (973:973:973))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[3\]\~15)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (271:271:271) (343:343:343))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1919:1919:1919))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (942:942:942) (973:973:973))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[4\]\~17)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (270:270:270) (344:344:344))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1919:1919:1919))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (942:942:942) (973:973:973))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[5\]\~19)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (273:273:273) (351:351:351))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1919:1919:1919))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (942:942:942) (973:973:973))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[6\]\~21)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (269:269:269) (341:341:341))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1919:1919:1919))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (942:942:942) (973:973:973))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[7\]\~23)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (271:271:271) (347:347:347))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[7\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1919:1919:1919))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (942:942:942) (973:973:973))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[8\]\~25)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (260:260:260) (326:326:326))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_counter\[8\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1903:1903:1903) (1919:1919:1919))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (942:942:942) (973:973:973))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|Equal0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (273:273:273) (351:351:351))
+        (PORT datab (271:271:271) (344:344:344))
+        (PORT datac (237:237:237) (312:312:312))
+        (PORT datad (241:241:241) (307:307:307))
+        (IOPATH dataa combout (367:367:367) (329:329:329))
+        (IOPATH datab combout (369:369:369) (331:331:331))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|Equal0\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (274:274:274) (352:352:352))
+        (PORT datab (271:271:271) (344:344:344))
+        (PORT datac (240:240:240) (315:315:315))
+        (PORT datad (241:241:241) (307:307:307))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|Equal0\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (293:293:293) (365:365:365))
+        (PORT datac (207:207:207) (235:235:235))
+        (PORT datad (210:210:210) (228:228:228))
+        (IOPATH datab combout (391:391:391) (399:399:399))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[2\]\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (249:249:249) (282:282:282))
+        (PORT datab (979:979:979) (956:956:956))
+        (PORT datac (442:442:442) (481:481:481))
+        (IOPATH dataa combout (346:346:346) (357:357:357))
+        (IOPATH datab combout (351:351:351) (349:349:349))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[0\]\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (440:440:440) (447:447:447))
+        (PORT datad (205:205:205) (230:230:230))
+        (IOPATH datab combout (343:343:343) (339:339:339))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1895:1895:1895) (1911:1911:1911))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[1\]\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (484:484:484) (522:522:522))
+        (PORT datab (440:440:440) (447:447:447))
+        (PORT datad (204:204:204) (229:229:229))
+        (IOPATH dataa combout (327:327:327) (323:323:323))
+        (IOPATH datab combout (343:343:343) (339:339:339))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1895:1895:1895) (1911:1911:1911))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[2\]\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (474:474:474) (514:514:514))
+        (PORT datab (436:436:436) (442:442:442))
+        (PORT datac (946:946:946) (926:926:926))
+        (PORT datad (219:219:219) (242:242:242))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (343:343:343) (349:349:349))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|Add1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (298:298:298) (376:376:376))
+        (PORT datac (246:246:246) (327:327:327))
+        (PORT datad (247:247:247) (315:315:315))
+        (IOPATH datab combout (369:369:369) (349:349:349))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[2\]\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (221:221:221) (252:252:252))
+        (PORT datab (220:220:220) (247:247:247))
+        (PORT datad (210:210:210) (230:230:230))
+        (IOPATH dataa combout (358:358:358) (377:377:377))
+        (IOPATH datab combout (364:364:364) (378:378:378))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1895:1895:1895) (1911:1911:1911))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|Add1\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (282:282:282) (364:364:364))
+        (PORT datab (300:300:300) (378:378:378))
+        (PORT datac (238:238:238) (313:313:313))
+        (PORT datad (248:248:248) (316:316:316))
+        (IOPATH dataa combout (334:334:334) (344:344:344))
+        (IOPATH datab combout (343:343:343) (349:349:349))
+        (IOPATH datac combout (265:265:265) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[3\]\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (222:222:222) (253:253:253))
+        (PORT datab (436:436:436) (442:442:442))
+        (PORT datad (201:201:201) (225:225:225))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (343:343:343) (339:339:339))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|bit_counter\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1895:1895:1895) (1911:1911:1911))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|Equal2\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (282:282:282) (364:364:364))
+        (PORT datab (300:300:300) (378:378:378))
+        (PORT datac (237:237:237) (311:311:311))
+        (PORT datad (248:248:248) (316:316:316))
+        (IOPATH dataa combout (349:349:349) (365:365:365))
+        (IOPATH datab combout (351:351:351) (349:349:349))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|all_bits_transmitted\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (823:823:823) (834:834:834))
+        (PORT datac (375:375:375) (356:356:356))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|all_bits_transmitted)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1897:1897:1897) (1914:1914:1914))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|read_fifo_en\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (278:278:278) (354:354:354))
+        (PORT datac (247:247:247) (327:327:327))
+        (PORT datad (261:261:261) (326:326:326))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_will_be_1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (653:653:653) (602:602:602))
+        (PORT datac (680:680:680) (685:685:685))
+        (PORT datad (433:433:433) (436:436:436))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1899:1899:1899) (1916:1916:1916))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1709:1709:1709) (1684:1684:1684))
+        (PORT sload (1322:1322:1322) (1370:1370:1370))
+        (PORT ena (866:866:866) (853:853:853))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1899:1899:1899) (1916:1916:1916))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1709:1709:1709) (1683:1683:1683))
+        (PORT sload (1322:1322:1322) (1370:1370:1370))
+        (PORT ena (866:866:866) (853:853:853))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (303:303:303) (387:387:387))
+        (PORT datab (310:310:310) (383:383:383))
+        (PORT datac (265:265:265) (344:344:344))
+        (PORT datad (270:270:270) (340:340:340))
+        (IOPATH dataa combout (310:310:310) (323:323:323))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (223:223:223) (254:254:254))
+        (PORT datab (293:293:293) (368:368:368))
+        (PORT datac (279:279:279) (354:354:354))
+        (PORT datad (282:282:282) (348:348:348))
+        (IOPATH dataa combout (310:310:310) (323:323:323))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|_\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (378:378:378) (372:372:372))
+        (PORT datab (687:687:687) (629:629:629))
+        (PORT datad (210:210:210) (229:229:229))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|full_dff)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1901:1901:1901) (1918:1918:1918))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1259:1259:1259) (1303:1303:1303))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[0\]\~8)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (491:491:491) (505:505:505))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[1\]\~10)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (492:492:492) (506:506:506))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[2\]\~12)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (473:473:473) (500:500:500))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[3\]\~14)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (475:475:475) (501:501:501))
+        (IOPATH dataa combout (367:367:367) (357:357:357))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[4\]\~16)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (451:451:451) (482:482:482))
+        (IOPATH datab combout (391:391:391) (399:399:399))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1901:1901:1901) (1918:1918:1918))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1259:1259:1259) (1303:1303:1303))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[5\]\~18)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (504:504:504) (516:516:516))
+        (IOPATH datab combout (369:369:369) (349:349:349))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[6\]\~20)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (444:444:444) (473:473:473))
+        (IOPATH datab combout (391:391:391) (399:399:399))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[7\]\~22)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (241:241:241) (307:307:307))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[7\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1901:1901:1901) (1918:1918:1918))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1259:1259:1259) (1303:1303:1303))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1901:1901:1901) (1918:1918:1918))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1259:1259:1259) (1303:1303:1303))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1901:1901:1901) (1918:1918:1918))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1259:1259:1259) (1303:1303:1303))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|WideOr0\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (265:265:265) (339:339:339))
+        (PORT datab (263:263:263) (332:332:332))
+        (PORT datac (231:231:231) (301:301:301))
+        (PORT datad (233:233:233) (295:295:295))
+        (IOPATH dataa combout (380:380:380) (360:360:360))
+        (IOPATH datab combout (381:381:381) (361:361:361))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|comb\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2670:2670:2670) (2860:2860:2860))
+        (PORT datab (269:269:269) (341:341:341))
+        (PORT datac (193:193:193) (224:224:224))
+        (PORT datad (196:196:196) (217:217:217))
+        (IOPATH dataa combout (367:367:367) (329:329:329))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|usedw_counter\|counter_reg_bit\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1899:1899:1899) (1916:1916:1916))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1706:1706:1706) (1681:1681:1681))
+        (PORT sload (1322:1322:1322) (1370:1370:1370))
+        (PORT ena (866:866:866) (853:853:853))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1901:1901:1901) (1918:1918:1918))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1259:1259:1259) (1303:1303:1303))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1901:1901:1901) (1918:1918:1918))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1259:1259:1259) (1303:1303:1303))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1901:1901:1901) (1918:1918:1918))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1259:1259:1259) (1303:1303:1303))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|fifo_write_space\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1901:1901:1901) (1918:1918:1918))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sclr (1259:1259:1259) (1303:1303:1303))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sclr (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|WideOr0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (265:265:265) (339:339:339))
+        (PORT datab (264:264:264) (333:333:333))
+        (PORT datac (231:231:231) (302:302:302))
+        (PORT datad (234:234:234) (296:296:296))
+        (IOPATH dataa combout (380:380:380) (360:360:360))
+        (IOPATH datab combout (381:381:381) (361:361:361))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|WideOr0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (193:193:193) (223:223:223))
+        (PORT datad (196:196:196) (217:217:217))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_to_uart_data\[0\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (662:662:662) (747:747:747))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (285:285:285) (354:354:354))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|_\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (411:411:411) (449:449:449))
+        (PORT datad (706:706:706) (667:667:667))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1905:1905:1905) (1922:1922:1922))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1736:1736:1736) (1703:1703:1703))
+        (PORT sload (1088:1088:1088) (1102:1102:1102))
+        (PORT ena (844:844:844) (831:831:831))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (285:285:285) (355:355:355))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1905:1905:1905) (1922:1922:1922))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1736:1736:1736) (1703:1703:1703))
+        (PORT sload (1088:1088:1088) (1102:1102:1102))
+        (PORT ena (844:844:844) (831:831:831))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (286:286:286) (361:361:361))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1905:1905:1905) (1922:1922:1922))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1735:1735:1735) (1702:1702:1702))
+        (PORT sload (1088:1088:1088) (1102:1102:1102))
+        (PORT ena (844:844:844) (831:831:831))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita3)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (284:284:284) (354:354:354))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1905:1905:1905) (1922:1922:1922))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1735:1735:1735) (1702:1702:1702))
+        (PORT sload (1088:1088:1088) (1102:1102:1102))
+        (PORT ena (844:844:844) (831:831:831))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (286:286:286) (360:360:360))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1905:1905:1905) (1922:1922:1922))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1734:1734:1734) (1701:1701:1701))
+        (PORT sload (1088:1088:1088) (1102:1102:1102))
+        (PORT ena (844:844:844) (831:831:831))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita5)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (284:284:284) (354:354:354))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1905:1905:1905) (1922:1922:1922))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1734:1734:1734) (1701:1701:1701))
+        (PORT sload (1088:1088:1088) (1102:1102:1102))
+        (PORT ena (844:844:844) (831:831:831))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_comb_bita6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (287:287:287) (361:361:361))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|wr_ptr\|counter_reg_bit\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1905:1905:1905) (1922:1922:1922))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1734:1734:1734) (1701:1701:1701))
+        (PORT sload (1088:1088:1088) (1102:1102:1102))
+        (PORT ena (844:844:844) (831:831:831))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_lsb\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (824:824:824) (835:835:835))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (282:282:282) (364:364:364))
+        (PORT datab (280:280:280) (356:356:356))
+        (PORT datac (777:777:777) (798:798:798))
+        (PORT datad (262:262:262) (328:328:328))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datab combout (369:369:369) (331:331:331))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_lsb)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1897:1897:1897) (1914:1914:1914))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (880:880:880) (873:873:873))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[0\]\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1001:1001:1001) (972:972:972))
+        (PORT datab (799:799:799) (828:828:828))
+        (PORT datad (938:938:938) (905:905:905))
+        (IOPATH dataa combout (358:358:358) (377:377:377))
+        (IOPATH datab combout (369:369:369) (378:378:378))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[0\]\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1002:1002:1002) (975:975:975))
+        (PORT datab (265:265:265) (335:335:335))
+        (PORT datac (954:954:954) (922:922:922))
+        (IOPATH dataa combout (380:380:380) (389:389:389))
+        (IOPATH datab combout (381:381:381) (361:361:361))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (289:289:289) (361:361:361))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|_\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (989:989:989) (959:959:959))
+        (PORT datac (759:759:759) (790:790:790))
+        (PORT datad (966:966:966) (926:926:926))
+        (IOPATH dataa combout (334:334:334) (344:344:344))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1815:1815:1815) (1816:1816:1816))
+        (PORT sload (1436:1436:1436) (1455:1455:1455))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[1\]\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1002:1002:1002) (974:974:974))
+        (PORT datab (802:802:802) (832:832:832))
+        (PORT datad (265:265:265) (331:331:331))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datab combout (369:369:369) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[1\]\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (476:476:476) (489:489:489))
+        (PORT datac (720:720:720) (713:713:713))
+        (PORT datad (1019:1019:1019) (977:977:977))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (289:289:289) (361:361:361))
+        (IOPATH datab combout (377:377:377) (395:395:395))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1814:1814:1814) (1815:1815:1815))
+        (PORT sload (1436:1436:1436) (1455:1455:1455))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[2\]\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1002:1002:1002) (974:974:974))
+        (PORT datab (802:802:802) (831:831:831))
+        (PORT datad (264:264:264) (330:330:330))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datab combout (369:369:369) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[2\]\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (460:460:460) (494:494:494))
+        (PORT datab (476:476:476) (489:489:489))
+        (PORT datad (1020:1020:1020) (978:978:978))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita2)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (290:290:290) (364:364:364))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1814:1814:1814) (1815:1815:1815))
+        (PORT sload (1436:1436:1436) (1455:1455:1455))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[3\]\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1002:1002:1002) (974:974:974))
+        (PORT datab (294:294:294) (369:369:369))
+        (PORT datad (952:952:952) (932:932:932))
+        (IOPATH dataa combout (312:312:312) (323:323:323))
+        (IOPATH datab combout (313:313:313) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[3\]\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (508:508:508) (521:521:521))
+        (PORT datac (401:401:401) (433:433:433))
+        (PORT datad (1021:1021:1021) (978:978:978))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (292:292:292) (369:369:369))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH dataa cout (435:435:435) (328:328:328))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1813:1813:1813) (1814:1814:1814))
+        (PORT sload (1436:1436:1436) (1455:1455:1455))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[4\]\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1000:1000:1000) (971:971:971))
+        (PORT datab (797:797:797) (826:826:826))
+        (PORT datad (263:263:263) (331:331:331))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datab combout (369:369:369) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[4\]\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (461:461:461) (494:494:494))
+        (PORT datac (439:439:439) (457:457:457))
+        (PORT datad (1021:1021:1021) (979:979:979))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita4)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (285:285:285) (355:355:355))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datab cout (445:445:445) (334:334:334))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+        (IOPATH cin cout (58:58:58) (58:58:58))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1813:1813:1813) (1813:1813:1813))
+        (PORT sload (1436:1436:1436) (1455:1455:1455))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[5\]\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1002:1002:1002) (975:975:975))
+        (PORT datab (804:804:804) (834:834:834))
+        (PORT datad (427:427:427) (451:451:451))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datab combout (369:369:369) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[5\]\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (438:438:438) (471:471:471))
+        (PORT datac (464:464:464) (484:484:484))
+        (PORT datad (1019:1019:1019) (976:976:976))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_comb_bita5)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (262:262:262) (327:327:327))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+        (IOPATH cin combout (483:483:483) (458:458:458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|rd_ptr_msb\|counter_reg_bit\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT asdata (1812:1812:1812) (1812:1812:1812))
+        (PORT sload (1436:1436:1436) (1455:1455:1455))
+        (PORT ena (845:845:845) (832:832:832))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[6\]\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1001:1001:1001) (973:973:973))
+        (PORT datab (800:800:800) (829:829:829))
+        (PORT datad (263:263:263) (328:328:328))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datab combout (369:369:369) (331:331:331))
+        (IOPATH datac combout (366:366:366) (380:380:380))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|low_addressa\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1921:1921:1921) (1937:1937:1937))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|ram_read_address\[6\]\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (477:477:477) (490:490:490))
+        (PORT datac (423:423:423) (453:453:453))
+        (PORT datad (1019:1019:1019) (976:976:976))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_to_uart_data\[1\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (682:682:682) (767:767:767))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_to_uart_data\[2\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (612:612:612) (697:697:697))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_to_uart_data\[3\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (632:632:632) (717:717:717))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_to_uart_data\[4\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (632:632:632) (717:717:717))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_to_uart_data\[5\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (652:652:652) (737:737:737))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_to_uart_data\[6\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (672:672:672) (757:757:757))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rs232_0_to_uart_data\[7\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (622:622:622) (707:707:707))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.datain_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (2712:2712:2712) (2898:2898:2898))
+        (PORT d[1] (2956:2956:2956) (3126:3126:3126))
+        (PORT d[2] (3006:3006:3006) (3175:3175:3175))
+        (PORT d[3] (3017:3017:3017) (3184:3184:3184))
+        (PORT d[4] (2996:2996:2996) (3164:3164:3164))
+        (PORT d[5] (2686:2686:2686) (2872:2872:2872))
+        (PORT d[6] (2981:2981:2981) (3149:3149:3149))
+        (PORT d[7] (2952:2952:2952) (3123:3123:3123))
+        (PORT clk (2250:2250:2250) (2284:2284:2284))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (201:201:201))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.addr_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (806:806:806) (820:820:820))
+        (PORT d[1] (803:803:803) (812:812:812))
+        (PORT d[2] (773:773:773) (788:788:788))
+        (PORT d[3] (814:814:814) (828:828:828))
+        (PORT d[4] (766:766:766) (779:779:779))
+        (PORT d[5] (805:805:805) (816:816:816))
+        (PORT d[6] (803:803:803) (815:815:815))
+        (PORT clk (2247:2247:2247) (2280:2280:2280))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (201:201:201))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.we_a_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (1030:1030:1030) (942:942:942))
+        (PORT clk (2247:2247:2247) (2280:2280:2280))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (201:201:201))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.active_core_port_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2250:2250:2250) (2284:2284:2284))
+        (PORT d[0] (1573:1573:1573) (1496:1496:1496))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.wpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2251:2251:2251) (2285:2285:2285))
+        (IOPATH (posedge clk) pulse (0:0:0) (2194:2194:2194))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.rpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2251:2251:2251) (2285:2285:2285))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.ftpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2251:2251:2251) (2285:2285:2285))
+        (IOPATH (posedge clk) pulse (0:0:0) (2772:2772:2772))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.rwpgen_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2251:2251:2251) (2285:2285:2285))
+        (IOPATH (posedge clk) pulse (0:0:0) (2772:2772:2772))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.addr_b_register)
+    (DELAY
+      (ABSOLUTE
+        (PORT d[0] (740:740:740) (705:705:705))
+        (PORT d[1] (434:434:434) (423:423:423))
+        (PORT d[2] (431:431:431) (417:417:417))
+        (PORT d[3] (432:432:432) (419:419:419))
+        (PORT d[4] (438:438:438) (426:426:426))
+        (PORT d[5] (434:434:434) (424:424:424))
+        (PORT d[6] (435:435:435) (424:424:424))
+        (PORT clk (2208:2208:2208) (2203:2203:2203))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (201:201:201))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_register")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.active_core_port_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2208:2208:2208) (2203:2203:2203))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.rpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2209:2209:2209) (2204:2204:2204))
+        (IOPATH (posedge clk) pulse (0:0:0) (2618:2618:2618))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.ftpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2209:2209:2209) (2204:2204:2204))
+        (IOPATH (posedge clk) pulse (0:0:0) (2802:2802:2802))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_ram_pulse_generator")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_FIFO\|Sync_FIFO\|auto_generated\|dpfifo\|FIFOram\|ram_block1a0.rwpgen_b)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2209:2209:2209) (2204:2204:2204))
+        (IOPATH (posedge clk) pulse (0:0:0) (2802:2802:2802))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~10)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1053:1053:1053) (1026:1026:1026))
+        (PORT datac (755:755:755) (775:775:775))
+        (PORT datad (377:377:377) (353:353:353))
+        (IOPATH dataa combout (369:369:369) (389:389:389))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_clock_rising_edge\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (425:425:425) (427:427:427))
+        (PORT datab (432:432:432) (421:421:421))
+        (PORT datac (946:946:946) (926:926:926))
+        (PORT datad (468:468:468) (497:497:497))
+        (IOPATH dataa combout (312:312:312) (323:323:323))
+        (IOPATH datab combout (312:312:312) (331:331:331))
+        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|RS232_Out_Counters\|baud_clock_rising_edge)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1895:1895:1895) (1911:1911:1911))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (935:935:935) (906:906:906))
+        (PORT datac (757:757:757) (777:777:777))
+        (PORT datad (1019:1019:1019) (977:977:977))
+        (IOPATH datab combout (369:369:369) (349:349:349))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\[8\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2285:2285:2285) (2283:2283:2283))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (889:889:889) (891:891:891))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1055:1055:1055) (1028:1028:1028))
+        (PORT datab (267:267:267) (338:338:338))
+        (PORT datad (377:377:377) (354:354:354))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH datab combout (381:381:381) (361:361:361))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\[7\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2285:2285:2285) (2283:2283:2283))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sload (1423:1423:1423) (1442:1442:1442))
+        (PORT ena (889:889:889) (891:891:891))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~8)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1055:1055:1055) (1028:1028:1028))
+        (PORT datab (266:266:266) (336:336:336))
+        (PORT datad (400:400:400) (374:374:374))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH datab combout (381:381:381) (361:361:361))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2285:2285:2285) (2283:2283:2283))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sload (1423:1423:1423) (1442:1442:1442))
+        (PORT ena (889:889:889) (891:891:891))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1055:1055:1055) (1029:1029:1029))
+        (PORT datab (266:266:266) (336:336:336))
+        (PORT datad (376:376:376) (352:352:352))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH datab combout (381:381:381) (361:361:361))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2285:2285:2285) (2283:2283:2283))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sload (1423:1423:1423) (1442:1442:1442))
+        (PORT ena (889:889:889) (891:891:891))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1056:1056:1056) (1029:1029:1029))
+        (PORT datab (265:265:265) (335:335:335))
+        (PORT datad (401:401:401) (375:375:375))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH datab combout (381:381:381) (361:361:361))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2285:2285:2285) (2283:2283:2283))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sload (1423:1423:1423) (1442:1442:1442))
+        (PORT ena (889:889:889) (891:891:891))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (463:463:463) (433:433:433))
+        (PORT datab (1213:1213:1213) (1156:1156:1156))
+        (PORT datad (1018:1018:1018) (976:976:976))
+        (IOPATH dataa combout (328:328:328) (323:323:323))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2285:2285:2285) (2283:2283:2283))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sload (1423:1423:1423) (1442:1442:1442))
+        (PORT ena (889:889:889) (891:891:891))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1258:1258:1258) (1198:1198:1198))
+        (PORT datab (417:417:417) (392:392:392))
+        (PORT datad (1020:1020:1020) (978:978:978))
+        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (IOPATH datab combout (331:331:331) (331:331:331))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2285:2285:2285) (2283:2283:2283))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sload (1423:1423:1423) (1442:1442:1442))
+        (PORT ena (889:889:889) (891:891:891))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1054:1054:1054) (1027:1027:1027))
+        (PORT datab (266:266:266) (336:336:336))
+        (PORT datad (376:376:376) (353:353:353))
+        (IOPATH dataa combout (382:382:382) (394:394:394))
+        (IOPATH datab combout (381:381:381) (361:361:361))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2285:2285:2285) (2283:2283:2283))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT sload (1423:1423:1423) (1442:1442:1442))
+        (PORT ena (889:889:889) (891:891:891))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD sload (posedge clk) (171:171:171))
+      (HOLD asdata (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (799:799:799) (813:813:813))
+        (PORT datac (234:234:234) (306:306:306))
+        (PORT datad (1021:1021:1021) (979:979:979))
+        (IOPATH datab combout (391:391:391) (399:399:399))
+        (IOPATH datac combout (265:265:265) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|data_out_shift_reg\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1919:1919:1919) (1936:1936:1936))
+        (PORT d (80:80:80) (90:90:90))
+        (PORT ena (853:853:853) (845:845:845))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+      (HOLD ena (posedge clk) (171:171:171))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|serial_data_out\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1320:1320:1320) (1333:1333:1333))
+        (PORT datad (1900:1900:1900) (1739:1739:1739))
+        (IOPATH datac combout (263:263:263) (251:251:251))
+        (IOPATH datad combout (144:144:144) (125:125:125))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE rs232_0\|RS232_Out_Serializer\|serial_data_out)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1928:1928:1928) (1944:1944:1944))
+        (PORT d (80:80:80) (90:90:90))
+        (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (171:171:171))
+    )
+  )
+)

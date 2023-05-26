@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA_TEST/LED/PRJ/simulation/modelsim
+vLED
+Z1 !s110 1668256011
+!i10b 1
+!s100 ^g[LO7ljbRI6_6F:84D;F1
+II6f1Ko4z_IPjYz0WdO[NY1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1668156423
+8D:/code-file/FPGA_TEST/LED/SRC/LED.v
+FD:/code-file/FPGA_TEST/LED/SRC/LED.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1668256011.000000
+!s107 D:/code-file/FPGA_TEST/LED/SRC/LED.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA_TEST/LED/SRC|D:/code-file/FPGA_TEST/LED/SRC/LED.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA_TEST/LED/SRC
+Z6 tCvgOpt 0
+n@l@e@d
+vLED_tb
+R1
+!i10b 1
+!s100 NH9j70oR`Z4k87oCif^=A0
+IT?Cn]clzTAXeSWBRh1]?:1
+R2
+R0
+w1668156573
+8D:/code-file/FPGA_TEST/LED/PRJ/../TB/LED_tb.v
+FD:/code-file/FPGA_TEST/LED/PRJ/../TB/LED_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/code-file/FPGA_TEST/LED/PRJ/../TB/LED_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA_TEST/LED/PRJ/../TB|D:/code-file/FPGA_TEST/LED/PRJ/../TB/LED_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA_TEST/LED/PRJ/../TB
+R6
+n@l@e@d_tb

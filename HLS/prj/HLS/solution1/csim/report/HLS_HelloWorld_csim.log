@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../code/HLS_HelloWorld_tb.cpp in release mode
+   Compiling ../../../code/HLS_HelloWorld.cpp in release mode
+   Generating csim.exe
+shift_out is 0 
+shift_out is 1 
+shift_out is 0 
+shift_out is 1 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

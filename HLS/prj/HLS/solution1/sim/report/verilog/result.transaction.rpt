@@ -1,0 +1,5 @@
+                             latency        interval
+transaction       0:             101             102
+transaction       1:             101             102
+transaction       2:             101             102
+transaction       3:             101               x

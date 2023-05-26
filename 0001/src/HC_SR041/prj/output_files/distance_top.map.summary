@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat May 20 21:23:44 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : distance_top
+Top-level Entity Name : HC_SR04_TOP
+Family : Cyclone IV E
+Total logic elements : 3,017
+    Total combinational functions : 2,332
+    Dedicated logic registers : 1,145
+Total registers : 1145
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 7,168
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

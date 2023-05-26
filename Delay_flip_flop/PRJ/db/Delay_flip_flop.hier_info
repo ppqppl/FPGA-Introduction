@@ -1,0 +1,6 @@
+|Delay_flip_flop
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+D => inst.DATAIN
+
+

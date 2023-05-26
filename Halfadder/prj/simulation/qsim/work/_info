@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA/Halfadder/prj/simulation/qsim
+vHalfadder
+Z1 !s110 1679736828
+!i10b 1
+!s100 bJP`d38O1TI0^KS@nhC:a2
+IK;>1VYa;R3g`oZo1;MJZD2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1679736827
+Z4 8Halfadder.vo
+Z5 FHalfadder.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1679736828.000000
+Z8 !s107 Halfadder.vo|
+Z9 !s90 -work|work|Halfadder.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@halfadder
+vHalfadder_vlg_vec_tst
+R1
+!i10b 1
+!s100 j<8DR?m0DljhRAjQB]IAd2
+IW1Zl208;cVJ<mWd7hDdz10
+R2
+R0
+R3
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@halfadder_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 2d;:^WLZfLbbYzOzEkc>O1
+I8@E7MBO9hR>A;4j0B=K:M3
+R2
+R0
+R3
+R4
+R5
+L0 158
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

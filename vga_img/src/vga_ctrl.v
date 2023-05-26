@@ -1,0 +1,190 @@
+//VGA显示，实训讲解
+`define vga_640_480
+	`include "vga_para.v"
+ module vga_ctrl(
+     input                 clk     ,//时钟信号
+     input                 rst_n   ,//复位信号
+     input       [23:0]    data_dis,//需要显示的信号
+   
+     output  reg [10:0]    h_addr  ,//数据有效显示区域行地址
+     output  reg [10:0]    v_addr  ,//数据有效显示区域场地址
+
+     output  reg           hsync   ,//行同步信号
+     output  reg           vsync   ,//场同步信号
+     output                sync    ,
+
+     output  reg [7:0]     vga_r   ,//三通道,红色
+     output  reg [7:0]     vga_g   ,//三通道,绿色
+     output  reg [7:0]     vga_b   ,//三通道,蓝色
+     output  reg           vga_blk ,//复合空白信号控制信号,VGA消隐信号显示数据时为1电产,其他时候为低电平
+     output                vga_clk  //显示器显示时钟         
+ );
+ //参数定义
+     parameter H_SYNC_STA =  1 ;
+     parameter H_SYNC_STO =  `H_Sync_Time ;
+     parameter H_Data_STA =  `H_Sync_Time + `H_Back_Porch + `H_Left_Border;
+     parameter H_Data_STO =  `H_Sync_Time + `H_Back_Porch + `H_Left_Border + `H_Data_Time;   
+     parameter V_SYNC_STA =  1 ;
+     parameter V_SYNC_STO =  `V_Sync_Time ;
+     parameter V_Data_STA =  `V_Sync_Time  + `V_Back_Porch + `V_Top_Border;
+     parameter V_Data_STO =  `V_Sync_Time  + `V_Back_Porch + `V_Top_Border + `V_Data_Time;
+
+    //   parameter H_SYNC_STA = `H_Right_Border + `H_Front_Porch;
+    //   parameter H_SYNC_STO = `H_Right_Border + `H_Front_Porch + `H_Sync_Time ;
+    //   parameter H_Data_STA = `H_Right_Border + `H_Front_Porch + `H_Sync_Time ;
+    //   parameter H_Data_STO = `H_Right_Border + `H_Front_Porch + `H_Sync_Time + `H_Data_Time ;
+    //   
+    //   parameter V_SYNC_STA = `V_Bottom_Border + `V_Front_Porch;
+    //   parameter V_SYNC_STO = `V_Bottom_Border + `V_Front_Porch + `V_Sync_Time;
+    //   parameter V_Data_STA = `V_Bottom_Border + `V_Front_Porch + `V_Sync_Time ;
+    //   parameter V_Data_STO = `V_Bottom_Border + `V_Front_Porch + `V_Sync_Time + `V_Data_Time ;        
+ //信号定义
+  reg  [11:0]  cnt_h_addr;//行地址计数器
+  wire         add_h_addr;
+  wire         end_h_addr;
+
+  reg  [11:0]  cnt_v_addr;//场地址计数器
+  wire         add_v_addr;
+  wire         end_v_addr;
+
+  reg          clk_25M   ;
+
+ assign sync = 1'b0;
+  //assign vga_blk = ~((cnt_h_addr<(`H_Front_Porch+`H_Sync_Time+`H_Back_Porch))||
+  //                   (cnt_v_addr<`V_Front_Porch+`V_Sync_Time+`V_Back_Porch));
+ //clk_25M
+  always @(posedge clk or negedge rst_n) begin
+      if(!rst_n)begin
+        clk_25M <= 1'b0;
+      end
+      else begin
+        clk_25M <= ~clk_25M;
+      end
+  end
+  assign vga_clk = clk_25M;
+
+ //cnt_h_addr
+  always@(posedge vga_clk or negedge rst_n)begin
+     if(!rst_n)begin
+        cnt_h_addr <= 12'd0;
+     end
+     else if(add_h_addr) begin
+        if(end_h_addr)begin
+           cnt_h_addr <= 12'd0;
+        end
+        else begin
+           cnt_h_addr = cnt_h_addr + 12'd1;
+        end
+     end
+     else begin
+       cnt_h_addr <= 12'd0;
+     end
+  end
+  assign add_h_addr = 1'b1;//开启条件
+  assign end_h_addr = add_h_addr && cnt_h_addr >= `H_Total_Time - 1;
+ 
+ //cnt_v_addr
+  always@(posedge vga_clk or negedge rst_n)begin
+   if(!rst_n)begin
+      cnt_v_addr <= 12'd0;
+   end
+   else if(add_v_addr) begin
+      if(end_v_addr)begin
+         cnt_v_addr <= 12'd0;
+      end
+      else begin
+         cnt_v_addr = cnt_v_addr + 12'd1;
+      end
+   end
+   else begin
+      cnt_v_addr = cnt_v_addr;
+   end
+  end
+  assign add_v_addr = end_h_addr;
+  assign end_v_addr = add_v_addr && cnt_v_addr >= `V_Total_Time - 1;
+
+ //行同步信号
+  always@(posedge vga_clk or negedge rst_n)begin
+     if(!rst_n)begin
+        hsync <= 1'b1;
+     end
+     else if(cnt_h_addr == H_SYNC_STA -1)begin
+        hsync <= 1'b0;
+     end
+     else if(cnt_h_addr == H_SYNC_STO - 1) begin
+        hsync <= 1'b1;
+     end
+     else begin
+        hsync <= hsync ;
+     end
+  end
+ 
+ //场同步信号
+  always@(posedge vga_clk or negedge rst_n)begin
+     if(!rst_n)begin
+        vsync <= 1'b1;
+     end
+     else if(cnt_v_addr == V_SYNC_STA -1)begin
+        vsync <= 1'b0;
+     end
+     else if(cnt_v_addr == V_SYNC_STO - 1) begin
+        vsync <= 1'b1;
+     end
+     else begin
+        vsync <= vsync ;
+     end
+  end
+  
+
+ //数据有效显示区域定义
+  always@(posedge vga_clk or negedge rst_n)begin
+     if(!rst_n)begin
+        h_addr <= 11'd0;
+     end
+     else if ((cnt_h_addr >= H_Data_STA - 1 )&&(cnt_h_addr <= H_Data_STO -1)) begin
+        h_addr <= cnt_h_addr - H_Data_STA -1 ;
+     end
+     else begin
+        h_addr <= 11'd0;
+     end
+  end
+
+ //场地址有效显示区域定义
+    always@(posedge vga_clk or negedge rst_n)begin
+     if(!rst_n)begin
+        v_addr <= 11'd0;
+     end
+     else if ((cnt_v_addr >= V_Data_STA - 1 )&& (cnt_v_addr <= V_Data_STO -1)) begin
+        v_addr <= cnt_v_addr - V_Data_STA -1 ;
+     end
+     else begin
+        v_addr <= 11'd0;
+     end
+  end
+
+ //显示数据
+  always@(posedge vga_clk or negedge rst_n)begin
+     if(!rst_n)begin
+        vga_r <= 8'd0;
+        vga_b <= 8'd0;
+        vga_g <= 8'd0;
+        vga_blk <= 1'b0;
+     end
+     else if((cnt_h_addr >= H_Data_STA - 1 )&&(cnt_h_addr <= H_Data_STO -1)
+            && (cnt_v_addr >= V_Data_STA - 1 )&& (cnt_v_addr <= V_Data_STO -1))begin
+        vga_r <= data_dis[23:16];//data_dis[23-:8]
+        vga_g <= data_dis[15:8] ;//data_dis[15-:8]
+        vga_b <= data_dis[7:0]  ;//data_dis[7- :8] 
+        vga_blk <= 1'b1;
+     end
+     else begin
+        vga_r <= 8'd0;
+        vga_b <= 8'd0;
+        vga_g <= 8'd0;
+        vga_blk <= 1'b0;
+     end
+  end
+  
+
+ endmodule
+

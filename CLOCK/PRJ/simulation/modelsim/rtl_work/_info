@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA/CLOCK/PRJ/simulation/modelsim
+vCLOCK
+Z1 !s110 1670507382
+!i10b 1
+!s100 ?Dbld4Zlbmk@0Tif[k?=63
+IOd:XCi]O0AIY[BA`TkgYj2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1670507355
+8D:/code-file/FPGA/CLOCK/SRC/CLOCK.v
+FD:/code-file/FPGA/CLOCK/SRC/CLOCK.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1670507382.000000
+!s107 D:/code-file/FPGA/CLOCK/SRC/CLOCK.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/CLOCK/SRC|D:/code-file/FPGA/CLOCK/SRC/CLOCK.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/CLOCK/SRC
+Z7 tCvgOpt 0
+n@c@l@o@c@k
+vSEG_driver
+R1
+!i10b 1
+!s100 L5F<STde0GR:PoSHV?h>F2
+IcZ7cWS@M>U1Yd^I92j7[]1
+R2
+R0
+w1670507240
+8D:/code-file/FPGA/CLOCK/SRC/SEG_driver.v
+FD:/code-file/FPGA/CLOCK/SRC/SEG_driver.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/code-file/FPGA/CLOCK/SRC/SEG_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/CLOCK/SRC|D:/code-file/FPGA/CLOCK/SRC/SEG_driver.v|
+!i113 1
+R5
+R6
+R7
+n@s@e@g_driver
+vTB_CLOCK
+R1
+!i10b 1
+!s100 aZQ@eMzn>X<92Db6OJS``2
+IEVAK:>zzP<]N6?FMEO70@0
+R2
+R0
+w1670507184
+8D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v
+FD:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/CLOCK/PRJ/../TB|D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/CLOCK/PRJ/../TB
+R7
+n@t@b_@c@l@o@c@k
+vTIME_ctrl
+R1
+!i10b 1
+!s100 kbWDE<XJ6[<^`]h93EjiO2
+IU6GPGO6VRUVikf1[ZRCBF1
+R2
+R0
+w1670507274
+8D:/code-file/FPGA/CLOCK/SRC/TIME_ctrl.v
+FD:/code-file/FPGA/CLOCK/SRC/TIME_ctrl.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/code-file/FPGA/CLOCK/SRC/TIME_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/CLOCK/SRC|D:/code-file/FPGA/CLOCK/SRC/TIME_ctrl.v|
+!i113 1
+R5
+R6
+R7
+n@t@i@m@e_ctrl

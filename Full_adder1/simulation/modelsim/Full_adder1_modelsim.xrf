@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, D:/code-file/FPGA/Full_adder1/bdf/Full_adder1.bdf
+source_file = 1, D:/code-file/FPGA/Full_adder1/bdf/Half_adder1.bdf
+source_file = 1, D:/code-file/FPGA/Full_adder1/db/Full_adder1.cbx.xml
+design_name = Full_adder1
+instance = comp, \sout~output , sout~output, Full_adder1, 1
+instance = comp, \cout~output , cout~output, Full_adder1, 1
+instance = comp, \a~input , a~input, Full_adder1, 1
+instance = comp, \cin~input , cin~input, Full_adder1, 1
+instance = comp, \b~input , b~input, Full_adder1, 1
+instance = comp, \inst1|inst , inst1|inst, Full_adder1, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA_TEST/Delay_flip_flop_Verilog/PRJ/simulation/qsim
+vDelayff
+Z1 !s110 1668351658
+!i10b 1
+!s100 4k=<189h`kz>8L@>cNODO2
+IhLZbPUjg9f5h@BjSnfTJ`3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1668351657
+Z4 8Delayff.vo
+Z5 FDelayff.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1668351658.000000
+Z8 !s107 Delayff.vo|
+Z9 !s90 -work|work|Delayff.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@delayff
+vDelayff_vlg_vec_tst
+R1
+!i10b 1
+!s100 =2F31eA=SRjKLV;^R36Ud3
+IGL5lN30]=9mBji`?5VV;>3
+R2
+R0
+w1668351656
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@delayff_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 EXC_@T3e8;B8NPn0?^mae3
+I?8H`3ES?Q=8=Ah[W6NY:@2
+R2
+R0
+R3
+R4
+R5
+L0 127
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

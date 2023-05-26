@@ -1,0 +1,7 @@
+module(
+	input		[3:0]		a,
+	ipnut		[3:0]		b,
+	ipnut					cin,
+	output	[3:0]		sout,
+	output				cout,
+);

@@ -1,0 +1,112 @@
+# Reading D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/tcl/vsim/pref.tcl
+# do hc_sr04_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/HC_SR04/rtl {D:/code-file/FPGA/HC_SR04/rtl/seg_driver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:40:49 on May 21,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/HC_SR04/rtl" D:/code-file/FPGA/HC_SR04/rtl/seg_driver.v 
+# -- Compiling module seg_driver
+# 
+# Top level modules:
+# 	seg_driver
+# End time: 09:40:49 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/HC_SR04/rtl {D:/code-file/FPGA/HC_SR04/rtl/HC_SR04_TOP.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:40:49 on May 21,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/HC_SR04/rtl" D:/code-file/FPGA/HC_SR04/rtl/HC_SR04_TOP.v 
+# -- Compiling module HC_SR04_TOP
+# 
+# Top level modules:
+# 	HC_SR04_TOP
+# End time: 09:40:49 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/HC_SR04/rtl {D:/code-file/FPGA/HC_SR04/rtl/hc_sr_trig.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:40:49 on May 21,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/HC_SR04/rtl" D:/code-file/FPGA/HC_SR04/rtl/hc_sr_trig.v 
+# -- Compiling module hc_sr_trig
+# 
+# Top level modules:
+# 	hc_sr_trig
+# End time: 09:40:49 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/HC_SR04/rtl {D:/code-file/FPGA/HC_SR04/rtl/hc_sr_echo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:40:49 on May 21,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/HC_SR04/rtl" D:/code-file/FPGA/HC_SR04/rtl/hc_sr_echo.v 
+# -- Compiling module hc_sr_echo
+# 
+# Top level modules:
+# 	hc_sr_echo
+# End time: 09:40:49 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/HC_SR04/rtl {D:/code-file/FPGA/HC_SR04/rtl/hc_sr_driver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:40:49 on May 21,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/HC_SR04/rtl" D:/code-file/FPGA/HC_SR04/rtl/hc_sr_driver.v 
+# -- Compiling module hc_sr_driver
+# 
+# Top level modules:
+# 	hc_sr_driver
+# End time: 09:40:49 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/HC_SR04/rtl {D:/code-file/FPGA/HC_SR04/rtl/clk_div.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:40:49 on May 21,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/HC_SR04/rtl" D:/code-file/FPGA/HC_SR04/rtl/clk_div.v 
+# -- Compiling module clk_div
+# 
+# Top level modules:
+# 	clk_div
+# End time: 09:40:49 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/HC_SR04/prj/../tb {D:/code-file/FPGA/HC_SR04/prj/../tb/tb_hc_sr.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:40:50 on May 21,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/HC_SR04/prj/../tb" D:/code-file/FPGA/HC_SR04/prj/../tb/tb_hc_sr.v 
+# -- Compiling module tb_hc_sr
+# 
+# Top level modules:
+# 	tb_hc_sr
+# End time: 09:40:50 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_hc_sr
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_hc_sr 
+# Start time: 09:40:52 on May 21,2023
+# Loading work.tb_hc_sr
+# Loading work.HC_SR04_TOP
+# Loading work.hc_sr_driver
+# Loading work.clk_div
+# Loading work.hc_sr_trig
+# Loading work.hc_sr_echo
+# Loading work.seg_driver
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: Data structure takes 9650768 bytes of memory
+#          Process time 0.45 seconds
+#          $stop    : D:/code-file/FPGA/HC_SR04/prj/../tb/tb_hc_sr.v(60)
+#    Time: 2744377 ns  Iteration: 0  Instance: /tb_hc_sr
+# Break in Module tb_hc_sr at D:/code-file/FPGA/HC_SR04/prj/../tb/tb_hc_sr.v line 60
+run
+run
+# Break key hit
+run -all
+# End time: 09:49:40 on May 21,2023, Elapsed time: 0:08:48
+# Errors: 0, Warnings: 0

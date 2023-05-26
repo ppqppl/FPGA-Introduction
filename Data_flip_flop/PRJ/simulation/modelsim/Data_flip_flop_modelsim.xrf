@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, D:/code-file/FPGA_TEST/Data_flip_flop/SRC/Data_flip_flop.bdf
+source_file = 1, D:/code-file/FPGA_TEST/Data_flip_flop/PRJ/db/Data_flip_flop.cbx.xml
+design_name = Data_flip_flop
+instance = comp, \Q~output , Q~output, Data_flip_flop, 1
+instance = comp, \QL~output , QL~output, Data_flip_flop, 1
+instance = comp, \D~input , D~input, Data_flip_flop, 1
+instance = comp, \CLK~input , CLK~input, Data_flip_flop, 1
+instance = comp, \inst2~1 , inst2~1, Data_flip_flop, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

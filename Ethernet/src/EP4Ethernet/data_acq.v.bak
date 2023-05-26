@@ -1,0 +1,34 @@
+/***********************************************/
+
+//Project Name : Data_acquisition
+//Email		   :
+//Create Time	: 2021/01/09 13:36
+//Editor       : Liu
+//Version		: Rev1.0.0
+
+/***********************************************/
+
+module data_acq (
+	input clk,
+	input rst_n,
+	output reg cnvst
+
+);
+
+parameter T500NS=10'd24;
+
+reg[5:0] i;                  
+always @(posedge sys_clk or negedge rst_n)begin
+  if(!rst_n)begin 
+		i		<=	6'd0;
+		cnvst <= 1'b0;
+	   end
+  else if(i == T500NS)begin 
+		i 		<= 6'd0;
+		cnvst <= 1'b1;
+		end
+  else begin 
+		i 		<= i + 1'b1;
+		cnvst <= 1'b0;
+		end
+end

@@ -1,0 +1,165 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA/HC_SR04/prj/simulation/modelsim
+vclk_div
+Z1 !s110 1684633249
+!i10b 1
+!s100 bV2<ZcdP8B;G_RJBI=31a0
+IEQC99Bb:]:I_WlhOJGN5?3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1655177481
+8D:/code-file/FPGA/HC_SR04/rtl/clk_div.v
+FD:/code-file/FPGA/HC_SR04/rtl/clk_div.v
+Z3 L0 11
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1684633249.000000
+!s107 D:/code-file/FPGA/HC_SR04/rtl/clk_div.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/HC_SR04/rtl|D:/code-file/FPGA/HC_SR04/rtl/clk_div.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/HC_SR04/rtl
+Z8 tCvgOpt 0
+vHC_SR04_TOP
+R1
+!i10b 1
+!s100 EPT9fARAB[eVP3`fGTgFA0
+IcbaNVdFNLoXYIBZ9dd2SU1
+R2
+R0
+w1655186611
+8D:/code-file/FPGA/HC_SR04/rtl/HC_SR04_TOP.v
+FD:/code-file/FPGA/HC_SR04/rtl/HC_SR04_TOP.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/code-file/FPGA/HC_SR04/rtl/HC_SR04_TOP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/HC_SR04/rtl|D:/code-file/FPGA/HC_SR04/rtl/HC_SR04_TOP.v|
+!i113 1
+R6
+R7
+R8
+n@h@c_@s@r04_@t@o@p
+vhc_sr_driver
+R1
+!i10b 1
+!s100 HXnH5M<]W9Bo^o4G@>Bbz0
+I<KR1kNm`]RlNUh>0iZ7<l1
+R2
+R0
+w1655187947
+8D:/code-file/FPGA/HC_SR04/rtl/hc_sr_driver.v
+FD:/code-file/FPGA/HC_SR04/rtl/hc_sr_driver.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/code-file/FPGA/HC_SR04/rtl/hc_sr_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/HC_SR04/rtl|D:/code-file/FPGA/HC_SR04/rtl/hc_sr_driver.v|
+!i113 1
+R6
+R7
+R8
+vhc_sr_echo
+R1
+!i10b 1
+!s100 C2izzWmkz54@I0J^=4<?e3
+I@4ARK>jzAPnCV:O2OmB5`0
+R2
+R0
+w1655191255
+8D:/code-file/FPGA/HC_SR04/rtl/hc_sr_echo.v
+FD:/code-file/FPGA/HC_SR04/rtl/hc_sr_echo.v
+L0 13
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/code-file/FPGA/HC_SR04/rtl/hc_sr_echo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/HC_SR04/rtl|D:/code-file/FPGA/HC_SR04/rtl/hc_sr_echo.v|
+!i113 1
+R6
+R7
+R8
+vhc_sr_trig
+R1
+!i10b 1
+!s100 D^7hR6YfQU:2R4z_8JDM61
+I;kJ5n62DB4HOD8EVd>FPf3
+R2
+R0
+w1655189888
+8D:/code-file/FPGA/HC_SR04/rtl/hc_sr_trig.v
+FD:/code-file/FPGA/HC_SR04/rtl/hc_sr_trig.v
+L0 12
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/code-file/FPGA/HC_SR04/rtl/hc_sr_trig.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/HC_SR04/rtl|D:/code-file/FPGA/HC_SR04/rtl/hc_sr_trig.v|
+!i113 1
+R6
+R7
+R8
+vseg_driver
+R1
+!i10b 1
+!s100 `8EkU`DX>ih798Be>d?Lz2
+I:ZBSOmc>;44?f_A3K<MlS2
+R2
+R0
+w1655185733
+8D:/code-file/FPGA/HC_SR04/rtl/seg_driver.v
+FD:/code-file/FPGA/HC_SR04/rtl/seg_driver.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/code-file/FPGA/HC_SR04/rtl/seg_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/HC_SR04/rtl|D:/code-file/FPGA/HC_SR04/rtl/seg_driver.v|
+!i113 1
+R6
+R7
+R8
+vtb_hc_sr
+!s110 1684633250
+!i10b 1
+!s100 JY[b^4;bG5CGIn@zeLVAz3
+IQkIK:65mKQG@bRbojXLCT2
+R2
+R0
+w1655189234
+8D:/code-file/FPGA/HC_SR04/prj/../tb/tb_hc_sr.v
+FD:/code-file/FPGA/HC_SR04/prj/../tb/tb_hc_sr.v
+L0 6
+R4
+r1
+!s85 0
+31
+!s108 1684633250.000000
+!s107 D:/code-file/FPGA/HC_SR04/prj/../tb/tb_hc_sr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/HC_SR04/prj/../tb|D:/code-file/FPGA/HC_SR04/prj/../tb/tb_hc_sr.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/HC_SR04/prj/../tb
+R8

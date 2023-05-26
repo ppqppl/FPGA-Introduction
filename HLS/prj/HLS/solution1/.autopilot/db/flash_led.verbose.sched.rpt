@@ -1,0 +1,140 @@
+
+
+================================================================
+== Vivado HLS Report for 'flash_led'
+================================================================
+* Date:           Sat May 13 12:59:48 2023
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        HLS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     1.968|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----------+-----------+-----------+-----------+---------+
+    |        Latency        |        Interval       | Pipeline|
+    |    min    |    max    |    min    |    max    |   Type  |
+    +-----------+-----------+-----------+-----------+---------+
+    |  100000001|  100000001|  100000001|  100000001|   none  |
+    +-----------+-----------+-----------+-----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----------+-----------+----------+-----------+-----------+-----------+----------+
+        |          |        Latency        | Iteration|  Initiation Interval  |    Trip   |          |
+        | Loop Name|    min    |    max    |  Latency |  achieved |   target  |   Count   | Pipelined|
+        +----------+-----------+-----------+----------+-----------+-----------+-----------+----------+
+        |- Loop 1  |  100000000|  100000000|         1|          -|          -|  100000000|    no    |
+        +----------+-----------+-----------+----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	2  / (!exitcond)
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.80>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %led_o_V), !map !40"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %led_i_V), !map !46"   --->   Operation 4 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @flash_led_str) nounwind"   --->   Operation 5 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%led_i_V_read = call i1 @_ssdm_op_Read.ap_vld.i1(i1 %led_i_V)" [HLS/code/HLS_HelloWorld.cpp:3]   --->   Operation 6 'read' 'led_i_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %led_i_V, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [HLS/code/HLS_HelloWorld.cpp:4]   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %led_o_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [HLS/code/HLS_HelloWorld.cpp:5]   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.80ns)   --->   "%r_V = xor i1 %led_i_V_read, true" [HLS/code/HLS_HelloWorld.cpp:10]   --->   Operation 9 'xor' 'r_V' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.46ns)   --->   "br label %1" [HLS/code/HLS_HelloWorld.cpp:7]   --->   Operation 10 'br' <Predicate = true> <Delay = 0.46>
+
+State 2 <SV = 1> <Delay = 1.96>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%t_V = phi i27 [ 0, %0 ], [ %i_V, %._crit_edge ]"   --->   Operation 11 'phi' 't_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (1.96ns)   --->   "%exitcond = icmp eq i27 %t_V, -34217728" [HLS/code/HLS_HelloWorld.cpp:7]   --->   Operation 12 'icmp' 'exitcond' <Predicate = true> <Delay = 1.96> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.96> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 100000000, i64 100000000, i64 100000000)"   --->   Operation 13 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (1.77ns)   --->   "%i_V = add i27 %t_V, 1" [HLS/code/HLS_HelloWorld.cpp:7]   --->   Operation 14 'add' 'i_V' <Predicate = true> <Delay = 1.77> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %4, label %2" [HLS/code/HLS_HelloWorld.cpp:7]   --->   Operation 15 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (1.96ns)   --->   "%tmp = icmp eq i27 %t_V, -34217730" [HLS/code/HLS_HelloWorld.cpp:9]   --->   Operation 16 'icmp' 'tmp' <Predicate = (!exitcond)> <Delay = 1.96> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.96> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "br i1 %tmp, label %3, label %._crit_edge" [HLS/code/HLS_HelloWorld.cpp:9]   --->   Operation 17 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_ovld.i1P(i1* %led_o_V, i1 %r_V)" [HLS/code/HLS_HelloWorld.cpp:10]   --->   Operation 18 'write' <Predicate = (!exitcond & tmp)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "br label %._crit_edge" [HLS/code/HLS_HelloWorld.cpp:11]   --->   Operation 19 'br' <Predicate = (!exitcond & tmp)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "br label %1" [HLS/code/HLS_HelloWorld.cpp:7]   --->   Operation 20 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "ret void" [HLS/code/HLS_HelloWorld.cpp:13]   --->   Operation 21 'ret' <Predicate = (exitcond)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.8ns
+The critical path consists of the following:
+	wire read on port 'led_i_V' (HLS/code/HLS_HelloWorld.cpp:3) [6]  (0 ns)
+	'xor' operation ('r.V', HLS/code/HLS_HelloWorld.cpp:10) [9]  (0.8 ns)
+
+ <State 2>: 1.97ns
+The critical path consists of the following:
+	'phi' operation ('i.V') with incoming values : ('i.V', HLS/code/HLS_HelloWorld.cpp:7) [12]  (0 ns)
+	'icmp' operation ('tmp', HLS/code/HLS_HelloWorld.cpp:9) [18]  (1.97 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

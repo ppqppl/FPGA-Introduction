@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "eth_txc",
+					"strict" : false
+				},
+				{
+					"name" : "eth_tx_ctl",
+					"strict" : false
+				},
+				{
+					"name" : "eth_txd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_txd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_txd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_txd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "sys_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "eth_rx_ctl",
+					"strict" : false
+				},
+				{
+					"name" : "eth_rxd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_rxd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_rxd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_rxd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

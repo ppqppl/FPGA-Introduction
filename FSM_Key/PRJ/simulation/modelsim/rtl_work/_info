@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/code-file/FPGA/FSM_Key/PRJ/simulation/modelsim
+vFSM_Key
+Z1 !s110 1668761590
+!i10b 1
+!s100 hG2_H_4F8EfGj3[8ki3Hb0
+I5d5^573jC16ARB:`]1kdN0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1668761567
+8D:/code-file/FPGA/FSM_Key/SRC/FSM_Key.v
+FD:/code-file/FPGA/FSM_Key/SRC/FSM_Key.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1668761590.000000
+!s107 D:/code-file/FPGA/FSM_Key/SRC/FSM_Key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/FSM_Key/SRC|D:/code-file/FPGA/FSM_Key/SRC/FSM_Key.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/FSM_Key/SRC
+Z6 tCvgOpt 0
+n@f@s@m_@key
+vTB_Key
+R1
+!i10b 1
+!s100 JTBQNWE7lbz0hnUfV1WZK1
+ID>=]>bl;f:7mOLfESc@3Z3
+R2
+R0
+w1668760328
+8D:/code-file/FPGA/FSM_Key/PRJ/../TB/TB_Key.v
+FD:/code-file/FPGA/FSM_Key/PRJ/../TB/TB_Key.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/code-file/FPGA/FSM_Key/PRJ/../TB/TB_Key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/code-file/FPGA/FSM_Key/PRJ/../TB|D:/code-file/FPGA/FSM_Key/PRJ/../TB/TB_Key.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/code-file/FPGA/FSM_Key/PRJ/../TB
+R6
+n@t@b_@key

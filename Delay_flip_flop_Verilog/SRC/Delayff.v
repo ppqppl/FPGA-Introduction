@@ -1,0 +1,12 @@
+module Delayff(D,CLK,Q);
+    input D;
+    input CLK;
+    output Q;
+
+    reg Q;
+
+    always @ (posedge CLK)//我们用正的时钟沿做它的敏感信号
+    begin
+        Q <= D;//上升沿有效的时候，把d捕获到q
+    end
+endmodule

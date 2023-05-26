@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at FSM_Key_3.v(81): always construct contains both blocking and non-blocking assignments File: D:/code-file/FPGA/FSM_Key_3/SRC/FSM_Key_3.v Line: 81

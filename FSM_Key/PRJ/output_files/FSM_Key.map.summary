@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Nov 18 16:53:02 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : FSM_Key
+Top-level Entity Name : FSM_Key
+Family : Cyclone IV E
+Total logic elements : 35
+    Total combinational functions : 34
+    Dedicated logic registers : 22
+Total registers : 22
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

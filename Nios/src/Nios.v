@@ -1,0 +1,5 @@
+module Nios (
+    input  
+);
+    
+endmodule

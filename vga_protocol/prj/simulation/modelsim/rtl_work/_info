@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/CODE/Quartus-18/vga_protocol/prj/simulation/modelsim
+vcounter25M
+Z1 !s110 1654571843
+!i10b 1
+!s100 ;2kH9@02dOoPIccBG7J`a3
+IbU?hgWfH@aH14Le4_NakT3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1654086832
+8D:/CODE/Quartus-18/vga_protocol/src/counter25M.v
+FD:/CODE/Quartus-18/vga_protocol/src/counter25M.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1654571843.000000
+!s107 D:/CODE/Quartus-18/vga_protocol/src/counter25M.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CODE/Quartus-18/vga_protocol/src|D:/CODE/Quartus-18/vga_protocol/src/counter25M.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/CODE/Quartus-18/vga_protocol/src
+Z7 tCvgOpt 0
+ncounter25@m
+vdata_generate
+R1
+!i10b 1
+!s100 IiODNXL^EZoS5^II:8k>W0
+I<KVI9aCC=UT0E`dL7k^7H2
+R2
+R0
+w1654571757
+8D:/CODE/Quartus-18/vga_protocol/src/data_generate.v
+FD:/CODE/Quartus-18/vga_protocol/src/data_generate.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/CODE/Quartus-18/vga_protocol/src/data_generate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CODE/Quartus-18/vga_protocol/src|D:/CODE/Quartus-18/vga_protocol/src/data_generate.v|
+!i113 1
+R5
+R6
+R7
+vrom
+R1
+!i10b 1
+!s100 6V?NDEU@Gk3>@HGO<BmXc3
+IQh=1mE3mYSUEKjCX1<M7M1
+R2
+R0
+w1654570456
+8D:/CODE/Quartus-18/vga_protocol/ip/rom.v
+FD:/CODE/Quartus-18/vga_protocol/ip/rom.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/CODE/Quartus-18/vga_protocol/ip/rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CODE/Quartus-18/vga_protocol/ip|D:/CODE/Quartus-18/vga_protocol/ip/rom.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/CODE/Quartus-18/vga_protocol/ip
+R7
+vvga_contro
+R1
+!i10b 1
+!s100 `3EA18dIAM`O@IUa?2D>X0
+INI4M6Tf`fL_6O<f4kUb3a1
+R2
+R0
+w1654568799
+8D:/CODE/Quartus-18/vga_protocol/src/vga_contro.v
+FD:/CODE/Quartus-18/vga_protocol/src/vga_contro.v
+L0 24
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/CODE/Quartus-18/vga_protocol/src/vga_param.v|D:/CODE/Quartus-18/vga_protocol/src/vga_contro.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CODE/Quartus-18/vga_protocol/src|D:/CODE/Quartus-18/vga_protocol/src/vga_contro.v|
+!i113 1
+R5
+R6
+R7
+vvga_protocol_top
+R1
+!i10b 1
+!s100 =fR20<och2A;3VVz7I?Kl2
+IK7GS:gd?g4Ej[56B<5URo2
+R2
+R0
+w1654086259
+8D:/CODE/Quartus-18/vga_protocol/src/vga_protocol_top.v
+FD:/CODE/Quartus-18/vga_protocol/src/vga_protocol_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/CODE/Quartus-18/vga_protocol/src/vga_protocol_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CODE/Quartus-18/vga_protocol/src|D:/CODE/Quartus-18/vga_protocol/src/vga_protocol_top.v|
+!i113 1
+R5
+R6
+R7
+vvga_tb
+R1
+!i10b 1
+!s100 7a_c>_EIh;zg?4KX48VMU1
+ISLGZ@j7P0c[Qfhf^SKz_01
+R2
+R0
+w1654082413
+8D:/CODE/Quartus-18/vga_protocol/prj/../src/vga_tb.v
+FD:/CODE/Quartus-18/vga_protocol/prj/../src/vga_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/CODE/Quartus-18/vga_protocol/prj/../src/vga_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CODE/Quartus-18/vga_protocol/prj/../src|D:/CODE/Quartus-18/vga_protocol/prj/../src/vga_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/CODE/Quartus-18/vga_protocol/prj/../src
+R7

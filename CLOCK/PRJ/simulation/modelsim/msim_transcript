@@ -1,0 +1,96 @@
+# Reading D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/tcl/vsim/pref.tcl
+# do CLOCK_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/CLOCK/SRC {D:/code-file/FPGA/CLOCK/SRC/TIME_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:42 on Dec 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/CLOCK/SRC" D:/code-file/FPGA/CLOCK/SRC/TIME_ctrl.v 
+# -- Compiling module TIME_ctrl
+# 
+# Top level modules:
+# 	TIME_ctrl
+# End time: 21:49:42 on Dec 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/CLOCK/SRC {D:/code-file/FPGA/CLOCK/SRC/SEG_driver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:42 on Dec 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/CLOCK/SRC" D:/code-file/FPGA/CLOCK/SRC/SEG_driver.v 
+# -- Compiling module SEG_driver
+# 
+# Top level modules:
+# 	SEG_driver
+# End time: 21:49:42 on Dec 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/CLOCK/SRC {D:/code-file/FPGA/CLOCK/SRC/CLOCK.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:42 on Dec 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/CLOCK/SRC" D:/code-file/FPGA/CLOCK/SRC/CLOCK.v 
+# -- Compiling module CLOCK
+# 
+# Top level modules:
+# 	CLOCK
+# End time: 21:49:42 on Dec 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/CLOCK/PRJ/../TB {D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:42 on Dec 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/CLOCK/PRJ/../TB" D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v 
+# -- Compiling module TB_CLOCK
+# 
+# Top level modules:
+# 	TB_CLOCK
+# End time: 21:49:42 on Dec 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_CLOCK
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_CLOCK 
+# Start time: 21:49:42 on Dec 08,2022
+# Loading work.TB_CLOCK
+# Loading work.CLOCK
+# Loading work.TIME_ctrl
+# Loading work.SEG_driver
+# ** Warning: (vsim-3015) D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v(9): [PCDPC] - Port size (6) does not match connection size (1) for port 'sel'. The port definition is at: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_CLOCK/inst_CLOCK File: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v
+# ** Warning: (vsim-3015) D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v(9): [PCDPC] - Port size (8) does not match connection size (1) for port 'dig'. The port definition is at: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_CLOCK/inst_CLOCK File: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint sim:/TB_CLOCK/inst_CLOCK/inst_TIME_ctrl/*
+add wave -position insertpoint sim:/TB_CLOCK/inst_CLOCK/inst_SEG_driver/*
+# Break key hit
+# Simulation stop requested.
+run -all
+run -all
+# ** Note: $stop    : D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v(27)
+#    Time: 200000100 ns  Iteration: 0  Instance: /TB_CLOCK
+# Break in Module TB_CLOCK at D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v line 27
+run -all
+run -all
+restart
+# ** Warning: (vsim-3015) D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v(9): [PCDPC] - Port size (6) does not match connection size (1) for port 'sel'. The port definition is at: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_CLOCK/inst_CLOCK File: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v
+# ** Warning: (vsim-3015) D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v(9): [PCDPC] - Port size (8) does not match connection size (1) for port 'dig'. The port definition is at: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_CLOCK/inst_CLOCK File: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v
+restart
+# ** Warning: (vsim-3015) D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v(9): [PCDPC] - Port size (6) does not match connection size (1) for port 'sel'. The port definition is at: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_CLOCK/inst_CLOCK File: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v
+# ** Warning: (vsim-3015) D:/code-file/FPGA/CLOCK/PRJ/../TB/TB_CLOCK.v(9): [PCDPC] - Port size (8) does not match connection size (1) for port 'dig'. The port definition is at: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_CLOCK/inst_CLOCK File: D:/code-file/FPGA/CLOCK/SRC/CLOCK.v
+run -all
+# End time: 21:52:12 on Dec 08,2022, Elapsed time: 0:02:30
+# Errors: 0, Warnings: 6

@@ -1,0 +1,9 @@
+|Data_flip_flop
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst5.IN0
+D => inst.IN1
+CLK => inst3.IN1
+CLK => inst.IN0
+QL <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

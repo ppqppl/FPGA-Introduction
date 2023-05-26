@@ -1,0 +1,52 @@
+# Reading D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/tcl/vsim/pref.tcl
+# do Halfadder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/environment/IDE/Quartus_18.1.0.625/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/Halfadder/src {D:/code-file/FPGA/Halfadder/src/Halfadder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:52:41 on Mar 25,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/Halfadder/src" D:/code-file/FPGA/Halfadder/src/Halfadder.v 
+# -- Compiling module Halfadder
+# 
+# Top level modules:
+# 	Halfadder
+# End time: 14:52:41 on Mar 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/code-file/FPGA/Halfadder/prj/../tb {D:/code-file/FPGA/Halfadder/prj/../tb/TB_Halfadder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:52:41 on Mar 25,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/code-file/FPGA/Halfadder/prj/../tb" D:/code-file/FPGA/Halfadder/prj/../tb/TB_Halfadder.v 
+# -- Compiling module TB_Halfadder
+# 
+# Top level modules:
+# 	TB_Halfadder
+# End time: 14:52:41 on Mar 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_Halfadder
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_Halfadder 
+# Start time: 14:52:41 on Mar 25,2023
+# Loading work.TB_Halfadder
+# Loading work.Halfadder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/code-file/FPGA/Halfadder/prj/../tb/TB_Halfadder.v(24)
+#    Time: 80 ns  Iteration: 0  Instance: /TB_Halfadder
+# Break in Module TB_Halfadder at D:/code-file/FPGA/Halfadder/prj/../tb/TB_Halfadder.v line 24
+run
+# End time: 14:53:55 on Mar 25,2023, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 0

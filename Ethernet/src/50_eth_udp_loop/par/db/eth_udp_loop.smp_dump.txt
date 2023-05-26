@@ -1,0 +1,36 @@
+
+State Machine - |eth_udp_loop|udp:u_udp|udp_tx:u_udp_tx|cur_state
+Name cur_state.st_crc cur_state.st_tx_data cur_state.st_ip_head cur_state.st_eth_head cur_state.st_preamble cur_state.st_check_sum cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 
+cur_state.st_check_sum 0 0 0 0 0 1 1 
+cur_state.st_preamble 0 0 0 0 1 0 1 
+cur_state.st_eth_head 0 0 0 1 0 0 1 
+cur_state.st_ip_head 0 0 1 0 0 0 1 
+cur_state.st_tx_data 0 1 0 0 0 0 1 
+cur_state.st_crc 1 0 0 0 0 0 1 
+
+State Machine - |eth_udp_loop|udp:u_udp|udp_rx:u_udp_rx|cur_state
+Name cur_state.st_rx_end cur_state.st_rx_data cur_state.st_udp_head cur_state.st_ip_head cur_state.st_eth_head cur_state.st_preamble cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 
+cur_state.st_preamble 0 0 0 0 0 1 1 
+cur_state.st_eth_head 0 0 0 0 1 0 1 
+cur_state.st_ip_head 0 0 0 1 0 0 1 
+cur_state.st_udp_head 0 0 1 0 0 0 1 
+cur_state.st_rx_data 0 1 0 0 0 0 1 
+cur_state.st_rx_end 1 0 0 0 0 0 1 
+
+State Machine - |eth_udp_loop|arp:u_arp|arp_tx:u_arp_tx|cur_state
+Name cur_state.st_crc cur_state.st_arp_data cur_state.st_eth_head cur_state.st_preamble cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 
+cur_state.st_preamble 0 0 0 1 1 
+cur_state.st_eth_head 0 0 1 0 1 
+cur_state.st_arp_data 0 1 0 0 1 
+cur_state.st_crc 1 0 0 0 1 
+
+State Machine - |eth_udp_loop|arp:u_arp|arp_rx:u_arp_rx|cur_state
+Name cur_state.st_rx_end cur_state.st_arp_data cur_state.st_eth_head cur_state.st_preamble cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 
+cur_state.st_preamble 0 0 0 1 1 
+cur_state.st_eth_head 0 0 1 0 1 
+cur_state.st_arp_data 0 1 0 0 1 
+cur_state.st_rx_end 1 0 0 0 1 
