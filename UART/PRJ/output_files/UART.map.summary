@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sun May 21 14:23:54 2023
+Analysis & Synthesis Status : Successful - Sun Jun 25 21:03:09 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : UART
 Top-level Entity Name : UART
 Family : Cyclone IV E
-Total logic elements : 193
-    Total combinational functions : 190
-    Dedicated logic registers : 128
-Total registers : 128
-Total pins : 26
+Total logic elements : 97
+    Total combinational functions : 97
+    Dedicated logic registers : 47
+Total registers : 47
+Total pins : 4
 Total virtual pins : 0
-Total memory bits : 2,048
+Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

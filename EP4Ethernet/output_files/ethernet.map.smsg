@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at udp_receive.v(20): object "DES_MAC" differs only in case from object "des_mac" in the same scope File: D:/code-file/FPGA/EP4Ethernet/udp_receive.v Line: 20
+Info (10281): Verilog HDL Declaration information at udp_receive.v(23): object "DES_IP" differs only in case from object "des_ip" in the same scope File: D:/code-file/FPGA/EP4Ethernet/udp_receive.v Line: 23

@@ -1,0 +1,128 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+# Date created = 15:13:29  January 13, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ethernet_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY ethernet
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:13:29  JANUARY 13, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 780
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_C25 -to eth_tx_data[0]
+set_location_assignment PIN_A26 -to eth_tx_data[1]
+set_location_assignment PIN_B26 -to eth_tx_data[2]
+set_location_assignment PIN_C26 -to eth_tx_data[3]
+set_location_assignment PIN_B25 -to eth_tx_en
+set_location_assignment PIN_Y2 -to sys_clk
+set_location_assignment PIN_M21 -to rst_n
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp2.stp
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb -section_id Tb
+set_location_assignment PIN_C23 -to eth_tx_clk_125m
+set_global_assignment -name EDA_TEST_BENCH_NAME TB -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/ethernet.vt -section_id TB
+set_location_assignment PIN_B15 -to eth_rx_clk
+set_location_assignment PIN_D21 -to eth_rx_data[3]
+set_location_assignment PIN_A23 -to eth_rx_data[2]
+set_location_assignment PIN_C21 -to eth_rx_data[1]
+set_location_assignment PIN_B23 -to eth_rx_data[0]
+set_location_assignment PIN_A22 -to eth_rxdv
+set_location_assignment PIN_C19 -to eth0_rst_n
+set_location_assignment PIN_D22 -to eth1_rst_n
+set_location_assignment PIN_B22 -to eth_rx_col
+set_location_assignment PIN_D20 -to eth_rx_crs
+set_location_assignment PIN_Y23 -to SW17
+set_location_assignment PIN_Y24 -to SW16
+set_location_assignment PIN_AG23 -to cnvst
+set_location_assignment PIN_AH25 -to ad[15]
+set_location_assignment PIN_AE25 -to ad[14]
+set_location_assignment PIN_AG25 -to ad[13]
+set_location_assignment PIN_AD25 -to ad[12]
+set_location_assignment PIN_AF22 -to ad[11]
+set_location_assignment PIN_AD22 -to ad[10]
+set_location_assignment PIN_AE22 -to ad[9]
+set_location_assignment PIN_AF21 -to ad[8]
+set_location_assignment PIN_AF25 -to ad[7]
+set_location_assignment PIN_AC22 -to ad[6]
+set_location_assignment PIN_AF24 -to ad[5]
+set_location_assignment PIN_AE21 -to ad[4]
+set_location_assignment PIN_AD19 -to ad[3]
+set_location_assignment PIN_AF15 -to ad[2]
+set_location_assignment PIN_AC19 -to ad[1]
+set_location_assignment PIN_AF16 -to ad[0]
+set_location_assignment PIN_AA22 -to SW15
+set_global_assignment -name VERILOG_FILE crc32_d4.v
+set_global_assignment -name VERILOG_FILE udp_send.v
+set_global_assignment -name VERILOG_FILE ethernet.v
+set_global_assignment -name QIP_FILE clk125m.qip
+set_global_assignment -name SIGNALTAP_FILE output_files/stp2.stp
+set_global_assignment -name VERILOG_FILE udp_receive.v
+set_global_assignment -name QIP_FILE clk250.qip
+set_global_assignment -name QIP_FILE altddioin.qip
+set_global_assignment -name QIP_FILE rxclk250.qip
+set_global_assignment -name VERILOG_FILE ptp_DataParse.v
+set_global_assignment -name VERILOG_FILE crc.v
+set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name QIP_FILE ram.qip
+set_global_assignment -name QIP_FILE ram2.qip
+set_global_assignment -name VERILOG_FILE eth_arp_send.v
+set_global_assignment -name QIP_FILE fir.qip
+set_global_assignment -name SIP_FILE fir.sip
+set_global_assignment -name VERILOG_FILE data_acq.v
+set_global_assignment -name QIP_FILE fifo.qip
+set_global_assignment -name VERILOG_FILE fifo_pp.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

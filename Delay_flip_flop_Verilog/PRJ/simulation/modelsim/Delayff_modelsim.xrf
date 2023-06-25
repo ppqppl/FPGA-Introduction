@@ -1,6 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, D:/code-file/FPGA_TEST/Delay_flip_flop_Verilog/SRC/Delayff.v
-source_file = 1, D:/code-file/FPGA_TEST/Delay_flip_flop_Verilog/PRJ/db/Delayff.cbx.xml
+source_file = 1, D:/code-file/FPGA/Delay_flip_flop_Verilog/SRC/Delayff.v
+source_file = 1, D:/code-file/FPGA/Delay_flip_flop_Verilog/PRJ/Waveform.vwf
+source_file = 1, D:/code-file/FPGA/Delay_flip_flop_Verilog/PRJ/db/Delayff.cbx.xml
 design_name = Delayff
 instance = comp, \Q~output , Q~output, Delayff, 1
 instance = comp, \CLK~input , CLK~input, Delayff, 1

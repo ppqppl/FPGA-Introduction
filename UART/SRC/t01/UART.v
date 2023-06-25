@@ -1,0 +1,44 @@
+`timescale 1ns / 1ns
+module UART(
+    input               sys_clk     ,
+    input               sys_rst_n   ,
+    input               rx          ,
+    output              tx
+);
+ 
+wire    [7:0]   po_data;
+wire            po_flag;
+ 
+ 
+uart_rx
+#(
+    .BAUD_MAX    ('d115_200     ),
+    .CLK_MAX     ('d50_000_000  )
+)
+uart_rx_inst
+(
+    .sys_clk     (sys_clk  ),
+    .sys_rst_n   (sys_rst_n),
+    .rx          (rx       ),
+                           
+    .po_data     (po_data  ),
+    .po_flag     (po_flag  )
+    );
+      
+ 
+uart_tx
+#(
+    .BAUD_MAX('d115_200     )       ,
+    .CLK_MAX ('d50_000_000  )
+)uart_tx_inst
+(
+    .sys_clk     (sys_clk  ),
+    .sys_rst_n   (sys_rst_n),
+                           
+    .pi_data     (po_data  ),
+    .pi_flag     (po_flag  ),
+                           
+    .tx          (tx       )
+);
+ 
+endmodule

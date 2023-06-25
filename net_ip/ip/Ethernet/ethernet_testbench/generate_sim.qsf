@@ -1,0 +1,4 @@
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name TOP_LEVEL_ENTITY generate_sim
+set_global_assignment -name TCL_SCRIPT_FILE generate_sim_verilog.tcl
+set_global_assignment -name TCL_SCRIPT_FILE generate_sim_vhdl.tcl

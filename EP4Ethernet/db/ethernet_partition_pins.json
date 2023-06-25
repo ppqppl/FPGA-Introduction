@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "eth_tx_en",
+					"strict" : false
+				},
+				{
+					"name" : "eth_tx_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_tx_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_tx_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_tx_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cnvst",
+					"strict" : false
+				},
+				{
+					"name" : "eth0_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "eth1_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "SW15",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "SW16",
+					"strict" : false
+				},
+				{
+					"name" : "sys_clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

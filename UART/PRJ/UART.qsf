@@ -18,7 +18,7 @@
 #
 # Quartus Prime
 # Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-# Date created = 16:24:29  December 09, 2022
+# Date created = 12:25:42  May 28, 2023
 #
 # -------------------------------------------------------------------------- #
 #
@@ -37,10 +37,10 @@
 
 
 set_global_assignment -name FAMILY "Cyclone IV E"
-set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name DEVICE EP4CE6E22C8
 set_global_assignment -name TOP_LEVEL_ENTITY UART
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:24:29  DECEMBER 09, 2022"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:25:42  MAY 28, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -51,19 +51,23 @@ set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TB_UART -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME TB_UART -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TB_UART
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TB_UART -section_id TB_UART
-set_global_assignment -name EDA_TEST_BENCH_FILE ../TB/TB_UART.v -section_id TB_UART
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE ../SRC/FPGA_UART.v
-set_global_assignment -name QSYS_FILE UART.qsys
-set_location_assignment PIN_G12 -to rs232_0_UART_RXD
-set_location_assignment PIN_G9 -to rs232_0_UART_TXD
-set_location_assignment PIN_Y2 -to clk_clk
-set_location_assignment PIN_M23 -to reset_reset_n
+set_location_assignment PIN_23 -to clk
+set_location_assignment PIN_24 -to rstn
+set_location_assignment PIN_10 -to UART_rx
+set_location_assignment PIN_11 -to UART_tx
+set_global_assignment -name VERILOG_FILE ../SRC/t3/UART_send.v
+set_global_assignment -name VERILOG_FILE ../SRC/t3/UART.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

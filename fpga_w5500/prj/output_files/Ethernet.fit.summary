@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Jun 25 20:43:36 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : Ethernet
+Top-level Entity Name : HC_SR04_TOP
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 3,186 / 6,272 ( 51 % )
+    Total combinational functions : 2,943 / 6,272 ( 47 % )
+    Dedicated logic registers : 856 / 6,272 ( 14 % )
+Total registers : 856
+Total pins : 32 / 92 ( 35 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

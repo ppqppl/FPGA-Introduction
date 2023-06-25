@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Delayff
-Sun Nov 13 22:55:35 2022
+Mon Nov 14 16:01:50 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 13 22:55:35 2022           ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 14 16:01:50 2022           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; Delayff                                         ;
 ; Top-level Entity Name              ; Delayff                                         ;
@@ -161,13 +161,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; ../SRC/Delayff.v                 ; yes             ; User Verilog HDL File  ; D:/code-file/FPGA_TEST/Delay_flip_flop_Verilog/SRC/Delayff.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                            ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+; ../SRC/Delayff.v                 ; yes             ; User Verilog HDL File  ; D:/code-file/FPGA/Delay_flip_flop_Verilog/SRC/Delayff.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -256,12 +256,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Sun Nov 13 22:55:25 2022
+    Info: Processing started: Mon Nov 14 16:01:39 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Delayff -c Delayff
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /code-file/fpga_test/delay_flip_flop_verilog/src/delayff.v
-    Info (12023): Found entity 1: Delayff File: D:/code-file/FPGA_TEST/Delay_flip_flop_Verilog/SRC/Delayff.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /code-file/fpga/delay_flip_flop_verilog/src/delayff.v
+    Info (12023): Found entity 1: Delayff File: D:/code-file/FPGA/Delay_flip_flop_Verilog/SRC/Delayff.v Line: 1
 Info (12127): Elaborating entity "Delayff" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -271,9 +271,9 @@ Info (21057): Implemented 4 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4772 megabytes
-    Info: Processing ended: Sun Nov 13 22:55:35 2022
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 4775 megabytes
+    Info: Processing ended: Mon Nov 14 16:01:50 2022
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:07
 
 

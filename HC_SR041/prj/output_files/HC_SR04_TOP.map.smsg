@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at UART_driver.v(52): always construct contains both blocking and non-blocking assignments File: D:/code-file/FPGA/HC_SR041/src/UART_driver.v Line: 52
+Info (10281): Verilog HDL Declaration information at UART_send.v(3): object "CLK" differs only in case from object "clk" in the same scope File: D:/code-file/FPGA/HC_SR041/src/UART_send.v Line: 3
+Info (10281): Verilog HDL Declaration information at HC_SR04_TOP.v(2): object "clk" differs only in case from object "CLK" in the same scope File: D:/code-file/FPGA/HC_SR041/src/HC_SR04_TOP.v Line: 2

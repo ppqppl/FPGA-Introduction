@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue May 30 12:52:07 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : HC_SR04_TOP
+Top-level Entity Name : HC_SR04_TOP
+Family : Cyclone IV E
+Total logic elements : 1,859
+    Total combinational functions : 1,849
+    Dedicated logic registers : 159
+Total registers : 159
+Total pins : 27
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
