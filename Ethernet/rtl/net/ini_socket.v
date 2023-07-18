@@ -33,6 +33,7 @@ parameter 	SN_DIP	=32'hC0_A8_00_05,		//wangguan
 				SN_DPORT	=16'd6000,			//ziwang
 				SN_DSHAR	=48'h010203040506,//MAC
 				SN_PORT	=16'd6000;			//IP
+
 				
 parameter	IDLE					=6'd00,
 				WRMR_CMD				=6'd01,

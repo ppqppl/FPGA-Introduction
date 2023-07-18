@@ -61,6 +61,7 @@ parameter 	SN_DIP		=32'hC0_A8_00_05,		//wangguan
 				SN_DSHAR		=48'h010203040506,//MAC
 				SN_PORT		=16'd6000;			//IP				
 
+
 reg	[04:00]		state	;
 reg 	[04:00]		cnt;
 reg	[15:00]		cnt_byte;

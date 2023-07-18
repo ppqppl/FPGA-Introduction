@@ -3,6 +3,7 @@ module UART_driver (
     input   wire            rstn        ,
     input   wire    [18:0]  data_in     , 
     input   wire            UART_rx     ,
+	input   wire 	[3 :0]	key_flag	,
 
     output  wire            UART_tx         
 );
@@ -12,6 +13,7 @@ module UART_driver (
 
     reg     [7:0]   data    ;
     wire            flag    ;
+    reg             flag_s  ;
     wire            tx_done ;   
 	wire 			flag_0	;	// 未启动超声波
 
@@ -39,6 +41,21 @@ module UART_driver (
 		byte9  = "9",
 		byte10 = "\n";
 
+	// 按键判断
+	always @(posedge clk or negedge rstn) begin
+		if(!rstn) begin
+			flag_s <= 0;
+		end
+		else if(key_flag[0] == 1) begin
+			flag_s <= 1;
+		end
+		else if(key_flag[1] == 1) begin
+			flag_s <= 0;
+		end
+		else begin
+			flag_s <= flag_s;
+		end
+	end
 
     always@(posedge clk or negedge rstn) begin
         if(!rstn)
@@ -61,7 +78,7 @@ module UART_driver (
         end
     end
 
-   assign flag 	= cnt_clk == CLK_50MHz/11 - 1;	// 一秒钟发送所有数据
+   	assign flag 	= (cnt_clk == CLK_50MHz/11 - 1) && (flag_s == 1);	// 一秒钟发送所有数据
 	assign flag_0	= cm_hund == 0 && cm_ten == 0 && cm_unit == 0 && point_1 == 0 && point_2 == 0 && point_3 == 0;
 
 	always @(posedge clk or negedge rstn)begin  

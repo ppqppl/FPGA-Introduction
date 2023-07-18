@@ -112,6 +112,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "beep",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
@@ -121,6 +125,14 @@
 				},
 				{
 					"name" : "spi_miso",
+					"strict" : false
+				},
+				{
+					"name" : "key[3]",
+					"strict" : false
+				},
+				{
+					"name" : "key[2]",
 					"strict" : false
 				},
 				{

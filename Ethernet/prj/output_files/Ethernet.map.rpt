@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ethernet
-Sat Jun 17 17:32:05 2023
+Wed Jun 28 12:22:12 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -14,56 +14,63 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. Analysis & Synthesis IP Cores Summary
- 10. State Machine - |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|state
- 11. State Machine - |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|task_sche:untask_sche|state
- 12. Registers Protected by Synthesis
- 13. Registers Removed During Synthesis
- 14. Removed Registers Triggering Further Register Optimizations
- 15. General Register Statistics
- 16. Inverted Register Statistics
- 17. Multiplexer Restructuring Statistics (Restructuring Performed)
- 18. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst|altsyncram:altsyncram_component|altsyncram_qcq1:auto_generated
- 19. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500
- 20. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|ini_socket:unini_socket
- 21. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd
- 22. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd
- 23. Parameter Settings for User Entity Instance: sr04_top:u_sr04_top|clk_div:u_clk_div
- 24. Parameter Settings for User Entity Instance: sr04_top:u_sr04_top|trig_driver:u_trig_driver
- 25. Parameter Settings for User Entity Instance: sr04_top:u_sr04_top|echo_driver:u_echo_driver
- 26. Parameter Settings for User Entity Instance: UART_driver:u_UART_driver|UART_send:UART_send_init
- 27. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces
- 28. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst|altsyncram:altsyncram_component
- 29. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|task_sche:untask_sche
- 30. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv
- 31. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500
- 32. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|ini_socket:unini_socket
- 33. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd
- 34. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd
- 35. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Div0
- 36. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod1
- 37. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod0
- 38. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Div2
- 39. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod3
- 40. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Div1
- 41. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod2
- 42. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Div3
- 43. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod4
- 44. Parameter Settings for Inferred Entity Instance: led_driver:u_led_driver|lpm_divide:Div0
- 45. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod5
- 46. altsyncram Parameter Settings by Entity Instance
- 47. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd"
- 48. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd"
- 49. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|ini_socket:unini_socket"
- 50. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500"
- 51. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst"
- 52. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces"
- 53. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top"
- 54. Port Connectivity Checks: "UART_driver:u_UART_driver|UART_send:UART_send_init"
- 55. Post-Synthesis Netlist Statistics for Top Partition
- 56. Elapsed Time Per Partition
- 57. Analysis & Synthesis Messages
- 58. Analysis & Synthesis Suppressed Messages
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. Analysis & Synthesis IP Cores Summary
+ 11. State Machine - |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|state
+ 12. State Machine - |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|task_sche:untask_sche|state
+ 13. Registers Protected by Synthesis
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Inverted Register Statistics
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst|altsyncram:altsyncram_component|altsyncram_qcq1:auto_generated
+ 20. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500
+ 21. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|ini_socket:unini_socket
+ 22. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd
+ 23. Source assignments for net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd
+ 24. Parameter Settings for User Entity Instance: sr04_top:u_sr04_top|clk_div:u_clk_div
+ 25. Parameter Settings for User Entity Instance: sr04_top:u_sr04_top|trig_driver:u_trig_driver
+ 26. Parameter Settings for User Entity Instance: sr04_top:u_sr04_top|echo_driver:u_echo_driver
+ 27. Parameter Settings for User Entity Instance: UART_driver:u_UART_driver|UART_send:UART_send_init
+ 28. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces
+ 29. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst|altsyncram:altsyncram_component
+ 30. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|task_sche:untask_sche
+ 31. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv
+ 32. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500
+ 33. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|ini_socket:unini_socket
+ 34. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd
+ 35. Parameter Settings for User Entity Instance: net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd
+ 36. Parameter Settings for User Entity Instance: key_debounce:u_key_debounce
+ 37. Parameter Settings for User Entity Instance: key_debounce:u_key_debounce1
+ 38. Parameter Settings for User Entity Instance: key_debounce:u_key_debounce2
+ 39. Parameter Settings for User Entity Instance: key_debounce:u_key_debounce3
+ 40. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Div0
+ 41. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod1
+ 42. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod0
+ 43. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Div2
+ 44. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod3
+ 45. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Div1
+ 46. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod2
+ 47. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Div3
+ 48. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod4
+ 49. Parameter Settings for Inferred Entity Instance: led_driver:u_led_driver|lpm_divide:Div0
+ 50. Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Mod5
+ 51. Parameter Settings for Inferred Entity Instance: beep_driver:u_beep_driver|lpm_mult:Mult0
+ 52. altsyncram Parameter Settings by Entity Instance
+ 53. lpm_mult Parameter Settings by Entity Instance
+ 54. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd"
+ 55. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd"
+ 56. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|ini_socket:unini_socket"
+ 57. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500"
+ 58. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst"
+ 59. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces"
+ 60. Port Connectivity Checks: "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top"
+ 61. Port Connectivity Checks: "UART_driver:u_UART_driver|UART_send:UART_send_init"
+ 62. Post-Synthesis Netlist Statistics for Top Partition
+ 63. Elapsed Time Per Partition
+ 64. Analysis & Synthesis Messages
+ 65. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -89,19 +96,19 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 17 17:32:05 2023           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 28 12:22:12 2023           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; Ethernet                                        ;
 ; Top-level Entity Name              ; HC_SR04_TOP                                     ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 3,334                                           ;
-;     Total combinational functions  ; 3,008                                           ;
-;     Dedicated logic registers      ; 900                                             ;
-; Total registers                    ; 900                                             ;
-; Total pins                         ; 32                                              ;
+; Total logic elements               ; 3,513                                           ;
+;     Total combinational functions  ; 3,187                                           ;
+;     Dedicated logic registers      ; 1,021                                           ;
+; Total registers                    ; 1021                                            ;
+; Total pins                         ; 37                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 2,048                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 2                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
@@ -220,6 +227,8 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ; Library ;
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; ../rtl/tool/beep_driver.v        ; yes             ; User Verilog HDL File        ; D:/code-file/FPGA/Ethernet/rtl/tool/beep_driver.v                                           ;         ;
+; ../rtl/tool/key_debounce.v       ; yes             ; User Verilog HDL File        ; D:/code-file/FPGA/Ethernet/rtl/tool/key_debounce.v                                          ;         ;
 ; ../rtl/net/w5500_top.v           ; yes             ; User Verilog HDL File        ; D:/code-file/FPGA/Ethernet/rtl/net/w5500_top.v                                              ;         ;
 ; ../rtl/net/w5500_altera_top.v    ; yes             ; User Verilog HDL File        ; D:/code-file/FPGA/Ethernet/rtl/net/w5500_altera_top.v                                       ;         ;
 ; ../rtl/net/task_sche.v           ; yes             ; User Verilog HDL File        ; D:/code-file/FPGA/Ethernet/rtl/net/task_sche.v                                              ;         ;
@@ -272,6 +281,12 @@ refer to the applicable agreement for further details.
 ; db/lpm_divide_pkm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/code-file/FPGA/Ethernet/prj/db/lpm_divide_pkm.tdf                                        ;         ;
 ; db/sign_div_unsign_hnh.tdf       ; yes             ; Auto-Generated Megafunction  ; D:/code-file/FPGA/Ethernet/prj/db/sign_div_unsign_hnh.tdf                                   ;         ;
 ; db/alt_u_div_maf.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/code-file/FPGA/Ethernet/prj/db/alt_u_div_maf.tdf                                         ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; d:/environment/ide/quartus_18.1.0.625/quartus/libraries/megafunctions/lpm_mult.tdf          ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; d:/environment/ide/quartus_18.1.0.625/quartus/libraries/megafunctions/lpm_add_sub.inc       ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; d:/environment/ide/quartus_18.1.0.625/quartus/libraries/megafunctions/multcore.inc          ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; d:/environment/ide/quartus_18.1.0.625/quartus/libraries/megafunctions/bypassff.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; d:/environment/ide/quartus_18.1.0.625/quartus/libraries/megafunctions/altshift.inc          ;         ;
+; db/mult_rgt.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/code-file/FPGA/Ethernet/prj/db/mult_rgt.tdf                                              ;         ;
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
@@ -280,31 +295,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 3,334      ;
+; Estimated Total logic elements              ; 3,513      ;
 ;                                             ;            ;
-; Total combinational functions               ; 3008       ;
+; Total combinational functions               ; 3187       ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 1130       ;
-;     -- 3 input functions                    ; 634        ;
-;     -- <=2 input functions                  ; 1244       ;
+;     -- 4 input functions                    ; 1193       ;
+;     -- 3 input functions                    ; 633        ;
+;     -- <=2 input functions                  ; 1361       ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 2266       ;
-;     -- arithmetic mode                      ; 742        ;
+;     -- normal mode                          ; 2342       ;
+;     -- arithmetic mode                      ; 845        ;
 ;                                             ;            ;
-; Total registers                             ; 900        ;
-;     -- Dedicated logic registers            ; 900        ;
+; Total registers                             ; 1021       ;
+;     -- Dedicated logic registers            ; 1021       ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 32         ;
+; I/O pins                                    ; 37         ;
 ; Total memory bits                           ; 2048       ;
 ;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
+; Embedded Multiplier 9-bit elements          ; 2          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; rstn~input ;
-; Maximum fan-out                             ; 901        ;
-; Total fan-out                               ; 12407      ;
-; Average fan-out                             ; 3.12       ;
+; Maximum fan-out                             ; 1022       ;
+; Total fan-out                               ; 13431      ;
+; Average fan-out                             ; 3.13       ;
 +---------------------------------------------+------------+
 
 
@@ -313,8 +328,8 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                ; Entity Name         ; Library Name ;
 +----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |HC_SR04_TOP                                       ; 3008 (0)            ; 900 (0)                   ; 2048        ; 0            ; 0       ; 0         ; 32   ; 0            ; |HC_SR04_TOP                                                                                                                                                                       ; HC_SR04_TOP         ; work         ;
-;    |UART_driver:u_UART_driver|                     ; 1540 (80)           ; 65 (49)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|UART_driver:u_UART_driver                                                                                                                                             ; UART_driver         ; work         ;
+; |HC_SR04_TOP                                       ; 3187 (2)            ; 1021 (0)                  ; 2048        ; 2            ; 0       ; 1         ; 37   ; 0            ; |HC_SR04_TOP                                                                                                                                                                       ; HC_SR04_TOP         ; work         ;
+;    |UART_driver:u_UART_driver|                     ; 1541 (81)           ; 65 (49)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|UART_driver:u_UART_driver                                                                                                                                             ; UART_driver         ; work         ;
 ;       |UART_send:UART_send_init|                   ; 46 (46)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|UART_driver:u_UART_driver|UART_send:UART_send_init                                                                                                                    ; UART_send           ; work         ;
 ;       |lpm_divide:Div0|                            ; 187 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|UART_driver:u_UART_driver|lpm_divide:Div0                                                                                                                             ; lpm_divide          ; work         ;
 ;          |lpm_divide_5jm:auto_generated|           ; 187 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|UART_driver:u_UART_driver|lpm_divide:Div0|lpm_divide_5jm:auto_generated                                                                                               ; lpm_divide_5jm      ; work         ;
@@ -352,23 +367,28 @@ refer to the applicable agreement for further details.
 ;          |lpm_divide_8bm:auto_generated|           ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|UART_driver:u_UART_driver|lpm_divide:Mod4|lpm_divide_8bm:auto_generated                                                                                               ; lpm_divide_8bm      ; work         ;
 ;             |sign_div_unsign_tlh:divider|          ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|UART_driver:u_UART_driver|lpm_divide:Mod4|lpm_divide_8bm:auto_generated|sign_div_unsign_tlh:divider                                                                   ; sign_div_unsign_tlh ; work         ;
 ;                |alt_u_div_e7f:divider|             ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|UART_driver:u_UART_driver|lpm_divide:Mod4|lpm_divide_8bm:auto_generated|sign_div_unsign_tlh:divider|alt_u_div_e7f:divider                                             ; alt_u_div_e7f       ; work         ;
+;    |beep_driver:u_beep_driver|                     ; 117 (117)           ; 75 (75)                   ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |HC_SR04_TOP|beep_driver:u_beep_driver                                                                                                                                             ; beep_driver         ; work         ;
+;       |lpm_mult:Mult0|                             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |HC_SR04_TOP|beep_driver:u_beep_driver|lpm_mult:Mult0                                                                                                                              ; lpm_mult            ; work         ;
+;          |mult_rgt:auto_generated|                 ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |HC_SR04_TOP|beep_driver:u_beep_driver|lpm_mult:Mult0|mult_rgt:auto_generated                                                                                                      ; mult_rgt            ; work         ;
+;    |key_debounce:u_key_debounce2|                  ; 31 (31)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|key_debounce:u_key_debounce2                                                                                                                                          ; key_debounce        ; work         ;
+;    |key_debounce:u_key_debounce3|                  ; 31 (31)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|key_debounce:u_key_debounce3                                                                                                                                          ; key_debounce        ; work         ;
 ;    |led_driver:u_led_driver|                       ; 62 (8)              ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|led_driver:u_led_driver                                                                                                                                               ; led_driver          ; work         ;
 ;       |lpm_divide:Div0|                            ; 54 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|led_driver:u_led_driver|lpm_divide:Div0                                                                                                                               ; lpm_divide          ; work         ;
 ;          |lpm_divide_pkm:auto_generated|           ; 54 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|led_driver:u_led_driver|lpm_divide:Div0|lpm_divide_pkm:auto_generated                                                                                                 ; lpm_divide_pkm      ; work         ;
 ;             |sign_div_unsign_hnh:divider|          ; 54 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|led_driver:u_led_driver|lpm_divide:Div0|lpm_divide_pkm:auto_generated|sign_div_unsign_hnh:divider                                                                     ; sign_div_unsign_hnh ; work         ;
 ;                |alt_u_div_maf:divider|             ; 54 (54)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|led_driver:u_led_driver|lpm_divide:Div0|lpm_divide_pkm:auto_generated|sign_div_unsign_hnh:divider|alt_u_div_maf:divider                                               ; alt_u_div_maf       ; work         ;
-;    |net_driver:u_net_driver|                       ; 1162 (0)            ; 741 (0)                   ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver                                                                                                                                               ; net_driver          ; work         ;
-;       |w5500_altera_top:u_w5500_altera_top|        ; 1162 (0)            ; 741 (0)                   ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top                                                                                                           ; w5500_altera_top    ; work         ;
+;    |net_driver:u_net_driver|                       ; 1159 (0)            ; 741 (0)                   ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver                                                                                                                                               ; net_driver          ; work         ;
+;       |w5500_altera_top:u_w5500_altera_top|        ; 1159 (0)            ; 741 (0)                   ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top                                                                                                           ; w5500_altera_top    ; work         ;
 ;          |dat_proces:undat_proces|                 ; 36 (35)             ; 43 (42)                   ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces                                                                                   ; dat_proces          ; work         ;
 ;             |my_ram:my_ram_inst|                   ; 1 (0)               ; 1 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst                                                                ; my_ram              ; work         ;
 ;                |altsyncram:altsyncram_component|   ; 1 (0)               ; 1 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
 ;                   |altsyncram_qcq1:auto_generated| ; 1 (1)               ; 1 (1)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst|altsyncram:altsyncram_component|altsyncram_qcq1:auto_generated ; altsyncram_qcq1     ; work         ;
-;          |w5500_top:unw5500_top|                   ; 1126 (0)            ; 698 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top                                                                                     ; w5500_top           ; work         ;
-;             |ini_w5500:unini_w5500|                ; 349 (349)           ; 293 (293)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500                                                               ; ini_w5500           ; work         ;
-;             |socket:unsocket|                      ; 525 (3)             ; 289 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket                                                                     ; socket              ; work         ;
+;          |w5500_top:unw5500_top|                   ; 1123 (0)            ; 698 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top                                                                                     ; w5500_top           ; work         ;
+;             |ini_w5500:unini_w5500|                ; 348 (348)           ; 293 (293)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500                                                               ; ini_w5500           ; work         ;
+;             |socket:unsocket|                      ; 523 (3)             ; 289 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket                                                                     ; socket              ; work         ;
 ;                |ini_socket:unini_socket|           ; 126 (126)           ; 52 (52)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|ini_socket:unini_socket                                             ; ini_socket          ; work         ;
 ;                |socket_rxd:ubsocket_rxd|           ; 165 (165)           ; 123 (123)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd                                             ; socket_rxd          ; work         ;
-;                |socket_txd:unsocket_txd|           ; 231 (231)           ; 114 (114)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd                                             ; socket_txd          ; work         ;
+;                |socket_txd:unsocket_txd|           ; 229 (229)           ; 114 (114)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd                                             ; socket_txd          ; work         ;
 ;             |spi_drv:unspi_drv|                    ; 144 (144)           ; 101 (101)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv                                                                   ; spi_drv             ; work         ;
 ;             |task_sche:untask_sche|                ; 108 (108)           ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|task_sche:untask_sche                                                               ; task_sche           ; work         ;
 ;    |sr04_top:u_sr04_top|                           ; 244 (0)             ; 87 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |HC_SR04_TOP|sr04_top:u_sr04_top                                                                                                                                                   ; sr04_top            ; work         ;
@@ -387,6 +407,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|my_ram:my_ram_inst|altsyncram:altsyncram_component|altsyncram_qcq1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; None ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 1           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 2           ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 1           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -667,6 +705,16 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Register name                                                                                                                             ; Reason for Removal                                                                                                                             ;
 +-------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; beep_driver:u_beep_driver|time_week[30..50]                                                                                               ; Stuck at GND due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|freq_data[15..17]                                                                                               ; Stuck at GND due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|freq_data[13,14]                                                                                                ; Stuck at VCC due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|freq_data[12]                                                                                                   ; Stuck at GND due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|freq_data[11]                                                                                                   ; Stuck at VCC due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|freq_data[10]                                                                                                   ; Stuck at GND due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|freq_data[8,9]                                                                                                  ; Stuck at VCC due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|freq_data[5..7]                                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|freq_data[4]                                                                                                    ; Stuck at VCC due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|freq_data[0..3]                                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                         ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|state[4,5]      ; Stuck at GND due to stuck port data_in                                                                                                         ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|o_cmd[0,1,5..7] ; Stuck at GND due to stuck port data_in                                                                                                         ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|o_cmd[0,1,5..7] ; Stuck at GND due to stuck port data_in                                                                                                         ;
@@ -678,6 +726,7 @@ Encoding Type:  One-Hot
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500|o_addr[6..15]                     ; Stuck at GND due to stuck port data_in                                                                                                         ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500|o_length[3,5..15]                 ; Stuck at GND due to stuck port data_in                                                                                                         ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|state[2]                                              ; Stuck at GND due to stuck port data_in                                                                                                         ;
+; UART_driver:u_UART_driver|flag_s                                                                                                          ; Merged with beep_driver:u_beep_driver|flag_s                                                                                                   ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|o_cmd[3]        ; Merged with net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|o_start  ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500|denr                              ; Merged with net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|denr     ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|denr            ; Merged with net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|denr     ;
@@ -748,7 +797,9 @@ Encoding Type:  One-Hot
 ; sr04_top:u_sr04_top|seg_driver:u_seg_driver|cm_ten[0]                                                                                     ; Merged with UART_driver:u_UART_driver|point_2[0]                                                                                               ;
 ; sr04_top:u_sr04_top|seg_driver:u_seg_driver|cm_hund[0]                                                                                    ; Merged with led_driver:u_led_driver|cm_hund[0]                                                                                                 ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|l_cmd[1,5..7]                         ; Merged with net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|l_cmd[0]                       ;
+; beep_driver:u_beep_driver|time_week[29]                                                                                                   ; Stuck at GND due to stuck port data_in                                                                                                         ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|l_cmd[0]                              ; Stuck at GND due to stuck port data_in                                                                                                         ;
+; beep_driver:u_beep_driver|time_week[0]                                                                                                    ; Stuck at GND due to stuck port data_in                                                                                                         ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|state~4                               ; Lost fanout                                                                                                                                    ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|state~5                               ; Lost fanout                                                                                                                                    ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|state~6                               ; Lost fanout                                                                                                                                    ;
@@ -764,7 +815,7 @@ Encoding Type:  One-Hot
 ; UART_driver:u_UART_driver|point_3[2,3]                                                                                                    ; Stuck at GND due to stuck port data_in                                                                                                         ;
 ; UART_driver:u_UART_driver|point_3[0]                                                                                                      ; Merged with led_driver:u_led_driver|cm_hund[0]                                                                                                 ;
 ; UART_driver:u_UART_driver|point_3[1]                                                                                                      ; Merged with led_driver:u_led_driver|cm_hund[1]                                                                                                 ;
-; Total Number of Removed Registers = 169                                                                                                   ;                                                                                                                                                ;
+; Total Number of Removed Registers = 211                                                                                                   ;                                                                                                                                                ;
 +-------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -783,10 +834,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 900   ;
-; Number of registers using Synchronous Clear  ; 170   ;
-; Number of registers using Synchronous Load   ; 36    ;
-; Number of registers using Asynchronous Clear ; 899   ;
+; Total registers                              ; 1021  ;
+; Number of registers using Synchronous Clear  ; 215   ;
+; Number of registers using Synchronous Load   ; 99    ;
+; Number of registers using Asynchronous Clear ; 1020  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 562   ;
 ; Number of registers using Preset             ; 0     ;
@@ -808,8 +859,12 @@ Encoding Type:  One-Hot
 ; sr04_top:u_sr04_top|seg_driver:u_seg_driver|seg[7]                                                     ; 1       ;
 ; UART_driver:u_UART_driver|UART_send:UART_send_init|UART_tx                                             ; 2       ;
 ; net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|cs ; 2       ;
-; sr04_top:u_sr04_top|echo_driver:u_echo_driver|data_r[1]                                                ; 1       ;
-; Total number of inverted registers = 11                                                                ;         ;
+; sr04_top:u_sr04_top|echo_driver:u_echo_driver|data_r[1]                                                ; 4       ;
+; key_debounce:u_key_debounce3|key_value                                                                 ; 2       ;
+; key_debounce:u_key_debounce2|key_value                                                                 ; 2       ;
+; key_debounce:u_key_debounce3|key_reg                                                                   ; 2       ;
+; key_debounce:u_key_debounce2|key_reg                                                                   ; 2       ;
+; Total number of inverted registers = 15                                                                ;         ;
 +--------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -818,34 +873,36 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|wr_ptr[12]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|wr_ptr[2]   ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|cnt_bit[1]                        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|cnt_byte[11]                      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |HC_SR04_TOP|UART_driver:u_UART_driver|xcnt[0]                                                                                                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|spi_drv:unspi_drv|cnt_byte[0]                       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |HC_SR04_TOP|UART_driver:u_UART_driver|xcnt[3]                                                                                                     ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |HC_SR04_TOP|UART_driver:u_UART_driver|UART_send:UART_send_init|cnt_bit[3]                                                                         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|waddr[4]                                          ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|raddr[12]                                         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|rsrsize[10] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|sr04_top:u_sr04_top|echo_driver:u_echo_driver|cnt[15]                                                                                 ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|waddr[8]                                          ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces|raddr[14]                                         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|rsrsize[0]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|sr04_top:u_sr04_top|echo_driver:u_echo_driver|cnt[1]                                                                                  ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |HC_SR04_TOP|key_debounce:u_key_debounce2|delay_cnt[1]                                                                                             ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |HC_SR04_TOP|key_debounce:u_key_debounce3|delay_cnt[9]                                                                                             ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|o_addr[3]   ;
 ; 16:1               ; 3 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|o_length[1] ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|rx_ptr[8]   ;
-; 32:1               ; 3 bits    ; 63 LEs        ; 30 LEs               ; 33 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|o_length[2] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|rx_ptr[11]  ;
+; 32:1               ; 3 bits    ; 63 LEs        ; 30 LEs               ; 33 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|o_length[1] ;
 ; 16:1               ; 16 bits   ; 160 LEs       ; 16 LEs               ; 144 LEs                ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|cnt_byte[8] ;
-; 33:1               ; 10 bits   ; 220 LEs       ; 20 LEs               ; 200 LEs                ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|tx_ptr[14]  ;
-; 29:1               ; 16 bits   ; 304 LEs       ; 16 LEs               ; 288 LEs                ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|cnt_byte[2] ;
-; 14:1               ; 5 bits    ; 45 LEs        ; 10 LEs               ; 35 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|tx_ptr[3]   ;
+; 33:1               ; 10 bits   ; 220 LEs       ; 20 LEs               ; 200 LEs                ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|tx_ptr[6]   ;
+; 29:1               ; 16 bits   ; 304 LEs       ; 16 LEs               ; 288 LEs                ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|cnt_byte[8] ;
+; 14:1               ; 5 bits    ; 45 LEs        ; 10 LEs               ; 35 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|tx_ptr[2]   ;
 ; 66:1               ; 2 bits    ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500|o_dat[6]                      ;
-; 63:1               ; 16 bits   ; 672 LEs       ; 16 LEs               ; 656 LEs                ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500|cnt_byte[6]                   ;
-; 68:1               ; 2 bits    ; 90 LEs        ; 24 LEs               ; 66 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500|o_dat[0]                      ;
-; 37:1               ; 4 bits    ; 96 LEs        ; 16 LEs               ; 80 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|o_dat[0]    ;
+; 63:1               ; 16 bits   ; 672 LEs       ; 16 LEs               ; 656 LEs                ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500|cnt_byte[7]                   ;
+; 68:1               ; 2 bits    ; 90 LEs        ; 24 LEs               ; 66 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500|o_dat[2]                      ;
+; 37:1               ; 4 bits    ; 96 LEs        ; 16 LEs               ; 80 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|o_dat[5]    ;
 ; 37:1               ; 2 bits    ; 48 LEs        ; 8 LEs                ; 40 LEs                 ; Yes        ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd|o_dat[3]    ;
-; 256:1              ; 7 bits    ; 1190 LEs      ; 56 LEs               ; 1134 LEs               ; Yes        ; |HC_SR04_TOP|sr04_top:u_sr04_top|seg_driver:u_seg_driver|seg[0]                                                                                    ;
-; 9:1                ; 24 bits   ; 144 LEs       ; 72 LEs               ; 72 LEs                 ; No         ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|o_sn_addr[12]                       ;
-; 9:1                ; 18 bits   ; 108 LEs       ; 72 LEs               ; 36 LEs                 ; No         ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|o_sn_addr[1]                        ;
+; 256:1              ; 7 bits    ; 1190 LEs      ; 56 LEs               ; 1134 LEs               ; Yes        ; |HC_SR04_TOP|sr04_top:u_sr04_top|seg_driver:u_seg_driver|seg[1]                                                                                    ;
+; 9:1                ; 24 bits   ; 144 LEs       ; 72 LEs               ; 72 LEs                 ; No         ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|o_sn_length[7]                      ;
+; 9:1                ; 18 bits   ; 108 LEs       ; 72 LEs               ; 36 LEs                 ; No         ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|o_sn_dat[7]                         ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|o_sn_cmd[3]                         ;
 ; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |HC_SR04_TOP|net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd|o_dat       ;
-; 256:1              ; 7 bits    ; 1190 LEs      ; 105 LEs              ; 1085 LEs               ; No         ; |HC_SR04_TOP|sr04_top:u_sr04_top|seg_driver:u_seg_driver|Selector3                                                                                 ;
+; 256:1              ; 7 bits    ; 1190 LEs      ; 105 LEs              ; 1085 LEs               ; No         ; |HC_SR04_TOP|sr04_top:u_sr04_top|seg_driver:u_seg_driver|Selector6                                                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1720,6 +1777,46 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key_debounce:u_key_debounce ;
++----------------+----------------------+----------------------------------+
+; Parameter Name ; Value                ; Type                             ;
++----------------+----------------------+----------------------------------+
+; MAX_NUM        ; 11110100001001000000 ; Unsigned Binary                  ;
++----------------+----------------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key_debounce:u_key_debounce1 ;
++----------------+----------------------+-----------------------------------+
+; Parameter Name ; Value                ; Type                              ;
++----------------+----------------------+-----------------------------------+
+; MAX_NUM        ; 11110100001001000000 ; Unsigned Binary                   ;
++----------------+----------------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key_debounce:u_key_debounce2 ;
++----------------+----------------------+-----------------------------------+
+; Parameter Name ; Value                ; Type                              ;
++----------------+----------------------+-----------------------------------+
+; MAX_NUM        ; 11110100001001000000 ; Unsigned Binary                   ;
++----------------+----------------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key_debounce:u_key_debounce3 ;
++----------------+----------------------+-----------------------------------+
+; Parameter Name ; Value                ; Type                              ;
++----------------+----------------------+-----------------------------------+
+; MAX_NUM        ; 11110100001001000000 ; Unsigned Binary                   ;
++----------------+----------------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: UART_driver:u_UART_driver|lpm_divide:Div0 ;
 +------------------------+----------------+--------------------------------------------------+
@@ -1973,6 +2070,41 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: beep_driver:u_beep_driver|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+---------------------------+
+; Parameter Name                                 ; Value        ; Type                      ;
++------------------------------------------------+--------------+---------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE            ;
+; LPM_WIDTHA                                     ; 18           ; Untyped                   ;
+; LPM_WIDTHB                                     ; 10           ; Untyped                   ;
+; LPM_WIDTHP                                     ; 28           ; Untyped                   ;
+; LPM_WIDTHR                                     ; 28           ; Untyped                   ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                   ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                   ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                   ;
+; LATENCY                                        ; 0            ; Untyped                   ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                   ;
+; INPUT_B_IS_CONSTANT                            ; YES          ; Untyped                   ;
+; USE_EAB                                        ; OFF          ; Untyped                   ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped                   ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                   ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                   ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K       ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                   ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                   ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                   ;
+; CBXI_PARAMETER                                 ; mult_rgt     ; Untyped                   ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                   ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                   ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                   ;
++------------------------------------------------+--------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                                                                                                                   ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
@@ -1991,6 +2123,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                                                   ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                                              ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                   ;
++---------------------------------------+------------------------------------------+
+; Name                                  ; Value                                    ;
++---------------------------------------+------------------------------------------+
+; Number of entity instances            ; 1                                        ;
+; Entity Instance                       ; beep_driver:u_beep_driver|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 18                                       ;
+;     -- LPM_WIDTHB                     ; 10                                       ;
+;     -- LPM_WIDTHP                     ; 28                                       ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                 ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                       ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                                      ;
+;     -- USE_EAB                        ; OFF                                      ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                     ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                       ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                       ;
++---------------------------------------+------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2073,30 +2225,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 32                          ;
-; cycloneiii_ff         ; 900                         ;
-;     CLR               ; 264                         ;
-;     CLR SCLR          ; 67                          ;
-;     CLR SLD           ; 6                           ;
+; boundary_port         ; 37                          ;
+; cycloneiii_ff         ; 1021                        ;
+;     CLR               ; 277                         ;
+;     CLR SCLR          ; 112                         ;
+;     CLR SLD           ; 69                          ;
 ;     ENA CLR           ; 429                         ;
 ;     ENA CLR SCLR      ; 103                         ;
 ;     ENA CLR SLD       ; 30                          ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 3018                        ;
-;     arith             ; 742                         ;
+; cycloneiii_lcell_comb ; 3197                        ;
+;     arith             ; 845                         ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 287                         ;
+;         2 data inputs ; 390                         ;
 ;         3 data inputs ; 445                         ;
-;     normal            ; 2276                        ;
-;         0 data inputs ; 88                          ;
-;         1 data inputs ; 55                          ;
-;         2 data inputs ; 814                         ;
-;         3 data inputs ; 189                         ;
-;         4 data inputs ; 1130                        ;
+;     normal            ; 2352                        ;
+;         0 data inputs ; 90                          ;
+;         1 data inputs ; 61                          ;
+;         2 data inputs ; 820                         ;
+;         3 data inputs ; 188                         ;
+;         4 data inputs ; 1193                        ;
+; cycloneiii_mac_mult   ; 1                           ;
+; cycloneiii_mac_out    ; 1                           ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 36.00                       ;
-; Average LUT depth     ; 14.08                       ;
+; Average LUT depth     ; 13.06                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2115,10 +2269,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Sat Jun 17 17:31:49 2023
+    Info: Processing started: Wed Jun 28 12:21:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ethernet -c Ethernet
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /code-file/fpga/ethernet/rtl/tool/beep_driver.v
+    Info (12023): Found entity 1: beep_driver File: D:/code-file/FPGA/Ethernet/rtl/tool/beep_driver.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /code-file/fpga/ethernet/rtl/tool/key_debounce.v
+    Info (12023): Found entity 1: key_debounce File: D:/code-file/FPGA/Ethernet/rtl/tool/key_debounce.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /code-file/fpga/ethernet/rtl/net/w5500_top.v
     Info (12023): Found entity 1: w5500_top File: D:/code-file/FPGA/Ethernet/rtl/net/w5500_top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /code-file/fpga/ethernet/rtl/net/w5500_altera_top.v
@@ -2165,9 +2323,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file /code-f
     Info (12023): Found entity 1: HC_SR04_TOP File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /code-file/fpga/ethernet/ip/ram/my_ram.v
     Info (12023): Found entity 1: my_ram File: D:/code-file/FPGA/Ethernet/ip/RAM/my_ram.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at socket_txd.v(324): created implicit net for "ir_vld" File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 324
+Warning (10236): Verilog HDL Implicit Net warning at socket_txd.v(325): created implicit net for "ir_vld" File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 325
 Info (12127): Elaborating entity "HC_SR04_TOP" for the top level hierarchy
-Info (12128): Elaborating entity "sr04_top" for hierarchy "sr04_top:u_sr04_top" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 40
+Info (12128): Elaborating entity "sr04_top" for hierarchy "sr04_top:u_sr04_top" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 44
 Info (12128): Elaborating entity "clk_div" for hierarchy "sr04_top:u_sr04_top|clk_div:u_clk_div" File: D:/code-file/FPGA/Ethernet/rtl/hcsr04/sr04_top.v Line: 18
 Info (12128): Elaborating entity "trig_driver" for hierarchy "sr04_top:u_sr04_top|trig_driver:u_trig_driver" File: D:/code-file/FPGA/Ethernet/rtl/hcsr04/sr04_top.v Line: 24
 Info (12128): Elaborating entity "echo_driver" for hierarchy "sr04_top:u_sr04_top|echo_driver:u_echo_driver" File: D:/code-file/FPGA/Ethernet/rtl/hcsr04/sr04_top.v Line: 32
@@ -2180,17 +2338,17 @@ Warning (10230): Verilog HDL assignment warning at seg_driver.v(55): truncated v
 Warning (10230): Verilog HDL assignment warning at seg_driver.v(56): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/hcsr04/seg_driver.v Line: 56
 Warning (10230): Verilog HDL assignment warning at seg_driver.v(57): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/hcsr04/seg_driver.v Line: 57
 Info (10264): Verilog HDL Case Statement information at seg_driver.v(90): all case item expressions in this case statement are onehot File: D:/code-file/FPGA/Ethernet/rtl/hcsr04/seg_driver.v Line: 90
-Info (12128): Elaborating entity "UART_driver" for hierarchy "UART_driver:u_UART_driver" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 48
-Warning (10036): Verilog HDL or VHDL warning at UART_driver.v(16): object "flag_0" assigned a value but never read File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 16
-Warning (10230): Verilog HDL assignment warning at UART_driver.v(60): truncated value with size 32 to match size of target (26) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 60
-Warning (10230): Verilog HDL assignment warning at UART_driver.v(77): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 77
-Warning (10230): Verilog HDL assignment warning at UART_driver.v(78): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 78
-Warning (10230): Verilog HDL assignment warning at UART_driver.v(79): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 79
-Warning (10230): Verilog HDL assignment warning at UART_driver.v(80): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 80
-Warning (10230): Verilog HDL assignment warning at UART_driver.v(81): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 81
-Warning (10230): Verilog HDL assignment warning at UART_driver.v(82): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 82
-Info (12128): Elaborating entity "UART_send" for hierarchy "UART_driver:u_UART_driver|UART_send:UART_send_init" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 134
-Info (12128): Elaborating entity "led_driver" for hierarchy "led_driver:u_led_driver" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 55
+Info (12128): Elaborating entity "UART_driver" for hierarchy "UART_driver:u_UART_driver" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 53
+Warning (10036): Verilog HDL or VHDL warning at UART_driver.v(18): object "flag_0" assigned a value but never read File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 18
+Warning (10230): Verilog HDL assignment warning at UART_driver.v(77): truncated value with size 32 to match size of target (26) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 77
+Warning (10230): Verilog HDL assignment warning at UART_driver.v(94): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 94
+Warning (10230): Verilog HDL assignment warning at UART_driver.v(95): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 95
+Warning (10230): Verilog HDL assignment warning at UART_driver.v(96): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 96
+Warning (10230): Verilog HDL assignment warning at UART_driver.v(97): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 97
+Warning (10230): Verilog HDL assignment warning at UART_driver.v(98): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 98
+Warning (10230): Verilog HDL assignment warning at UART_driver.v(99): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 99
+Info (12128): Elaborating entity "UART_send" for hierarchy "UART_driver:u_UART_driver|UART_send:UART_send_init" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 151
+Info (12128): Elaborating entity "led_driver" for hierarchy "led_driver:u_led_driver" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 60
 Warning (10036): Verilog HDL or VHDL warning at led_driver.v(13): object "point_1" assigned a value but never read File: D:/code-file/FPGA/Ethernet/rtl/tool/led_driver.v Line: 13
 Warning (10036): Verilog HDL or VHDL warning at led_driver.v(14): object "point_2" assigned a value but never read File: D:/code-file/FPGA/Ethernet/rtl/tool/led_driver.v Line: 14
 Warning (10036): Verilog HDL or VHDL warning at led_driver.v(15): object "point_3" assigned a value but never read File: D:/code-file/FPGA/Ethernet/rtl/tool/led_driver.v Line: 15
@@ -2200,7 +2358,7 @@ Warning (10230): Verilog HDL assignment warning at led_driver.v(31): truncated v
 Warning (10230): Verilog HDL assignment warning at led_driver.v(32): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/tool/led_driver.v Line: 32
 Warning (10230): Verilog HDL assignment warning at led_driver.v(33): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/tool/led_driver.v Line: 33
 Warning (10230): Verilog HDL assignment warning at led_driver.v(34): truncated value with size 32 to match size of target (4) File: D:/code-file/FPGA/Ethernet/rtl/tool/led_driver.v Line: 34
-Info (12128): Elaborating entity "net_driver" for hierarchy "net_driver:u_net_driver" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 66
+Info (12128): Elaborating entity "net_driver" for hierarchy "net_driver:u_net_driver" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 71
 Info (12128): Elaborating entity "w5500_altera_top" for hierarchy "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top" File: D:/code-file/FPGA/Ethernet/rtl/net/net_driver.v Line: 26
 Info (12128): Elaborating entity "dat_proces" for hierarchy "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|dat_proces:undat_proces" File: D:/code-file/FPGA/Ethernet/rtl/net/w5500_altera_top.v Line: 48
 Warning (10230): Verilog HDL assignment warning at dat_proces.v(71): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/dat_proces.v Line: 71
@@ -2249,41 +2407,48 @@ Warning (10027): Verilog HDL or VHDL warning at the spi_drv.v(198): index expres
 Info (10264): Verilog HDL Case Statement information at spi_drv.v(189): all case item expressions in this case statement are onehot File: D:/code-file/FPGA/Ethernet/rtl/net/spi_drv.v Line: 189
 Info (10264): Verilog HDL Case Statement information at spi_drv.v(221): all case item expressions in this case statement are onehot File: D:/code-file/FPGA/Ethernet/rtl/net/spi_drv.v Line: 221
 Info (12128): Elaborating entity "ini_w5500" for hierarchy "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|ini_w5500:unini_w5500" File: D:/code-file/FPGA/Ethernet/rtl/net/w5500_top.v Line: 125
-Warning (10230): Verilog HDL assignment warning at ini_w5500.v(279): truncated value with size 32 to match size of target (5) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_w5500.v Line: 279
-Warning (10230): Verilog HDL assignment warning at ini_w5500.v(291): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_w5500.v Line: 291
-Warning (10230): Verilog HDL assignment warning at ini_w5500.v(298): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_w5500.v Line: 298
-Warning (10230): Verilog HDL assignment warning at ini_w5500.v(306): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_w5500.v Line: 306
+Warning (10230): Verilog HDL assignment warning at ini_w5500.v(280): truncated value with size 32 to match size of target (5) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_w5500.v Line: 280
+Warning (10230): Verilog HDL assignment warning at ini_w5500.v(292): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_w5500.v Line: 292
+Warning (10230): Verilog HDL assignment warning at ini_w5500.v(299): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_w5500.v Line: 299
+Warning (10230): Verilog HDL assignment warning at ini_w5500.v(307): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_w5500.v Line: 307
 Info (12128): Elaborating entity "socket" for hierarchy "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket" File: D:/code-file/FPGA/Ethernet/rtl/net/w5500_top.v Line: 158
 Info (12128): Elaborating entity "ini_socket" for hierarchy "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|ini_socket:unini_socket" File: D:/code-file/FPGA/Ethernet/rtl/net/socket.v Line: 111
-Warning (10230): Verilog HDL assignment warning at ini_socket.v(211): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_socket.v Line: 211
+Warning (10230): Verilog HDL assignment warning at ini_socket.v(212): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/ini_socket.v Line: 212
 Info (12128): Elaborating entity "socket_txd" for hierarchy "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_txd:unsocket_txd" File: D:/code-file/FPGA/Ethernet/rtl/net/socket.v Line: 141
-Warning (10858): Verilog HDL warning at socket_txd.v(74): object dip used but never assigned File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 74
-Warning (10858): Verilog HDL warning at socket_txd.v(75): object dport used but never assigned File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 75
-Warning (10858): Verilog HDL warning at socket_txd.v(76): object sport used but never assigned File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 76
-Warning (10230): Verilog HDL assignment warning at socket_txd.v(291): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 291
-Warning (10230): Verilog HDL assignment warning at socket_txd.v(296): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 296
-Warning (10230): Verilog HDL assignment warning at socket_txd.v(349): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 349
-Warning (10030): Net "dip" at socket_txd.v(74) has no driver or initial value, using a default initial value '0' File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 74
-Warning (10030): Net "dport" at socket_txd.v(75) has no driver or initial value, using a default initial value '0' File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 75
-Warning (10030): Net "sport" at socket_txd.v(76) has no driver or initial value, using a default initial value '0' File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 76
+Warning (10858): Verilog HDL warning at socket_txd.v(75): object dip used but never assigned File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 75
+Warning (10858): Verilog HDL warning at socket_txd.v(76): object dport used but never assigned File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 76
+Warning (10858): Verilog HDL warning at socket_txd.v(77): object sport used but never assigned File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 77
+Warning (10230): Verilog HDL assignment warning at socket_txd.v(292): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 292
+Warning (10230): Verilog HDL assignment warning at socket_txd.v(297): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 297
+Warning (10230): Verilog HDL assignment warning at socket_txd.v(350): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 350
+Warning (10030): Net "dip" at socket_txd.v(75) has no driver or initial value, using a default initial value '0' File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 75
+Warning (10030): Net "dport" at socket_txd.v(76) has no driver or initial value, using a default initial value '0' File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 76
+Warning (10030): Net "sport" at socket_txd.v(77) has no driver or initial value, using a default initial value '0' File: D:/code-file/FPGA/Ethernet/rtl/net/socket_txd.v Line: 77
 Info (12128): Elaborating entity "socket_rxd" for hierarchy "net_driver:u_net_driver|w5500_altera_top:u_w5500_altera_top|w5500_top:unw5500_top|socket:unsocket|socket_rxd:ubsocket_rxd" File: D:/code-file/FPGA/Ethernet/rtl/net/socket.v Line: 164
 Warning (10230): Verilog HDL assignment warning at socket_rxd.v(206): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/socket_rxd.v Line: 206
 Warning (10230): Verilog HDL assignment warning at socket_rxd.v(211): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/socket_rxd.v Line: 211
 Warning (10230): Verilog HDL assignment warning at socket_rxd.v(264): truncated value with size 32 to match size of target (16) File: D:/code-file/FPGA/Ethernet/rtl/net/socket_rxd.v Line: 264
-Info (278001): Inferred 11 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Div0" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 78
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod1" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 78
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod0" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 77
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Div2" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 80
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod3" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 80
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Div1" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 79
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod2" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 79
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Div3" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 81
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod4" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 81
+Info (12128): Elaborating entity "key_debounce" for hierarchy "key_debounce:u_key_debounce" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 79
+Warning (10230): Verilog HDL assignment warning at key_debounce.v(30): truncated value with size 32 to match size of target (20) File: D:/code-file/FPGA/Ethernet/rtl/tool/key_debounce.v Line: 30
+Info (12128): Elaborating entity "beep_driver" for hierarchy "beep_driver:u_beep_driver" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 111
+Warning (10230): Verilog HDL assignment warning at beep_driver.v(70): truncated value with size 32 to match size of target (18) File: D:/code-file/FPGA/Ethernet/rtl/tool/beep_driver.v Line: 70
+Warning (10230): Verilog HDL assignment warning at beep_driver.v(76): truncated value with size 32 to match size of target (18) File: D:/code-file/FPGA/Ethernet/rtl/tool/beep_driver.v Line: 76
+Warning (10230): Verilog HDL assignment warning at beep_driver.v(79): truncated value with size 18 to match size of target (17) File: D:/code-file/FPGA/Ethernet/rtl/tool/beep_driver.v Line: 79
+Info (278001): Inferred 12 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Div0" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 95
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod1" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 95
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod0" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 94
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Div2" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 97
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod3" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 97
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Div1" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 96
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod2" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 96
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Div3" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 98
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod4" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 98
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "led_driver:u_led_driver|Div0" File: D:/code-file/FPGA/Ethernet/rtl/tool/led_driver.v Line: 29
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod5" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 82
-Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Div0" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 78
-Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Div0" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 78
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "UART_driver:u_UART_driver|Mod5" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "beep_driver:u_beep_driver|Mult0" File: D:/code-file/FPGA/Ethernet/rtl/tool/beep_driver.v Line: 46
+Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Div0" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 95
+Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Div0" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 95
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2298,22 +2463,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_7pc File: D:/code-file/FPGA/Ethernet/prj/db/add_sub_7pc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
     Info (12023): Found entity 1: add_sub_8pc File: D:/code-file/FPGA/Ethernet/prj/db/add_sub_8pc.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Mod1" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 78
-Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Mod1" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 78
+Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Mod1" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 95
+Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Mod1" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 95
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_8bm.tdf
     Info (12023): Found entity 1: lpm_divide_8bm File: D:/code-file/FPGA/Ethernet/prj/db/lpm_divide_8bm.tdf Line: 24
-Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Mod0" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 77
-Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Mod0" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 77
+Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Mod0" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 94
+Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Mod0" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 94
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Div2" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 80
-Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Div2" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 80
+Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Div2" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 97
+Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Div2" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 97
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2324,8 +2489,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_anh File: D:/code-file/FPGA/Ethernet/prj/db/sign_div_unsign_anh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_8af.tdf
     Info (12023): Found entity 1: alt_u_div_8af File: D:/code-file/FPGA/Ethernet/prj/db/alt_u_div_8af.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Div1" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 79
-Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Div1" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 79
+Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Div1" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 96
+Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Div1" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 96
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2336,8 +2501,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_0mh File: D:/code-file/FPGA/Ethernet/prj/db/sign_div_unsign_0mh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_k7f.tdf
     Info (12023): Found entity 1: alt_u_div_k7f File: D:/code-file/FPGA/Ethernet/prj/db/alt_u_div_k7f.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Div3" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 81
-Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Div3" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 81
+Info (12130): Elaborated megafunction instantiation "UART_driver:u_UART_driver|lpm_divide:Div3" File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 98
+Info (12133): Instantiated megafunction "UART_driver:u_UART_driver|lpm_divide:Div3" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/uart/UART_driver.v Line: 98
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "14"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2360,6 +2525,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_hnh File: D:/code-file/FPGA/Ethernet/prj/db/sign_div_unsign_hnh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_maf.tdf
     Info (12023): Found entity 1: alt_u_div_maf File: D:/code-file/FPGA/Ethernet/prj/db/alt_u_div_maf.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "beep_driver:u_beep_driver|lpm_mult:Mult0" File: D:/code-file/FPGA/Ethernet/rtl/tool/beep_driver.v Line: 46
+Info (12133): Instantiated megafunction "beep_driver:u_beep_driver|lpm_mult:Mult0" with the following parameter: File: D:/code-file/FPGA/Ethernet/rtl/tool/beep_driver.v Line: 46
+    Info (12134): Parameter "LPM_WIDTHA" = "18"
+    Info (12134): Parameter "LPM_WIDTHB" = "10"
+    Info (12134): Parameter "LPM_WIDTHP" = "28"
+    Info (12134): Parameter "LPM_WIDTHR" = "28"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_rgt.tdf
+    Info (12023): Found entity 1: mult_rgt File: D:/code-file/FPGA/Ethernet/prj/db/mult_rgt.tdf Line: 28
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high File: D:/code-file/FPGA/Ethernet/rtl/hcsr04/seg_driver.v Line: 80
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -2386,18 +2564,21 @@ Info (17016): Found the following redundant logic cells in design
 Info (144001): Generated suppressed messages file D:/code-file/FPGA/Ethernet/prj/output_files/Ethernet.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "uart_rx" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 5
-Info (21057): Implemented 3381 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 3341 logic cells
+    Warning (15610): No output dependent on input pin "key[0]" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 7
+    Warning (15610): No output dependent on input pin "key[1]" File: D:/code-file/FPGA/Ethernet/rtl/HC_SR04_TOP.v Line: 7
+Info (21057): Implemented 3567 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 3520 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
-    Info: Peak virtual memory: 4861 megabytes
-    Info: Processing ended: Sat Jun 17 17:32:05 2023
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 64 warnings
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Wed Jun 28 12:22:12 2023
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +------------------------------------------+

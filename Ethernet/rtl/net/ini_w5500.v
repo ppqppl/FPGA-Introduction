@@ -31,6 +31,7 @@ parameter 	GAR	=32'hC0_A8_00_05,		//wangguan
 				SHAR	=48'h010203040506,//MAC
 				SIPR	=32'hC0A8000A;		//IP
 
+				
 parameter	IDLE			=6'd00,
 				RST			=6'd01,
 				WRMR_CMD		=6'd02,
